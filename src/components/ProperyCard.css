@@ -1,0 +1,96 @@
+.property-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #222; /* Arrière-plan du card */
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.property-images-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Ajoute de l'espace sous la grande image */
+}
+
+.property-image {
+  width: 60%; /* Grande image statique */
+  margin-right: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.property-thumbnail {
+  width: 35%; /* Diaporama des miniatures */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100px; /* Taille des miniatures */
+  object-fit: cover;
+  margin-bottom: 10px; /* Espacement entre les miniatures */
+}
+
+.carousel-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.arrow-button {
+  background: #c59d6b; /* Couleur de fond des boutons */
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  border-radius: 50%;
+}
+
+.arrow-button:hover {
+  opacity: 1;
+  background-color: #a68a57; /* Couleur de survol des boutons */
+}
+
+.property-info {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  background-color: #222; /* Assurer que la section texte ait le même fond */
+}
+
+.property-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.property-info p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.discover-button {
+  padding: 10px 20px;
+  background-color: #c59d6b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.discover-button:hover {
+  background-color: #a68a57; /* Couleur de survol du bouton découvrir */
+}

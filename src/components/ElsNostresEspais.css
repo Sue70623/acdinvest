@@ -1,0 +1,79 @@
+/* ✅ SECTION PRINCIPALE */
+.espais-section {
+  background-color: #212226; /* Mise à jour de la couleur */
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-top: 0.025rem; /* ✅ Évite de chevaucher le H1 */
+}
+
+/* ✅ TITRES DE SECTION */
+.espais-subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ✅ GRILLE DES BLOCS D'ESPACES */
+.espais-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+/* ✅ CARTES D'ESPACE */
+.espai-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2e30; /* Adapté au fond général */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.espai-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.espai-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.espai-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.espai-link {
+  color: #f0c674;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  .espais-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .espai-card img {
+    height: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .espais-subtitle {
+    font-size: 2.5rem;
+  }
+
+  .espai-title {
+    font-size: 1.4rem;
+  }
+}

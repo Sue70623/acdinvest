@@ -1,0 +1,48 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* Variables globales */
+:root {
+  --color-primary: #ffffff;
+  --color-background: #212226;
+  --color-navbar-footer: #000000;
+  --color-accent: #c59d6b;
+  --color-footer-text: #727474;
+
+  --font-family: "Open Sans", sans-serif;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-semibold: 600;
+
+  --h1-size: 66.8px;
+  --h2-size: 50.8px;
+  --h3-size: 26.5px;
+  --paragraph-size: 18px;
+  --button-size: 21.7px;
+}
+
+/* Reset global */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  box-sizing: border-box;
+}
+
+/* Boutons généraux */
+button {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-size: var(--button-size);
+  border: none;
+  cursor: pointer;
+}
+
+/* Ajout pour éviter tout débordement */
+* {
+  box-sizing: border-box;
+}

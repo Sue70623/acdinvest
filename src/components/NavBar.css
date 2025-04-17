@@ -1,0 +1,82 @@
+.navbar {
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* LOGO */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* MENU DESKTOP */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet hover */
+.menu a:hover {
+  color: #c59d6b;
+}
+
+/* Effet actif (page sélectionnée) */
+.menu .active {
+  text-decoration: underline;
+  color: #c59d6b;
+}
+
+/* Effet onclick */
+.menu a:active {
+  transform: scale(1.1);
+}
+
+/* BOUTON HAMBURGER */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE - MODE MOBILE */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}

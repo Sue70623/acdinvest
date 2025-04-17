@@ -1,0 +1,106 @@
+/* ✅ HERO CONTAINER - Plein écran */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ajustable selon contenu */
+  overflow: hidden;
+  background: #212226; /* Mise à jour */
+}
+
+/* ✅ CONTAINER VIDÉO - Prend toute la place */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ✅ VIDÉO - Remplissage optimal */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ✅ TITRE H2 SUR LA VIDÉO */
+.hero-title {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 4vw;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  z-index: 3;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* ✅ LIEN "QUI SOM?" EN BAS À DROITE */
+.hero-link {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 1.5vw;
+  color: #c59d6b;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.hero-link:hover {
+  text-decoration: underline;
+}
+
+/* ✅ BOUTONS DE NAVIGATION - Flèches */
+.prev-video,
+.next-video {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c59d6b;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  z-index: 3;
+}
+
+.prev-video {
+  left: 10px;
+}
+
+.next-video {
+  right: 10px;
+}
+
+.prev-video:hover,
+.next-video:hover {
+  opacity: 1;
+}
+
+/* ✅ TITRE H1 SOUS LA VIDÉO */
+.page-title {
+  position: relative;
+  margin-top: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding: 0 1rem;
+  word-wrap: break-word;
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
