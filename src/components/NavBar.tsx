@@ -1,11 +1,24 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 const logo = "/src/assets/images/logo.png";
-// Import du logo
 
 const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleScrollToSection = (
+    event: React.MouseEvent<HTMLAnchorElement>
+  ) => {
+    event.preventDefault();
+    navigate("/"); // Redirige vers la page d'accueil
+    setTimeout(() => {
+      const section = document.querySelector("#els-nostres-espais");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Ajoute un délai pour s'assurer que la navigation est terminée
+  };
 
   return (
     <nav className="navbar">
@@ -29,13 +42,16 @@ const NavBar: React.FC = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/espais"
-            className={({ isActive }) => (isActive ? "active" : "")}
-            onClick={() => setMenuOpen(false)}
+          <a
+            href="/#els-nostres-espais"
+            className="nav-link"
+            onClick={(event) => {
+              setMenuOpen(false);
+              handleScrollToSection(event);
+            }}
           >
             Els Nostres Espais
-          </NavLink>
+          </a>
         </li>
         <li>
           <NavLink
@@ -48,11 +64,11 @@ const NavBar: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to="/contacte"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
             onClick={() => setMenuOpen(false)}
           >
-            Contact
+            Contacte
           </NavLink>
         </li>
         <li>

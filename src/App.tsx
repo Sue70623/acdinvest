@@ -9,6 +9,8 @@ import EspaisDeNegoci from "./pages/type/EspaisDeNegoci";
 import PoligonIIndustria from "./pages/type/PoligonIIndustria";
 import QuiSom from "./pages/navigation/QuiSom";
 import Actualitats from "./pages/navigation/Actualitats";
+import Contact from "./pages/navigation/Contact";
+import PlanaDelBou from "./pages/zones/PlanaDelBou";
 
 export default function App() {
   return (
@@ -21,6 +23,10 @@ export default function App() {
         <Route path="/poligon-i-industria" element={<PoligonIIndustria />} />
         <Route path="/qui-som" element={<QuiSom />} />
         <Route path="/actualitats" element={<Actualitats />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/Zones/PlanaDelBou" element={<PlanaDelBou />} />
+        <Route path="/Zones/Eres" element={< />} />
+        <Route path="/Zones/" element={< />} />
       </Routes>
     </Router>
   );

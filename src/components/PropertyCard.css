@@ -1,0 +1,129 @@
+.property-card {
+  display: flex;
+  gap: 2rem;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-image {
+  flex: 2;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.details {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement le contenu */
+  gap: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  position: relative;
+}
+
+.thumbnails img {
+  width: 0 0 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.thumbnails .prev,
+.thumbnails .next {
+  background: #c59d6b(0, 0, 0, 0.5); /* Fond semi-transparent */
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%; /* Boutons circulaires */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.thumbnails .prev {
+  left: 10px; /* Position à gauche */
+}
+
+.thumbnails .next {
+  right: 10px; /* Position à droite */
+}
+
+.thumbnails .prev:hover,
+.thumbnails .next:hover {
+  background: #a47f54(0, 0, 0, 0.8); /* Fond plus sombre au survol */
+}
+
+.info {
+  text-align: center;
+}
+
+.info .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info .location {
+  font-size: 1rem;
+  color: #c59d6b;
+  margin-bottom: 10px;
+}
+
+.info .description {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.discover-btn {
+  display: inline-block;
+  background-color: #c59d6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.discover-btn:hover {
+  background-color: #a47f54;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .property-card {
+    flex-direction: column;
+  }
+
+  .main-image {
+    margin-bottom: 20px;
+  }
+
+  .thumbnails {
+    justify-content: center;
+  }
+
+  .discover-btn {
+    align-self: center;
+  }
+}

@@ -7,8 +7,9 @@ const Home: React.FC = () => {
   return (
     <DefaultLayout>
       <Hero />
-      <ElsNostresEspais />
-      <button className="tots-els-espais-button">Tots els espais</button>
+      <div id="els-nostres-espais">
+        <ElsNostresEspais />
+      </div>
     </DefaultLayout>
   );
 };

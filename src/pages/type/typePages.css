@@ -1,0 +1,12 @@
+/* Centrer le titre */
+.type-page-title {
+  text-align: center;
+}
+
+/* Style du séparateur */
+.separator {
+  height: 4px;
+  background-color: #c59d6b;
+  margin: 2rem auto;
+  width: 60%;
+}
