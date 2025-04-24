@@ -60,7 +60,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/PlanaDelBou"
+            to="/Zones/PlanaDelBou"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             Plana del Bou
@@ -84,7 +84,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/centre-vila"
+            to="/Zones/EresdelPoble"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             Eres del poble
@@ -108,7 +108,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/zona-nord"
+            to="/Zones/ElNogerB"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             El Noger B
@@ -132,7 +132,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/plana-del-bou"
+            to="/Zones/EscolesSept"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             EscolesSept
@@ -156,7 +156,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/plana-del-bou"
+            to="/Zones/XiuletHauss"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             Xiulet Hauss
@@ -180,10 +180,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/plana-del-bou"
+            to="/Zones/LaFreixeraII"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
-            La Freixerall
+            La Freixera II
           </NavLink>
         </li>
         <li
@@ -204,7 +204,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/plana-del-bou"
+            to="/Zones/Edelweiss"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             Edelweiss
@@ -228,7 +228,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/plana-del-bou"
+            to="/Zones/NausHesei"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             Naus Hesei

@@ -11,6 +11,13 @@ import QuiSom from "./pages/navigation/QuiSom";
 import Actualitats from "./pages/navigation/Actualitats";
 import Contact from "./pages/navigation/Contact";
 import PlanaDelBou from "./pages/zones/PlanaDelBou";
+import EresdelPoble from "./pages/zones/EresdelPoble";
+import ElNogerB from "./pages/zones/ElNogerB";
+import EscolesSept from "./pages/zones/EscolesSept";
+import XiuletHauss from "./pages/zones/XiuletHauss";
+import LaFreixeraII from "./pages/zones/LaFreixeraII";
+import Edelweiss from "./pages/zones/Edelweiss";
+import NausHesei from "./pages/zones/NausHesei";
 
 export default function App() {
   return (
@@ -25,8 +32,14 @@ export default function App() {
         <Route path="/actualitats" element={<Actualitats />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Zones/PlanaDelBou" element={<PlanaDelBou />} />
-        <Route path="/Zones/Eres" element={< />} />
-        <Route path="/Zones/" element={< />} />
+        <Route path="/Zones/EresdelPoble" element={<EresdelPoble />} />
+        <Route path="/Zones/ElNogerB" element={<ElNogerB />} />
+        <Route path="/Zones/EscolesSept" element={<EscolesSept />} />
+        <Route path="/Zones/XiuletHauss" element={<XiuletHauss />} />
+        <Route path="/Zones/LaFreixeraII" element={<LaFreixeraII />} />
+        <Route path="/Zones/Edelweiss" element={<Edelweiss />} />
+        <Route path="/Zones/NausHesei" element={<NausHesei />} />
+        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );

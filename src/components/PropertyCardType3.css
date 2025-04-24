@@ -1,0 +1,78 @@
+.property-card-type3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0;
+    gap: 30px;
+  }
+  
+  .property-card-type3.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text-zone {
+    flex: 1;
+    color: white;
+  }
+  
+  .text-zone h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h4 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section li {
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  .image-zone {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-zone img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .view-gallery {
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .property-card-type3 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .property-card-type3.reverse {
+      flex-direction: column;
+    }
+  
+    .image-zone,
+    .text-zone {
+      width: 100%;
+    }
+  }
