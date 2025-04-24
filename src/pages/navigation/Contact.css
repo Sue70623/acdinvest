@@ -1,0 +1,22 @@
+.contact-page {
+  padding: 40px 20px;
+}
+
+.zone-content {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0 10px;
+  color: white;
+}
+
+.zone-description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.contact-map-iframe {
+  border-radius: 10px;
+  margin-top: 20px;
+}

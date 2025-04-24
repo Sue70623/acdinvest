@@ -18,6 +18,14 @@ import XiuletHauss from "./pages/zones/XiuletHauss";
 import LaFreixeraII from "./pages/zones/LaFreixeraII";
 import Edelweiss from "./pages/zones/Edelweiss";
 import NausHesei from "./pages/zones/NausHesei";
+import ListPlanaDelBou from "./pages/listeDesBiens/listPlanaDelBou";
+import ListEresDelPoble from "./pages/listeDesBiens/listEresDelPoble";
+import ListElNogerB from "./pages/listeDesBiens/listElNogerB";
+import ListEscolesSept from "./pages/listeDesBiens/listEscolesSept";
+import ListXiuletHauss from "./pages/listeDesBiens/listXiuletHauss";
+import ListLaFreixeraII from "./pages/listeDesBiens/listLaFreixeraII";
+import ListEdelweiss from "./pages/listeDesBiens/listEdelweiss";
+import ListNausHesei from "./pages/listeDesBiens/listNausHesei";
 
 export default function App() {
   return (
@@ -39,7 +47,38 @@ export default function App() {
         <Route path="/Zones/LaFreixeraII" element={<LaFreixeraII />} />
         <Route path="/Zones/Edelweiss" element={<Edelweiss />} />
         <Route path="/Zones/NausHesei" element={<NausHesei />} />
-        {/* Add more routes as needed */}
+        <Route
+          path="/liste-des-biens/listPlanaDelBou"
+          element={<ListPlanaDelBou />}
+        />
+        <Route
+          path="/liste-des-biens/listEresdelPoble"
+          element={<ListEresDelPoble />}
+        />
+        <Route
+          path="/liste-des-biens/listElNogerB"
+          element={<ListElNogerB />}
+        />
+        <Route
+          path="/liste-des-biens/listEscolesSept"
+          element={<ListEscolesSept />}
+        />
+        <Route
+          path="/liste-des-biens/listXiuletHauss"
+          element={<ListXiuletHauss />}
+        />
+        <Route
+          path="/liste-des-biens/listLaFreixeraII"
+          element={<ListLaFreixeraII />}
+        />
+        <Route
+          path="/liste-des-biens/listEdelweiss"
+          element={<ListEdelweiss />}
+        />
+        <Route
+          path="/liste-des-biens/listNausHesei"
+          element={<ListNausHesei />}
+        />
       </Routes>
     </Router>
   );

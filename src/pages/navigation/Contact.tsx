@@ -1,71 +1,32 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import "./ContactForm.css";
+import React from "react";
+import DefaultLayout from "../../layouts/DefaultLayout";
+import HeroType2 from "../../components/HeroType2";
+import ContactForm from "../../components/ContactForm";
+import "./Contact.css";
 
-const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [isValid, setIsValid] = useState(true);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const { name, email, message } = formData;
-
-    if (name && email && message) {
-      console.log("Message envoyé :", formData);
-      setIsValid(true);
-    } else {
-      setIsValid(false);
-    }
-  };
-
+const Contact: React.FC = () => {
   return (
-    <div className="contact-form-container">
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <h2>Contactez-nous</h2>
-        <input
-          type="text"
-          name="name"
-          placeholder="Nom"
-          value={formData.name}
-          onChange={handleChange}
-          className={!isValid && !formData.name ? "error" : ""}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          className={!isValid && !formData.email ? "error" : ""}
-        />
-        <textarea
-          name="message"
-          placeholder="Message"
-          value={formData.message}
-          onChange={handleChange}
-          className={!isValid && !formData.message ? "error" : ""}
-        />
-        <motion.button
-          type="submit"
-          whileTap={{ scale: 0.95 }}
-          className="submit-button"
-        >
-          ENVOYEZ
-        </motion.button>
-        {!isValid && <p className="error-message">Tous les champs sont requis.</p>}
-      </form>
-    </div>
+    <DefaultLayout>
+      <div className="contact-page">
+        <HeroType2 />
+        <div className="contact-content">
+          <h1>Contactez-nous</h1>
+          <p>Nous sommes là pour vous aider !</p>
+          <ContactForm />
+        </div>
+      </div>
+
+      <iframe
+        className="contact-map-iframe"
+        src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+        width="100%"
+        height="300"
+        style={{ border: "0", marginTop: "20px" }}
+        allowFullScreen
+        loading="lazy"
+      />
+    </DefaultLayout>
   );
 };
 
-export default ContactForm;
+export default Contact;
