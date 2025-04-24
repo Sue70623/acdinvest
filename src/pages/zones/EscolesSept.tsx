@@ -29,7 +29,7 @@ const EscolesSept: React.FC = () => {
           description="Description temporaire"
           images={["https://via.placeholder.com/600"]}
           buttonLabel="Ver Mas"
-          link="/"
+          link="/liste-des-biens/EscolesSept"
         />
         <PropertyCardType2
           title="Serveis"

@@ -29,7 +29,7 @@ const LaFreixeraII: React.FC = () => {
           description="Description temporaire"
           images={["https://via.placeholder.com/600"]}
           buttonLabel="Ver Mas"
-          link="/"
+          link="/liste-des-biens/LaFreixeraII"
         />
         <PropertyCardType2
           title="Serveis"

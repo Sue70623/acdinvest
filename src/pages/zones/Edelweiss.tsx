@@ -29,7 +29,7 @@ const Edelweiss: React.FC = () => {
           description="Description temporaire"
           images={["https://via.placeholder.com/600"]}
           buttonLabel="Ver Mas"
-          link="/"
+          link="/liste-des-biens/Edelweiss"
         />
         <PropertyCardType2
           title="Serveis"

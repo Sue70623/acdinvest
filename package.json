@@ -10,6 +10,7 @@
   "main": "src/index.tsx",
   "dependencies": {
     "basic-navigation": "^0.0.10",
+    "framer-motion": "^12.8.2",
     "loader-utils": "3.2.1",
     "lucide-react": "^0.488.0",
     "react": "^19.0.0",

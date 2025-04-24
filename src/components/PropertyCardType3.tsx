@@ -1,32 +1,53 @@
-// Composant PropertyCardType3 : variante utilisée pour la liste des biens
 import React from "react";
+import "./PropertyCardType3.css";
 
 interface PropertyCardType3Props {
   title: string;
-  subtitle: string;
-  description: string;
-  images: string[];
-  link: string;
+  image: string;
+  caracteristics: string[];
+  amenities: string[];
+  reverse?: boolean;
+  onViewGallery?: () => void;
 }
 
 const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
   title,
-  subtitle,
-  description,
-  images,
-  link,
+  image,
+  caracteristics,
+  amenities,
+  reverse = false,
+  onViewGallery,
 }) => {
   return (
-    <div className="property-card-type3">
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>{description}</p>
-      <div className="images">
-        {images.map((image, index) => (
-          <img key={index} src={image} alt={`${title} - ${index + 1}`} />
-        ))}
+    <div className={`property-card-type3 ${reverse ? "reverse" : ""}`}>
+      <div className="text-zone">
+        <h2>{title}</h2>
+        <div className="section">
+          <h4>CARACTERISTIC</h4>
+          <ul>
+            {caracteristics.map((item, index) => (
+              <li key={index}>• {item}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="section">
+          <h4>AMENAGEMENTS</h4>
+          <ul>
+            {amenities.map((item, index) => (
+              <li key={index}>• {item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <a href={link}>Learn More</a>
+
+      <div className="image-zone">
+        <img src={image} alt={title} />
+        {onViewGallery && (
+          <p className="view-gallery" onClick={onViewGallery}>
+            📷 Voir toutes nos photos
+          </p>
+        )}
+      </div>
     </div>
   );
 };
