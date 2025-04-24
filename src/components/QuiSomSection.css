@@ -1,0 +1,88 @@
+.qui-som-section {
+    background-color: #1c1d1f;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .qui-som-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .qui-som-introduction {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .qui-som-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .qui-som-section-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+  
+  .qui-som-section-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .qui-som-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .qui-som-content {
+    flex: 1;
+  }
+  
+  .qui-som-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .qui-som-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .qui-som-footer {
+    margin-top: 40px;
+  }
+  
+  .qui-som-button {
+    background-color: #c59d6b;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .qui-som-button:hover {
+    background-color: #a57f4f;
+  }
+  
+  @media (max-width: 768px) {
+    .qui-som-section-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .qui-som-section-item.reverse {
+      flex-direction: column;
+    }
+  
+    .qui-som-image img {
+      max-width: 100%;
+    }
+  }

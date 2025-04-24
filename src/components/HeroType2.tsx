@@ -1,8 +1,24 @@
-// Composant HeroType2 : version image seule du Hero
 import React from "react";
+import "./HeroType2.css";
 
-const HeroType2: React.FC = () => {
-  return <div>Section en cours de développement</div>;
+interface HeroType2Props {
+  backgroundImage: string;
+  title: string;
+  subtitle: string;
+}
+
+const HeroType2: React.FC<HeroType2Props> = ({ backgroundImage, title, subtitle }) => {
+  return (
+    <div
+      className="hero-type2"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="hero-overlay">
+        <h1 className="hero-title">{title}</h1>
+        <p className="hero-subtitle">{subtitle}</p>
+      </div>
+    </div>
+  );
 };
 
 export default HeroType2;

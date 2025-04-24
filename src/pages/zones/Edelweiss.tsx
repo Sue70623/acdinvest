@@ -12,7 +12,11 @@ const Edelweiss: React.FC = () => {
   return (
     <DefaultLayout>
       <div className="zone-page">
-        <HeroType2 />
+        <HeroType2 
+          backgroundImage="https://via.placeholder.com/1200x400" 
+          title="Edelweiss Zone" 
+          subtitle="Discover the beauty of Edelweiss"
+        />
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
@@ -29,7 +33,7 @@ const Edelweiss: React.FC = () => {
           description="Description temporaire"
           images={["https://via.placeholder.com/600"]}
           buttonLabel="Ver Mas"
-          link="/liste-des-biens/Edelweiss"
+          link="/liste-des-biens/listEdelweiss"
         />
         <PropertyCardType2
           title="Serveis"

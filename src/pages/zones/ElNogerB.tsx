@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType2 from "../../components/PropertyCardType2";
 import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
+import ImageGalleryModal from "../../components/ImageGalleryModal";
+
+// Tableau d'images pour la galerie
+const images = [
+  "https://via.placeholder.com/600x400?text=Image1",
+  "https://via.placeholder.com/600x400?text=Image2",
+  "https://via.placeholder.com/600x400?text=Image3",
+  "https://via.placeholder.com/600x400?text=Image4",
+];
+
+// State for gallery modal visibility
+const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
 const handleOpenGallery = () => {
-  console.log("Ouverture de la galerie...");
+  setIsGalleryOpen(true); // Ouvre la modale
+};
+
+const handleCloseGallery = () => {
+  setIsGalleryOpen(false); // Ferme la modale
 };
 
 const ElNogerB: React.FC = () => {
   return (
     <DefaultLayout>
       <div className="zone-page">
-        <HeroType2 />
+        <HeroType2
+          backgroundImage="https://via.placeholder.com/1200x400"
+          title="El Noger B"
+          subtitle="Un lloc de tranquil·litat i bellesa natural"
+        />
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
@@ -29,7 +49,7 @@ const ElNogerB: React.FC = () => {
           description="Description temporaire"
           images={["https://via.placeholder.com/600"]}
           buttonLabel="Ver Mas"
-          link="/liste-des-biens/ElNogerB"
+          link="/liste-des-biens/listElNogerB"
         />
         <PropertyCardType2
           title="Serveis"
@@ -63,6 +83,17 @@ const ElNogerB: React.FC = () => {
             loading="lazy"
           />
         </div>
+        {/* Affichage conditionnel de la modale */}
+        {isGalleryOpen && (
+          <ImageGalleryModal
+            title="Galerie - Plana del Bou"
+            images={images}
+            onClose={handleCloseGallery}
+            onImageClick={(imageUrl) =>
+              console.log("Image cliquée :", imageUrl)
+            }
+          />
+        )}
       </div>
     </DefaultLayout>
   );

@@ -8,7 +8,11 @@ const Contact: React.FC = () => {
   return (
     <DefaultLayout>
       <div className="contact-page">
-        <HeroType2 />
+        <HeroType2 
+          backgroundImage="/path/to/image.jpg" 
+          title="Bienvenue" 
+          subtitle="Nous contacter" 
+        />
         <div className="contact-content">
           <h1>Contactez-nous</h1>
           <p>Nous sommes là pour vous aider !</p>
