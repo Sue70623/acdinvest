@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import TotsElsEspaisButton from "../components/TotsElsEspaisButton";
 import SideMenu from "../components/SideMenu";
+import ScrollToTopButton from "../components/ScrollToTopButton";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const DefaultLayout: React.FC<{ children: React.ReactNode }> = ({
   children,
@@ -18,7 +20,14 @@ const DefaultLayout: React.FC<{ children: React.ReactNode }> = ({
       {/* Bouton flottant pour ouvrir le menu */}
       <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
       {/* Menu latéral */}
-      <SideMenu isOpen={isSideMenuOpen} onClose={() => setIsSideMenuOpen(false)} />
+      <SideMenu
+        isOpen={isSideMenuOpen}
+        onClose={() => setIsSideMenuOpen(false)}
+      />
+      {/* Bouton pour remonter en haut de la page */}
+      <ScrollToTopButton />
+      <WhatsAppButton />
+      {/* Ajoutez d'autres composants ici si nécessaire */}
     </div>
   );
 };

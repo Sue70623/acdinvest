@@ -5,32 +5,32 @@ import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
 
-// Tableau d'images pour la galerie
-const images = [
-  "https://via.placeholder.com/600x400?text=Image1",
-  "https://via.placeholder.com/600x400?text=Image2",
-  "https://via.placeholder.com/600x400?text=Image3",
-  "https://via.placeholder.com/600x400?text=Image4",
-];
-
-const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-
-const handleOpenGallery = () => {
-  setIsGalleryOpen(true); // Ouvre la modale
-};
-
-const handleCloseGallery = () => {
-  setIsGalleryOpen(false); // Ferme la modale
-};
-
 const EscolesSept: React.FC = () => {
+  // Tableau d'images pour la galerie
+  const images = [
+    "https://via.placeholder.com/600x400?text=Image1",
+    "https://via.placeholder.com/600x400?text=Image2",
+    "https://via.placeholder.com/600x400?text=Image3",
+    "https://via.placeholder.com/600x400?text=Image4",
+  ];
+
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+
+  const handleOpenGallery = () => {
+    setIsGalleryOpen(true); // Ouvre la modale
+  };
+
+  const handleCloseGallery = () => {
+    setIsGalleryOpen(false); // Ferme la modale
+  };
+
   return (
     <DefaultLayout>
       <div className="zone-page">
-        <HeroType2 
-          backgroundImage="https://via.placeholder.com/1200x400" 
-          title="Escoles Sept" 
-          subtitle="Un lloc únic envoltat de natura" 
+        <HeroType2
+          backgroundImage="https://via.placeholder.com/1200x400"
+          title="Escoles Sept"
+          subtitle="Un lloc únic envoltat de natura"
         />
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
@@ -89,7 +89,9 @@ const EscolesSept: React.FC = () => {
             title="Galerie - Plana del Bou"
             images={images}
             onClose={handleCloseGallery}
-            onImageClick={(imageUrl) => console.log("Image cliquée :", imageUrl)}
+            onImageClick={(imageUrl) =>
+              console.log("Image cliquée :", imageUrl)
+            }
           />
         )}
       </div>

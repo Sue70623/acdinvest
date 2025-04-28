@@ -5,6 +5,7 @@ import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
 
+const NausHesei: React.FC = () => {
 // Tableau d'images pour la galerie
 const images = [
   "https://via.placeholder.com/600x400?text=Image1",
@@ -23,7 +24,7 @@ const handleCloseGallery = () => {
   setIsGalleryOpen(false); // Ferme la modale
 };
 
-const NausHesei: React.FC = () => {
+
   return (
     <DefaultLayout>
       <div className="zone-page">

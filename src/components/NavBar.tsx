@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.css";
-const logo = "/src/assets/images/logo.png";
 
 const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,12 +19,15 @@ const NavBar: React.FC = () => {
     }, 100); // Ajoute un délai pour s'assurer que la navigation est terminée
   };
 
+  const logo =
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745480329/acdinvest_vfypda.svg";
+
   return (
     <nav className="navbar">
       {/* LOGO */}
       <div className="logo">
         <NavLink to="/">
-          <img src={logo} alt="Quetx Logo" />
+          <img src={logo} alt="ACD Invest Logo" />
         </NavLink>
       </div>
 
@@ -62,15 +64,7 @@ const NavBar: React.FC = () => {
             Qui Som
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) => (isActive ? "active" : "")}
-            onClick={() => setMenuOpen(false)}
-          >
-            Contacte
-          </NavLink>
-        </li>
+
         <li>
           <NavLink
             to="/actualitats"
@@ -78,6 +72,15 @@ const NavBar: React.FC = () => {
             onClick={() => setMenuOpen(false)}
           >
             Actualitats
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => setMenuOpen(false)}
+          >
+            Contacte
           </NavLink>
         </li>
       </ul>

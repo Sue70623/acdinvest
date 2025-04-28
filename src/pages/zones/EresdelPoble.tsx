@@ -6,26 +6,26 @@ import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal"; // Import the missing component
 // import statement removed as it was incomplete and unnecessary
 
-// Tableau d'images pour la galerie
-const images = [
-  "https://via.placeholder.com/600x400?text=Image1",
-  "https://via.placeholder.com/600x400?text=Image2",
-  "https://via.placeholder.com/600x400?text=Image3",
-  "https://via.placeholder.com/600x400?text=Image4",
-];
-
-// State for gallery modal visibility
-const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-
-const handleOpenGallery = () => {
-  setIsGalleryOpen(true); // Ouvre la modale
-};
-
-const handleCloseGallery = () => {
-  setIsGalleryOpen(false); // Ferme la modale
-};
-
 const EresdelPoble: React.FC = () => {
+  // Tableau d'images pour la galerie
+  const images = [
+    "https://via.placeholder.com/600x400?text=Image1",
+    "https://via.placeholder.com/600x400?text=Image2",
+    "https://via.placeholder.com/600x400?text=Image3",
+    "https://via.placeholder.com/600x400?text=Image4",
+  ];
+
+  // State for gallery modal visibility
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+
+  const handleOpenGallery = () => {
+    setIsGalleryOpen(true); // Ouvre la modale
+  };
+
+  const handleCloseGallery = () => {
+    setIsGalleryOpen(false); // Ferme la modale
+  };
+
   return (
     <DefaultLayout>
       <div className="zone-page">

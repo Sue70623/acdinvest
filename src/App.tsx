@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/navigation/Home";
 import ViuLaNatura from "./pages/type/ViuLaNatura";
@@ -30,6 +31,15 @@ import ListNausHesei from "./pages/listeDesBiens/listNausHesei";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
+      {/* Layout par défaut pour toutes les pages */}
+      {/* <DefaultLayout> */}
+      {/* <NavBar /> */}
+      {/* <Footer /> */}
+      {/* </DefaultLayout> */}
+
+      {/* Routes de l'application */}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/viu-la-natura" element={<ViuLaNatura />} />
