@@ -3,6 +3,7 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import HeroType2 from "../../components/HeroType2";
 import PropertyCardType2 from "../../components/PropertyCardType2";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
+import { Helmet } from "react-helmet";
 import "./zonesPages.css";
 
 const PlanaDelBou: React.FC = () => {
@@ -10,10 +11,14 @@ const PlanaDelBou: React.FC = () => {
 
   // Tableau d'images pour la galerie
   const images = [
-    "https://via.placeholder.com/600x400?text=Image1",
-    "https://via.placeholder.com/600x400?text=Image2",
-    "https://via.placeholder.com/600x400?text=Image3",
-    "https://via.placeholder.com/600x400?text=Image4",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
   ];
 
   const handleOpenGallery = () => {
@@ -25,55 +30,85 @@ const PlanaDelBou: React.FC = () => {
   };
 
   return (
-    <DefaultLayout>
+    <DefaultLayout
+      title="Plana del Bou - ACD Invest"
+      description="Découvrez Plana del Bou, un espace résidentiel intégré à la nature avec des vues imprenables."
+    >
+      <Helmet>
+        <title>Plana del Bou - ACD Invest</title>
+        <meta name="description" content="Découvrez Plana del Bou, un espace résidentiel intégré à la nature avec des vues imprenables." />
+      </Helmet>
+
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://via.placeholder.com/1200x400"
+          backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
           title="Plana del Bou"
-          subtitle="Un lloc únic envoltat de natura"
+          subtitle="Fontaneda, Andorra"
+          alt="Resort sostenible de Fontaneda amb habitatges en plena natura i espais de relaxació"
         />
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
 
-        <h1 className="zone-title">Plana del Bou</h1>
+        <h1 className="page-title">Plana del Bou</h1>
         <p className="zone-description">
-          Cette zone est nichée dans un écrin de verdure, à quelques minutes de
-          la ville...
+          Habitatges que combinen modernitat, sostenibilitat i un entorn natural
+          privilegiat, amb serveis com spa i gimnàs.
         </p>
 
         <PropertyCardType2
           title="Uns Espais"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Un espai ideal per desconnectar de la ciutat i gaudir d’un estil de vida saludable."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/liste-des-biens/listPlanaDelBou"
         />
         <PropertyCardType2
           title="Serveis"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Piscina, gimnàs, spa, rutes de muntanya, espais comuns."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
         />
         <PropertyCardType2
           title="Entorn"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="DPlenament integrat a la natura, amb vistes a les muntanyes i a prop de Fontaneda"
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
         />
 
         <div className="zone-info-block">
           <div className="zone-distances">
-            <p>Frontera espanyola: km</p>
-            <p>Frontera fancesa: km</p>
-            <p>Andorra la Vella: km</p>
+            <p>Frontera espanyola: 8,7km</p>
+            <p>Frontera fancesa: 32,3km</p>
+            <p>Andorra la Vella: 11,9km</p>
           </div>
           {/* Lien vers Google Maps */}
           <iframe
-            className="zone-map-iframe"
+            className="map-iframe"
             src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
             width="100%"
             height="300"

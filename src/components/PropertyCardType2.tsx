@@ -27,7 +27,7 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
     if (autoScroll && images.length > 1) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 3000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [images.length, autoScroll]);
@@ -77,7 +77,11 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
         </button>
         <div className="carousel-frame">
           {visibleImages.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${currentIndex + index + 1}`} />
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${currentIndex + index + 1}`}
+            />
           ))}
         </div>
         <button className="nav next" onClick={next} aria-label="Image suivante">

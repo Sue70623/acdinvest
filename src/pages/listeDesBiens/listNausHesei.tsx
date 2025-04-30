@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
@@ -20,8 +21,16 @@ const ListNausHesei: React.FC = () => {
     setIsModalOpen(false);
   };
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – Naus Hesei</h1>
+    <DefaultLayout
+      title="Liste des biens - Naus Hesei"
+      description="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre."
+    >
+      <Helmet>
+        <title>Liste des biens - Naus Hesei</title>
+        <meta name="description" content="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre." />
+      </Helmet>
+
+      <h1 className="page-title">Biens disponibles – Naus Hesei</h1>
       {/* Liste de biens */}
       <h2>Resort</h2>
       <PropertyCardType3

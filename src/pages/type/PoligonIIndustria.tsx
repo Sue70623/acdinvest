@@ -5,22 +5,26 @@ import "./typePages.css";
 
 const PoligonIIndustria = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout title="Polígon I Industria" description="Explore the industrial zones and properties available.">
       <h1 className="type-page-title">POLÍGON I INDUSTRIA</h1>
       <PropertyCard
-        mainImage="https://placehold.co/400x400?text=Main"
+        mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
+        mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
-          "https://placehold.co/286x286?text=Mini1",
-          "https://placehold.co/286x286?text=Mini2",
+          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
         ]}
-        zoneName="Plana Del Bou"
+        thumbnailsAlt={[
+          "Miniature 1 de Plana Del Bou",
+          "Miniature 2 de Plana Del Bou",
+        ]}
+        zoneName="Naus Hesei"
         location="Zone du bien 1"
-        description="Description temporaire 1"
+        description="Naus industrials a l’entrada d’Andorra."
         link="/Zones/NausHesei"
       />
 
       <hr className="separator" />
-      
     </DefaultLayout>
   );
 };

@@ -4,14 +4,19 @@ import PropertyCardType2 from "../../components/PropertyCardType2";
 import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
+import { Helmet } from "react-helmet";
 
 const XiuletHauss: React.FC = () => {
   // Tableau d'images pour la galerie
   const images = [
-    "https://via.placeholder.com/600x400?text=Image1",
-    "https://via.placeholder.com/600x400?text=Image2",
-    "https://via.placeholder.com/600x400?text=Image3",
-    "https://via.placeholder.com/600x400?text=Image4",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
   ];
 
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -25,43 +30,73 @@ const XiuletHauss: React.FC = () => {
   };
 
   return (
-    <DefaultLayout>
+    <DefaultLayout
+      title="Xiulet Hauss - ACD Invest"
+      description="Découvrez Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria."
+    >
+      <Helmet>
+        <title>Xiulet Hauss - ACD Invest</title>
+        <meta name="description" content="Découvrez Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria." />
+      </Helmet>
+
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://via.placeholder.com/1200x400"
+          backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
           title="Xuilet Hauss"
-          subtitle="Un lloc únic envoltat de natura"
+          subtitle="Sant Julià de Lòria, Andorra"
+          alt="Edifici Xiulet Hauss a Sant Julià de Lòria, construït sobre l'antic hort del Frare de Cal Colltort"
         />
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
 
-        <h1 className="zone-title">Xuilet Hauss</h1>
+        <h1 className="page-title">Xuilet Hauss</h1>
         {/* Exemple d'un bien */}
         {/* Description contextuelle */}
         <p className="zone-description">
-          Cette zone est nichée dans un écrin de verdure, à quelques minutes de
-          la ville...
+          Edifici construït sobre l’antic hort del Frare de Cal Colltort, amb
+          molta personalitat i arrels.
         </p>
         <PropertyCardType2
           title="Uns Espais"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Un espai amb ànima, on la tradició es troba amb la modernitat."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/liste-des-biens/listXiuletHauss"
         />
         <PropertyCardType2
           title="Serveis"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Porxada tradicional, estructura conservada, zona residencial tranquil·la."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
         />
         <PropertyCardType2
           title="Entorn"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Carrer dels Xiulets, part alta del centre històric, amb vistes i tranquil·litat."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
         />
@@ -73,7 +108,7 @@ const XiuletHauss: React.FC = () => {
           </div>
           {/* Lien vers Google Maps */}
           <iframe
-            className="zone-map-iframe"
+            className="map-iframe"
             src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
             width="100%"
             height="300"

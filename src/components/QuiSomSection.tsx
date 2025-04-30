@@ -40,7 +40,7 @@ const QuiSomSection: React.FC<QuiSomSectionProps> = ({
       </div>
       <div className="qui-som-footer">
         <a href="/contact" className="qui-som-button">
-          Contactez-nous
+          Contacta'ns
         </a>
       </div>
     </div>

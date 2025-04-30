@@ -5,29 +5,35 @@ import TotsElsEspaisButton from "../components/TotsElsEspaisButton";
 import SideMenu from "../components/SideMenu";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import WhatsAppButton from "../components/WhatsAppButton";
+import { Helmet } from "react-helmet";
+import "./DefaultLayout.css";
 
-const DefaultLayout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
-  // Gestion de l'état pour le menu latéral
+interface DefaultLayoutProps {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+}
+
+const DefaultLayout: React.FC<DefaultLayoutProps> = ({ title, description, children }) => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   return (
     <div className="default-layout">
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
       <NavBar />
       <main>{children}</main>
       <Footer />
-      {/* Bouton flottant pour ouvrir le menu */}
-      <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
-      {/* Menu latéral */}
-      <SideMenu
-        isOpen={isSideMenuOpen}
-        onClose={() => setIsSideMenuOpen(false)}
-      />
-      {/* Bouton pour remonter en haut de la page */}
-      <ScrollToTopButton />
-      <WhatsAppButton />
-      {/* Ajoutez d'autres composants ici si nécessaire */}
+      <SideMenu isOpen={isSideMenuOpen} onClose={() => setIsSideMenuOpen(false)} />
+
+      {/* Fixed buttons container */}
+      <div className="fixed-buttons">
+        <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
+        <ScrollToTopButton />
+        <WhatsAppButton />
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
+import { Helmet } from "react-helmet";
 
 const ListXiuletHauss: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,8 +22,15 @@ const ListXiuletHauss: React.FC = () => {
   };
 
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – Xiulet Hauss</h1>
+    <DefaultLayout
+      title="Liste des biens - Xiulet Hauss"
+      description="Découvrez les biens disponibles dans le projet Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria."
+    >
+      <Helmet>
+        <title>Liste des biens - Xiulet Hauss</title>
+        <meta name="description" content="Découvrez les biens disponibles dans le projet Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria." />
+      </Helmet>
+      <h1 className="page-title">Biens disponibles – Xiulet Hauss</h1>
       {/* Liste de biens */}
       <h2>Resort</h2>
       <PropertyCardType3

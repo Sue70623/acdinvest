@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
@@ -20,8 +21,16 @@ const ListEresDelPoble: React.FC = () => {
     setIsModalOpen(false);
   };
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – Eres del Poble</h1>
+    <DefaultLayout
+      title="Liste des biens - Eres del Poble"
+      description="Découvrez les maisons rurales disponibles dans le projet Eres del Poble, au cœur du village de Fontaneda."
+    >
+      <Helmet>
+        <title>Liste des biens - Eres del Poble</title>
+        <meta name="description" content="Découvrez les maisons rurales disponibles dans le projet Eres del Poble, au cœur du village de Fontaneda." />
+      </Helmet>
+
+      <h1 className="page-title">Biens disponibles – Eres del Poble</h1>
       {/* Liste de biens */}
       <h2>Resort</h2>
       <PropertyCardType3

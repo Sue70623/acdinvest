@@ -73,18 +73,20 @@
 }
 
 .action-button {
-  background-color: #c59d6b;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
   width: fit-content;
+  background-color: #c59d6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
 }
 
-.action-button:hover {
-  background-color: #a57f4f;
+.action-btn:hover {
+  background-color: #a47f54;
 }
 
 /* Responsiveness */

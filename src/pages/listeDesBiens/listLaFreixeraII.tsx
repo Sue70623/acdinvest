@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
@@ -20,8 +21,16 @@ const ListLaFreixeraII: React.FC = () => {
     setIsModalOpen(false);
   };
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – La Freixera II</h1>
+    <DefaultLayout
+      title="Liste des biens - La Freixera II"
+      description="Découvrez les biens disponibles dans le projet La Freixera II, un projet moderne et durable."
+    >
+      <Helmet>
+        <title>Liste des biens - La Freixera II</title>
+        <meta name="description" content="Découvrez les biens disponibles dans le projet La Freixera II, un projet moderne et durable." />
+      </Helmet>
+
+      <h1 className="page-title">Biens disponibles – La Freixera II</h1>
       {/* Liste de biens */}
       <h2>Resort</h2>
       <PropertyCardType3

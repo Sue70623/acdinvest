@@ -14,11 +14,14 @@
   overflow: hidden;
 }
 
+/* Styles pour l'image principale */
 .main-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+  width: 400px; /* Largeur fixe */
+  height: 400px; /* Hauteur fixe */
+  object-fit: cover; /* Remplit l'espace sans déformer */
+  display: block; /* Évite les espaces blancs autour de l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border-radius: 8px; /* Facultatif : ajoute des coins arrondis */
 }
 
 .details {
@@ -43,15 +46,25 @@
   border-radius: 5px;
 }
 
+/* Styles pour les miniatures */
+.thumbnails img {
+  width: 286px; /* Largeur fixe */
+  height: 286px; /* Hauteur fixe */
+  object-fit: cover; /* Remplit l'espace sans déformer */
+  display: block; /* Évite les espaces blancs autour de l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border-radius: 4px; /* Facultatif : ajoute des coins arrondis */
+}
+
 .thumbnails .prev,
 .thumbnails .next {
-  background: #c59d6b(0, 0, 0, 0.5); /* Fond semi-transparent */
+  background: #c59d6b; /* Fond semi-transparent */
   border: none;
   color: white;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
-  border-radius: 50%; /* Boutons circulaires */
+  cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -68,7 +81,7 @@
 
 .thumbnails .prev:hover,
 .thumbnails .next:hover {
-  background: #a47f54(0, 0, 0, 0.8); /* Fond plus sombre au survol */
+  background: #a47f54; /* Fond plus sombre au survol */
 }
 
 .info {
@@ -125,5 +138,15 @@
 
   .discover-btn {
     align-self: center;
+  }
+
+  .main-image img {
+    width: 100%; /* L'image principale prend toute la largeur */
+    height: auto; /* La hauteur s'ajuste automatiquement */
+  }
+
+  .thumbnails img {
+    width: 100%; /* Les miniatures prennent toute la largeur */
+    height: auto; /* La hauteur s'ajuste automatiquement */
   }
 }

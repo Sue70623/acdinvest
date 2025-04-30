@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
+import { Helmet } from "react-helmet";
 
 const ListEscolesSept: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,8 +21,15 @@ const ListEscolesSept: React.FC = () => {
     setIsModalOpen(false);
   };
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – Escoles Sept</h1>
+    <DefaultLayout
+      title="Liste des biens - Escoles Sept"
+      description="Découvrez les biens disponibles dans le projet Escoles Sept, situés dans un emplacement central."
+    >
+      <Helmet>
+        <title>Liste des biens - Escoles Sept</title>
+        <meta name="description" content="Découvrez les biens disponibles dans le projet Escoles Sept, situés dans un emplacement central." />
+      </Helmet>
+      <h1 className="page-title">Biens disponibles – Escoles Sept</h1>
       {/* Liste de biens */}
       <h2>Resort</h2>
       <PropertyCardType3

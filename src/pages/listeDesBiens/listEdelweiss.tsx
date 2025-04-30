@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
+import { Helmet } from "react-helmet";
 
 const ListEdelweiss: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,13 +22,21 @@ const ListEdelweiss: React.FC = () => {
   };
 
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – Edelweiss</h1>
+    <DefaultLayout
+      title="Liste des biens - Edelweiss"
+      description="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel."
+    >
+      <Helmet>
+        <title>Liste des biens - Edelweiss</title>
+        <meta name="description" content="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel." />
+      </Helmet>
+
+      <h1 className="page-title">Biens disponibles – Edelweiss</h1>
       {/* Liste de biens */}
 
       <PropertyCardType3
         title="Argüens"
-        image="https://via.placeholder.com/600"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={["80m²", "2 Chambres", "2 Banos"]}
         amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
         onViewGallery={() =>

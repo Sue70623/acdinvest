@@ -9,6 +9,10 @@
   --color-navbar-footer: #000000;
   --color-accent: #c59d6b;
   --color-footer-text: #727474;
+  --text-color: #fff;
+  --border-radius: 10px;
+  --spacing-large: 40px;
+  --spacing-medium: 20px;
 
   --font-family: "Open Sans", sans-serif;
   --font-bold: 700;
@@ -45,4 +49,58 @@ button {
 /* Ajout pour éviter tout débordement */
 * {
   box-sizing: border-box;
+}
+
+.zone-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0 10px;
+  color: white;
+}
+
+.zone-description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+.zone-info-block {
+  border: 2px solid #c59d6b;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1c1d1f;
+  color: #fff;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+.map-iframe {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Page title */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0 10px;
+  color: var(--text-color);
+}
+
+.bloc-premsa {
+  display: flex;
+  flex-direction: row; /* Affiche les articles en ligne */
+  gap: 16px; /* Espacement entre les articles */
+  margin-top: 24px; /* Espacement au-dessus de la section */
+}
+
+.bloc-premsa .article-card {
+  border: 1px solid #ddd; /* Bordure légère pour chaque article */
+  padding: 16px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  transition: transform 0.3s ease;
+}
+
+.bloc-premsa .article-card:hover {
+  transform: scale(1.02); /* Zoom léger au survol */
 }

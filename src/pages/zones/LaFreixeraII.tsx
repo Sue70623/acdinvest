@@ -4,14 +4,19 @@ import PropertyCardType2 from "../../components/PropertyCardType2";
 import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
+import { Helmet } from "react-helmet";
 
 const LaFreixeraII: React.FC = () => {
   // Tableau d'images pour la galerie
   const images = [
-    "https://via.placeholder.com/600x400?text=Image1",
-    "https://via.placeholder.com/600x400?text=Image2",
-    "https://via.placeholder.com/600x400?text=Image3",
-    "https://via.placeholder.com/600x400?text=Image4",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
   ];
 
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -25,43 +30,72 @@ const LaFreixeraII: React.FC = () => {
   };
 
   return (
-    <DefaultLayout>
+    <DefaultLayout
+      title="La Freixera II - ACD Invest"
+      description="Découvrez La Freixera II, un projet immobilier moderne et durable à Les Arades."
+    >
+      <Helmet>
+        <title>La Freixera II - ACD Invest</title>
+        <meta name="description" content="Découvrez La Freixera II, un projet immobilier moderne et durable à Les Arades." />
+      </Helmet>
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://via.placeholder.com/1200x400"
+          backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
           title="La Freixera II"
-          subtitle="Un lloc únic envoltat de natura"
+          subtitle="Sant Julià de Lòria, Andorra"
+          alt="Edifici d'obra nova La Freixera II amb pisos lluminosos i àtics a Sant Julià de Lòria"
         />
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
 
-        <h1 className="zone-title">La Freixera II</h1>
+        <h1 className="page-title">La Freixera II</h1>
         {/* Exemple d'un bien */}
         {/* Description contextuelle */}
         <p className="zone-description">
-          Cette zone est nichée dans un écrin de verdure, à quelques minutes de
-          la ville...
+          Pisos de 2 habitacions i àtics amb grans finestres, al costat de La
+          Freixera I.
         </p>
         <PropertyCardType2
           title="Uns Espais"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Un espai modern amb vista i accés fàcil a serveis, pensat per al confort."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/liste-des-biens/listLaFreixeraII"
         />
         <PropertyCardType2
           title="Serveis"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="5 plantes, 2 àtics, pàrquing, parada de bus, supermercat a 350 metres."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
         />
         <PropertyCardType2
           title="Entorn"
-          description="Description temporaire"
-          images={["https://via.placeholder.com/600"]}
+          description="Zona nord de Sant Julià, tranquil·litat amb serveis a prop i arquitectura contemporània."
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
         />
@@ -73,7 +107,7 @@ const LaFreixeraII: React.FC = () => {
           </div>
           {/* Lien vers Google Maps */}
           <iframe
-            className="zone-map-iframe"
+            className="map-iframe"
             src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
             width="100%"
             height="300"

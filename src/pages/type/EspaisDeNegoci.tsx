@@ -5,13 +5,18 @@ import "./typePages.css";
 
 const EspaisDeNegoci = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout title="Espais De Negoci" description="Description of Espais De Negoci">
       <h1 className="type-page-title">ESPAIS DE NEGOCI</h1>
       <PropertyCard
-        mainImage="https://placehold.co/400x400?text=Main"
+        mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
+        mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
-          "https://placehold.co/286x286?text=Mini1",
-          "https://placehold.co/286x286?text=Mini2",
+          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+        ]}
+        thumbnailsAlt={[
+          "Miniature 1 de Plana Del Bou",
+          "Miniature 2 de Plana Del Bou",
         ]}
         zoneName="Plana Del Bou"
         location="Zone du bien 1"

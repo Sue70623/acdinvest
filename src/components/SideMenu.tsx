@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FaTimes } from "react-icons/fa";
 
 interface SideMenuProps {
   isOpen: boolean;
@@ -33,10 +34,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
           border: "none",
           fontSize: "20px",
           cursor: "pointer",
-          color: "#c59d6b !important",
+          color: "#c59d6b",
         }}
       >
-        ❌
+        <FaTimes />
       </button>
 
       {/* Liste des zones */}
@@ -54,7 +55,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -78,7 +82,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -102,7 +109,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -126,7 +136,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -150,7 +163,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -174,7 +190,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -198,7 +217,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}
@@ -222,7 +244,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             style={{
               width: "40px",
               height: "40px",
-              backgroundColor: "#555",
+              backgroundImage:
+                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
+              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
+              backgroundPosition: "center", // Centre l'image
               borderRadius: "5px",
               marginRight: "10px",
             }}

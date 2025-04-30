@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
+import { Helmet } from "react-helmet";
 
 const ListElNogerB: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,8 +21,16 @@ const ListElNogerB: React.FC = () => {
     setIsModalOpen(false);
   };
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – El Noger B</h1>
+    <DefaultLayout
+      title="Liste des biens - El Noger B"
+      description="Explorez les biens disponibles dans le projet El Noger B, offrant confort et commodités modernes."
+    >
+      <Helmet>
+        <title>Liste des biens - El Noger B</title>
+        <meta name="description" content="Explorez les biens disponibles dans le projet El Noger B, offrant confort et commodités modernes." />
+      </Helmet>
+
+      <h1 className="page-title">Biens disponibles – El Noger B</h1>
       {/* Liste de biens */}
 
       <PropertyCardType3
@@ -58,6 +67,8 @@ const ListElNogerB: React.FC = () => {
         }
         reverse={true}
       />
+        
+    
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -126,6 +137,7 @@ const ListElNogerB: React.FC = () => {
         }
         reverse={true}
       />
+      
 
       <PropertyCardType3
         title="Argüens"
@@ -144,6 +156,7 @@ const ListElNogerB: React.FC = () => {
         }
         reverse={false}
       />
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -186,7 +199,7 @@ const ListElNogerB: React.FC = () => {
           pdfUrl={modalPdfUrl}
           onActionClick={() => console.log("Action Ver más déclenchée !")}
           onClose={handleCloseModal}
-        />
+          />
       )}
     </DefaultLayout>
   );

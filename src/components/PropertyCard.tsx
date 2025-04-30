@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./PropertyCard.css";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 interface PropertyCardProps {
   mainImage: string;
+  mainImageAlt: string; // Ajout de la propriété alt pour l'image principale
   thumbnails: string[];
+  thumbnailsAlt?: string[]; // Ajout de la propriété alt pour les miniatures (optionnel)
   zoneName: string;
   location: string;
   description: string;
@@ -13,7 +16,9 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({
   mainImage,
+  mainImageAlt,
   thumbnails,
+  thumbnailsAlt = [], // Valeur par défaut pour les alt des miniatures
   zoneName,
   location,
   description,
@@ -53,22 +58,33 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
     <div className="property-card">
       {/* Grande image à gauche */}
       <div className="main-image">
-        <img src={mainImage} alt="Main" />
+        <img src={mainImage} alt={mainImageAlt} className="main-image" />
       </div>
 
       {/* Miniatures et informations à droite */}
       <div className="details">
         {/* Diaporama de miniatures */}
         <div className="thumbnails">
-          <button className="prev" onClick={prevThumbnails}>
-            ←
-          </button>
+          <a
+            className="prev"
+            onClick={prevThumbnails}
+            role="button"
+            tabIndex={0}
+          >
+            <FaArrowCircleLeft />
+          </a>
           {visibleThumbnails.map((thumbnail, index) => (
-            <img key={index} src={thumbnail} alt={`Thumbnail ${index + 1}`} />
+            <img key={index} src={thumbnail}  alt={thumbnailsAlt[index] || `Miniature ${index + 1}`}
+            className="thumbnail" />
           ))}
-          <button className="next" onClick={nextThumbnails}>
-            →
-          </button>
+          <a
+            className="next"
+            onClick={nextThumbnails}
+            role="button"
+            tabIndex={0}
+          >
+            <FaArrowCircleRight />
+          </a>
         </div>
 
         {/* Texte centré verticalement */}

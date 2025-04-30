@@ -7,13 +7,19 @@ const ElsNostresEspais = () => {
     <section className="espais-section">
       <div className="espais-grid">
         <Link to="/viu-la-natura" className="espai-card">
-          <img src="/placeholder1.jpg" alt="Viu la Natura" />
+          <img
+            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            alt="Viu la Natura"
+          />
           <span className="espai-title">VIU LA NATURA</span>
           <span className="espai-link">Més informació</span>
         </Link>
 
         <Link to="/viu-la-ciutat" className="espai-card">
-          <img src="/placeholder2.jpg" alt="Viu la Ciutat" />
+          <img
+            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            alt="Viu la Ciutat"
+          />
           <span className="espai-title">VIU LA CIUTAT</span>
           <span className="espai-link">Més informació</span>
         </Link>
@@ -23,13 +29,19 @@ const ElsNostresEspais = () => {
 
       <div className="espais-grid">
         <Link to="/espais-de-negoci" className="espai-card">
-          <img src="/placeholder3.jpg" alt="Espais de Negoci" />
+          <img
+            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            alt="Espais de Negoci"
+          />
           <span className="espai-title">ESPAIS DE NEGOCI</span>
           <span className="espai-link">Més informació</span>
         </Link>
 
         <Link to="/poligon-i-industria" className="espai-card">
-          <img src="/placeholder4.jpg" alt="Polígon i Indústria" />
+          <img
+            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            alt="Polígon i Indústria"
+          />
           <span className="espai-title">POLÍGON I INDUSTRIA</span>
           <span className="espai-link">Més informació</span>
         </Link>

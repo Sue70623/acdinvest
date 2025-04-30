@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
@@ -20,8 +21,16 @@ const ListPlanaDelBou: React.FC = () => {
     setIsModalOpen(false);
   };
   return (
-    <DefaultLayout>
-      <h1>Biens disponibles – Plana del Bou</h1>
+    <DefaultLayout
+      title="Liste des biens - Plana del Bou"
+      description="Découvrez les biens disponibles dans le projet Plana del Bou, un espace résidentiel intégré à la nature."
+    >
+      <Helmet>
+        <title>Liste des biens - Plana del Bou</title>
+        <meta name="description" content="Découvrez les biens disponibles dans le projet Plana del Bou, un espace résidentiel intégré à la nature." />
+      </Helmet>
+
+      <h1 className="page-title">Biens disponibles – Plana del Bou</h1>
       {/* Liste de biens */}
       <h2>Resort</h2>
       <PropertyCardType3
