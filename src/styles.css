@@ -104,3 +104,37 @@ button {
 .bloc-premsa .article-card:hover {
   transform: scale(1.02); /* Zoom léger au survol */
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 36px;
+    --h2-size: 28px;
+    --h3-size: 20px;
+    --paragraph-size: 16px;
+    --button-size: 18px;
+  }
+
+  .zone-title,
+  .page-title {
+    font-size: var(--h2-size);
+  }
+
+  .zone-description {
+    font-size: var(--paragraph-size);
+    margin-bottom: 20px;
+  }
+
+  .bloc-premsa {
+    flex-direction: column;
+  }
+
+  .bloc-premsa .article-card {
+    margin-bottom: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

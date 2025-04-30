@@ -6,6 +6,7 @@
   justify-content: space-around;
   padding: 3rem 1rem;
   flex-wrap: wrap;
+  padding-bottom: 80px; /* Ajouté pour éviter le chevauchement avec les boutons fixes */
 }
 
 /* ✅ COLONNES DU FOOTER */
@@ -40,5 +41,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 100px; /* Plus d'espace en mode mobile */
   }
 }

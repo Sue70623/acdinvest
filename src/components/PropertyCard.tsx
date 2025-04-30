@@ -58,7 +58,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
     <div className="property-card">
       {/* Grande image à gauche */}
       <div className="main-image">
-        <img src={mainImage} alt={mainImageAlt} className="main-image" />
+        <img src={mainImage} alt={mainImageAlt || 'Main property image'} className="main-image" />
       </div>
 
       {/* Miniatures et informations à droite */}
@@ -74,8 +74,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <FaArrowCircleLeft />
           </a>
           {visibleThumbnails.map((thumbnail, index) => (
-            <img key={index} src={thumbnail}  alt={thumbnailsAlt[index] || `Miniature ${index + 1}`}
-            className="thumbnail" />
+            <img key={index} src={thumbnail} alt={thumbnailsAlt[index] || `Thumbnail ${index + 1}`} className="thumbnail-image" />
           ))}
           <a
             className="next"

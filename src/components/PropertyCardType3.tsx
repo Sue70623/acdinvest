@@ -41,7 +41,7 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
       </div>
 
       <div className="image-zone">
-        <img src={image} alt={title} />
+        <img src={image} alt={title || 'Property image'} />
         {onViewGallery && (
           <p className="view-gallery" onClick={onViewGallery}>
             📷 Voir toutes nos photos

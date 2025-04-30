@@ -33,10 +33,9 @@ const CustomModal: React.FC<CustomModalProps> = ({
           <div className="modal-images">
             {images.map((image, index) => (
               <img
-                key={index}
                 src={image}
-                alt={`Image ${index + 1}`}
-                className="modal-image"
+                alt={`Image ${index + 1}` || 'Image in modal view'}
+                className="custom-modal-image"
               />
             ))}
           </div>

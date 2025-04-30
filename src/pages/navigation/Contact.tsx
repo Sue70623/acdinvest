@@ -2,20 +2,11 @@ import React from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import HeroType2 from "../../components/HeroType2";
 import ContactForm from "../../components/ContactForm";
-import { Helmet } from "react-helmet";
 import "./Contact.css";
 
 const Contact: React.FC = () => {
   return (
-    <DefaultLayout
-      title="Contactez-nous - ACD Invest"
-      description="Contactez l'équipe d'ACD Invest pour toute question ou demande d'information. Nous sommes là pour vous aider."
-    >
-      <Helmet>
-        <title>Contactez-nous - ACD Invest</title>
-        <meta name="description" content="Contactez l'équipe d'ACD Invest pour toute question ou demande d'information. Nous sommes là pour vous aider." />
-      </Helmet>
-
+    <DefaultLayout title="Contactez-nous" description="Page de contact pour ACD Invest">
       <div className="contact-page">
         <HeroType2
           backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"

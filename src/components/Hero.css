@@ -104,3 +104,19 @@
     font-size: 2.5rem;
   }
 }
+
+/* Responsive adjustments for Hero component */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--h2-size);
+  }
+
+  .hero-subtitle {
+    font-size: var(--paragraph-size);
+  }
+
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+}

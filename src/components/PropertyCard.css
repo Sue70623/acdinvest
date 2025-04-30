@@ -122,31 +122,22 @@
   background-color: #a47f54;
 }
 
-/* Responsive */
+/* Responsive adjustments for PropertyCard */
 @media (max-width: 768px) {
   .property-card {
-    flex-direction: column;
+    padding: 16px;
   }
 
-  .main-image {
-    margin-bottom: 20px;
+  .property-card-title {
+    font-size: var(--h3-size);
   }
 
-  .thumbnails {
-    justify-content: center;
+  .property-card-description {
+    font-size: var(--paragraph-size);
   }
 
-  .discover-btn {
-    align-self: center;
-  }
-
-  .main-image img {
-    width: 100%; /* L'image principale prend toute la largeur */
-    height: auto; /* La hauteur s'ajuste automatiquement */
-  }
-
-  .thumbnails img {
-    width: 100%; /* Les miniatures prennent toute la largeur */
-    height: auto; /* La hauteur s'ajuste automatiquement */
+  .property-card img {
+    max-width: 100%;
+    height: auto;
   }
 }

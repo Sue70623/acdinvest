@@ -19,18 +19,15 @@
   margin: 5px 0;
 }
 
-/* Responsive */
+/* Responsive adjustments for zones pages */
 @media (max-width: 768px) {
-  .zone-title {
-    font-size: 28px;
-  }
-
-  .zone-description {
-    font-size: 16px;
-  }
-
   .zone-info-block {
-    padding: 15px;
-    font-size: 14px;
+    padding: 16px;
+    margin: 20px auto;
+  }
+
+  .map-iframe {
+    width: 100%;
+    height: auto;
   }
 }

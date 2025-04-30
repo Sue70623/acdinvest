@@ -50,7 +50,7 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
         </button>
 
         {/* Image principale */}
-        {imageUrl && <img src={imageUrl} alt={title} className="modal-image" />}
+        {imageUrl && <img src={imageUrl} alt={title || 'Image related to the article'} className="modal-image" />}
 
         {/* Titre */}
         <h1 className="modal-title">{title}</h1>

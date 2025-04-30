@@ -10,6 +10,7 @@ const ElsNostresEspais = () => {
           <img
             src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
             alt="Viu la Natura"
+            className="els-nostres-espais-image"
           />
           <span className="espai-title">VIU LA NATURA</span>
           <span className="espai-link">Més informació</span>
@@ -19,6 +20,7 @@ const ElsNostresEspais = () => {
           <img
             src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
             alt="Viu la Ciutat"
+            className="els-nostres-espais-image"
           />
           <span className="espai-title">VIU LA CIUTAT</span>
           <span className="espai-link">Més informació</span>
@@ -32,6 +34,7 @@ const ElsNostresEspais = () => {
           <img
             src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
             alt="Espais de Negoci"
+            className="els-nostres-espais-image"
           />
           <span className="espai-title">ESPAIS DE NEGOCI</span>
           <span className="espai-link">Més informació</span>
@@ -41,6 +44,7 @@ const ElsNostresEspais = () => {
           <img
             src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
             alt="Polígon i Indústria"
+            className="els-nostres-espais-image"
           />
           <span className="espai-title">POLÍGON I INDUSTRIA</span>
           <span className="espai-link">Més informació</span>

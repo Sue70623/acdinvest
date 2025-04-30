@@ -2,19 +2,10 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import HeroType2 from "../../components/HeroType2";
 import QuiSomSection from "../../components/QuiSomSection";
-import { Helmet } from "react-helmet";
 
 const QuiSom = () => {
   return (
-    <DefaultLayout
-      title="Qui Som - ACD Invest"
-      description="Découvrez qui nous sommes chez ACD Invest. Notre mission, nos valeurs et notre engagement envers nos clients."
-    >
-      <Helmet>
-        <title>Qui Som - ACD Invest</title>
-        <meta name="description" content="Découvrez qui nous sommes chez ACD Invest. Notre mission, nos valeurs et notre engagement envers nos clients." />
-      </Helmet>
-
+    <DefaultLayout title="Qui Som" description="Descobriu més sobre ACD Invest i la nostra missió.">
       <HeroType2
         backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
         title="Plana del Bou"
