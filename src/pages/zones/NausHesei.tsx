@@ -36,7 +36,10 @@ const NausHesei: React.FC = () => {
     >
       <Helmet>
         <title>Naus Hesei - ACD Invest</title>
-        <meta name="description" content="Découvrez les biens industriels Naus Hesei, situés à l'entrée d'Andorre." />
+        <meta
+          name="description"
+          content="Découvrez les biens industriels Naus Hesei, situés à l'entrée d'Andorre."
+        />
       </Helmet>
 
       <div className="zone-page">
@@ -100,6 +103,7 @@ const NausHesei: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: km</p>
@@ -109,7 +113,7 @@ const NausHesei: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d597.5687588222103!2d1.4838883889692485!3d42.475098470349195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

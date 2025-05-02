@@ -27,27 +27,19 @@ const ListEscolesSept: React.FC = () => {
     >
       <Helmet>
         <title>Liste des biens - Escoles Sept</title>
-        <meta name="description" content="Découvrez les biens disponibles dans le projet Escoles Sept, situés dans un emplacement central." />
+        <meta
+          name="description"
+          content="Découvrez les biens disponibles dans le projet Escoles Sept, situés dans un emplacement central."
+        />
       </Helmet>
       <h1 className="page-title">Biens disponibles – Escoles Sept</h1>
       {/* Liste de biens */}
-      <h2>Resort</h2>
+
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
+        title="Escoles Sept"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["Habitatges d’1 i 2 habitacions", "reformat 2022"]}
+        amenities={["Terrassa o balcó", "molta llum", "ubicació cèntrica"]}
       />
       <PropertyCardType3
         title="Argüens"
@@ -100,7 +92,7 @@ const ListEscolesSept: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Beç</h2>
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -135,7 +127,7 @@ const ListEscolesSept: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Autre</h2>
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"

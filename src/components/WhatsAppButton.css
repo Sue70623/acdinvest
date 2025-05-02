@@ -1,27 +1,27 @@
 /* Bouton WhatsApp flottant */
 .whatsapp-button {
   position: fixed;
-  bottom: 80px; /* Ajustez pour qu'il soit au-dessus du bouton ScrollToTop */
+  bottom: 100px;
   right: 20px;
   width: 50px;
   height: 50px;
-
-  color: #c59d6b; /* Couleur du texte */
+  font-size: 16px;
+  background-color: #c59d6b;
+  color: #fff;
   border-radius: 50%;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   cursor: pointer;
-  font-size: 24px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Space between buttons */
 }
 
 /* Effet au survol */
 .whatsapp-button:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
+  background-color: #b08a5c;
 }
 
 /* Responsive : ajustement pour mobile */
@@ -30,7 +30,30 @@
     width: 45px;
     height: 45px;
     font-size: 20px;
-    bottom: 70px; /* Ajustement pour mobile */
+    bottom: 80px;
     right: 15px;
   }
+}
+
+.floating-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* augmente l’espacement entre les boutons */
+}
+
+.floating-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 0.85rem; /* empêche le débordement de texte */
+  padding: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.floating-button .whatsapp-icon {
+  font-size: 1.4rem; /* augmente la taille de l’icône WhatsApp */
 }

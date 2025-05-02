@@ -36,7 +36,10 @@ const LaFreixeraII: React.FC = () => {
     >
       <Helmet>
         <title>La Freixera II - ACD Invest</title>
-        <meta name="description" content="Découvrez La Freixera II, un projet immobilier moderne et durable à Les Arades." />
+        <meta
+          name="description"
+          content="Découvrez La Freixera II, un projet immobilier moderne et durable à Les Arades."
+        />
       </Helmet>
       <div className="zone-page">
         <HeroType2
@@ -99,6 +102,7 @@ const LaFreixeraII: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: km</p>

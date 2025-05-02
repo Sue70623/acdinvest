@@ -28,11 +28,25 @@ const ListEdelweiss: React.FC = () => {
     >
       <Helmet>
         <title>Liste des biens - Edelweiss</title>
-        <meta name="description" content="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel." />
+        <meta
+          name="description"
+          content="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel."
+        />
       </Helmet>
 
       <h1 className="page-title">Biens disponibles – Edelweiss</h1>
       {/* Liste de biens */}
+
+      <PropertyCardType3
+        title="Edelweiss"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={[
+          "4 plantes + 1 subterrània",
+          "habitatges de 2 habitacions",
+          "àtic dúplex",
+        ]}
+        amenities={["Vistes muntanya", "grans finestres", "acabats moderns"]}
+      />
 
       <PropertyCardType3
         title="Argüens"

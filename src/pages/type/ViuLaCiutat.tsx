@@ -12,10 +12,13 @@ const ViuLaCiutat = () => {
     >
       <Helmet>
         <title>Viu La Ciutat - ACD Invest</title>
-        <meta name="description" content="Explorez nos biens immobiliers en ville. Profitez de la vie urbaine avec ACD Invest." />
+        <meta
+          name="description"
+          content="Explorez nos biens immobiliers en ville. Profitez de la vie urbaine avec ACD Invest."
+        />
       </Helmet>
 
-      <h1 className="type-page-title">TOT CIUTAT</h1>
+      <h1 className="type-page-title">VIU LA CIUTAT</h1>
       <PropertyCard
         mainImage="https://placehold.co/400x400?text=Main"
         mainImageAlt="Image principale de Plana Del Bou"
@@ -48,7 +51,7 @@ const ViuLaCiutat = () => {
         zoneName="Escoles Sept"
         location="Sant Julià de Lòria, Andorra"
         description="Edifici reformat al centre de Sant Julià de Lòria."
-        link="/Zones/Escoles Sept"
+        link="/Zones/EscolesSept"
       />
 
       <hr className="separator" />
@@ -66,7 +69,7 @@ const ViuLaCiutat = () => {
         zoneName="Xiulet Hauss"
         location="Sant Julià de Lòria, Andorra"
         description="Habitatge al barri antic de Sant Julià amb història i caràcter."
-        link="/Zones/Xiulet Hauss"
+        link="/Zones/XiuletHauss"
       />
 
       <hr className="separator" />
@@ -84,7 +87,7 @@ const ViuLaCiutat = () => {
         zoneName="La Freixera II"
         location="Sant Julià de Lòria, Andorra"
         description="Edifici d’obra nova modern i eficient a Les Arades."
-        link="/Zones/La Freixera II"
+        link="/Zones/LaFreixeraII"
       />
 
       <hr className="separator" />

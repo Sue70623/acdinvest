@@ -36,7 +36,10 @@ const PlanaDelBou: React.FC = () => {
     >
       <Helmet>
         <title>Plana del Bou - ACD Invest</title>
-        <meta name="description" content="Découvrez Plana del Bou, un espace résidentiel intégré à la nature avec des vues imprenables." />
+        <meta
+          name="description"
+          content="Découvrez Plana del Bou, un espace résidentiel intégré à la nature avec des vues imprenables."
+        />
       </Helmet>
 
       <div className="zone-page">
@@ -99,6 +102,7 @@ const PlanaDelBou: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+        <hr className="separator" />
 
         <div className="zone-info-block">
           <div className="zone-distances">
@@ -109,7 +113,7 @@ const PlanaDelBou: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2943.7924034511384!2d1.466213076238606!3d42.453432929197305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI3JzEyLjMiTiAxwrAyOCcwNy42IkU!5e0!3m2!1sfr!2sad!4v1746192572544!5m2!1sfr!2sad"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

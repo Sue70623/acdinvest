@@ -36,7 +36,10 @@ const Actualitats = () => {
     >
       <Helmet>
         <title>Actualités - ACD Invest</title>
-        <meta name="description" content="Restez informé des dernières actualités et événements d'ACD Invest." />
+        <meta
+          name="description"
+          content="Restez informé des dernières actualités et événements d'ACD Invest."
+        />
       </Helmet>
       <HeroType2
         backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
@@ -66,15 +69,15 @@ privilegiat, amb privacitat i amplitut per a disfrutar de l'espai.
           }
         />
         <ArticleBlogCard
-          title="Article 2"
-          excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          title="Instal·lació de plaques solars a Cal Bou ☀️"
+          excerpt="En breus, colocarem plaques solars a la Plana de Cal Bou per autoabastir..."
           image="https://via.placeholder.com/300x200"
           onReadMore={() =>
             openModal({
-              title: "Article 2",
+              title: "Instal·lació de plaques solars a Cal Bou ☀️",
               image: "https://via.placeholder.com/300x200",
               content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "En breus, colocarem plaques solars a la Plana de Cal Bou per autoabastir a tots els seus veïns i veïnes d’energia renovable.Fem del nostre espai un lloc més net i lliure d’emissions. Pots contactar amb nosaltres per a més informació. ",
             })
           }
           reverse={true} // Inverser l'image

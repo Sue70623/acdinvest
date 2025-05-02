@@ -30,13 +30,15 @@ const CustomModal: React.FC<CustomModalProps> = ({
 
         {/* Corps de la modale */}
         <div className="modal-body">
-          <div className="modal-images">
+          <div className="gallery-grid">
             {images.map((image, index) => (
-              <img
-                src={image}
-                alt={`Image ${index + 1}` || 'Image in modal view'}
-                className="custom-modal-image"
-              />
+              <div className="image-item" key={index}>
+                <img
+                  src={image}
+                  alt={`Gallery image ${index + 1}`}
+                  className="custom-modal-image"
+                />
+              </div>
             ))}
           </div>
         </div>

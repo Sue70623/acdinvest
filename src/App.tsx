@@ -29,8 +29,10 @@ import ListEdelweiss from "./pages/listeDesBiens/listEdelweiss";
 import ListNausHesei from "./pages/listeDesBiens/listNausHesei";
 
 export default function App() {
+  const basename = process.env.NODE_ENV === "production" ? "/acdinvest" : "";
+
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       {/* Layout par défaut pour toutes les pages */}
       {/* <DefaultLayout> */}
@@ -89,6 +91,7 @@ export default function App() {
           path="/liste-des-biens/listNausHesei"
           element={<ListNausHesei />}
         />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );

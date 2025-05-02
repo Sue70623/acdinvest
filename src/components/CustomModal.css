@@ -117,3 +117,33 @@
     background-color: #c59d6b;
     color: #ffffff;
   }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 10px; /* Spacing between images */
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .image-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1024px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+  }

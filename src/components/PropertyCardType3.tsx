@@ -8,6 +8,7 @@ interface PropertyCardType3Props {
   amenities: string[];
   reverse?: boolean;
   onViewGallery?: () => void;
+  galleryLink?: string;
 }
 
 const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
@@ -17,13 +18,14 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
   amenities,
   reverse = false,
   onViewGallery,
+  galleryLink,
 }) => {
   return (
     <div className={`property-card-type3 ${reverse ? "reverse" : ""}`}>
       <div className="text-zone">
         <h2>{title}</h2>
         <div className="section">
-          <h4>CARACTERISTIC</h4>
+          <h4>CARACTERÍSTIQUES</h4>
           <ul>
             {caracteristics.map((item, index) => (
               <li key={index}>• {item}</li>
@@ -31,7 +33,7 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
           </ul>
         </div>
         <div className="section">
-          <h4>AMENAGEMENTS</h4>
+          <h4>SERVEIS</h4>
           <ul>
             {amenities.map((item, index) => (
               <li key={index}>• {item}</li>
@@ -44,7 +46,7 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
         <img src={image} alt={title || 'Property image'} />
         {onViewGallery && (
           <p className="view-gallery" onClick={onViewGallery}>
-            📷 Voir toutes nos photos
+            📷 Veure totes les fotos
           </p>
         )}
       </div>

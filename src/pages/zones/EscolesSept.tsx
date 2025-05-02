@@ -36,7 +36,10 @@ const EscolesSept: React.FC = () => {
     >
       <Helmet>
         <title>Escoles Sept - ACD Invest</title>
-        <meta name="description" content="Découvrez les biens immobiliers Escoles Sept, situés dans un emplacement central à Sant Julià de Lòria." />
+        <meta
+          name="description"
+          content="Découvrez les biens immobiliers Escoles Sept, situés dans un emplacement central à Sant Julià de Lòria."
+        />
       </Helmet>
 
       <div className="zone-page">
@@ -100,6 +103,8 @@ const EscolesSept: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: km</p>

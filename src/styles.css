@@ -39,11 +39,16 @@ body {
 
 /* Boutons généraux */
 button {
+  border-radius: 8px;
+  font-size: 16px;
   background-color: var(--color-accent);
-  color: var(--color-primary);
-  font-size: var(--button-size);
-  border: none;
-  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b08a5c;
+  transform: scale(1.05);
 }
 
 /* Ajout pour éviter tout débordement */
@@ -105,7 +110,17 @@ button {
   transform: scale(1.02); /* Zoom léger au survol */
 }
 
-/* Responsive adjustments */
+/* Global typography styles for H1 and H2 */
+h1 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 768px) {
   :root {
     --h1-size: 36px;
@@ -136,5 +151,10 @@ button {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  h1, h2 {
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
   }
 }

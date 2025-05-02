@@ -28,11 +28,13 @@ const ListXiuletHauss: React.FC = () => {
     >
       <Helmet>
         <title>Liste des biens - Xiulet Hauss</title>
-        <meta name="description" content="Découvrez les biens disponibles dans le projet Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria." />
+        <meta
+          name="description"
+          content="Découvrez les biens disponibles dans le projet Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria."
+        />
       </Helmet>
       <h1 className="page-title">Biens disponibles – Xiulet Hauss</h1>
       {/* Liste de biens */}
-      <h2>Resort</h2>
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -67,7 +69,6 @@ const ListXiuletHauss: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Autre</h2>
       <PropertyCardType3
         title="Autre Bien"
         image="https://via.placeholder.com/600"
@@ -84,6 +85,20 @@ const ListXiuletHauss: React.FC = () => {
           )
         }
         reverse={false}
+      />
+      <PropertyCardType3
+        title="Xiulet Hauss"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={[
+          "Pisos amb història",
+          "ubicació al barri antic",
+          "edificat sobre l'hort del frare",
+        ]}
+        amenities={[
+          "Entorn tranquil",
+          "arquitectura típica",
+          "vistes del poble",
+        ]}
       />
 
       {/* Modale */}

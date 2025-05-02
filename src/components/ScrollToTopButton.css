@@ -1,37 +1,55 @@
 /* Bouton de retour en haut */
 .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c59d6b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Space between buttons */
+}
+
+/* Effet au survol */
+.scroll-to-top:hover {
+  background-color: #b08a5c;
+}
+
+/* Responsive : ajustement pour mobile */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    bottom: 40px;
+    right: 15px;
   }
-  
-  /* Effet au survol */
-  .scroll-to-top:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-  
-  /* Responsive : ajustement pour mobile */
-  @media (max-width: 768px) {
-    .scroll-to-top {
-      width: 35px;
-      height: 35px;
-      font-size: 18px;
-      bottom: 15px;
-      right: 15px;
-    }
-  }
+}
+
+.floating-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* augmente l’espacement entre les boutons */
+}
+
+.floating-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 0.85rem; /* empêche le débordement de texte */
+  padding: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}

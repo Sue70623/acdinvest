@@ -1,25 +1,30 @@
+/* Updated layout for PropertyCardType3 */
 .property-card-type3 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row; /* Default direction */
+  gap: 20px;
   align-items: center;
-  margin: 40px 0;
-  gap: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .property-card-type3.reverse {
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row-reverse; /* Reverse the layout */
 }
 
 .text-zone {
   flex: 1;
-  color: white;
+  padding: 20px;
+  color: #fff;
 }
 
 .text-zone h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 10px;
   font-family: "Trebuchet MS", sans-serif;
 }
 
@@ -50,30 +55,39 @@
 }
 
 .image-zone img {
-  max-width: 400px; /* Largeur maximale */
-  max-height: 300px; /* Hauteur maximale */
-  width: 100%; /* L'image s'adapte à la largeur du conteneur */
-  height: auto; /* La hauteur s'ajuste automatiquement */
-  object-fit: cover; /* Remplit l'espace sans déformer */
-  border-radius: 8px; /* Coins arrondis */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .view-gallery {
-  margin-top: 10px;
-  color: #fff;
-  text-decoration: underline;
+  display: block;
+  margin: 10px auto 0; /* Centered below the image */
+  text-align: center;
+  color: #c59d6b;
+  text-decoration: none;
   cursor: pointer;
+  font-size: 14px;
+  border: none;
+  background: none;
 }
 
-/* Responsive */
+.view-gallery:hover {
+  text-decoration: none; /* Prevent hover effects */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .property-card-type3 {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Stack layout for mobile */
   }
 
   .property-card-type3.reverse {
-    flex-direction: column;
+    flex-direction: column; /* Reset to column for mobile */
+  }
+
+  .text-zone {
+    padding: 10px;
   }
 
   .image-zone,

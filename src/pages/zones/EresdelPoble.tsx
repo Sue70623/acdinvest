@@ -37,7 +37,10 @@ const EresdelPoble: React.FC = () => {
     >
       <Helmet>
         <title>Eres del Poble - ACD Invest</title>
-        <meta name="description" content="Découvrez les maisons rurales d'Eres del Poble, au cœur du village de Fontaneda." />
+        <meta
+          name="description"
+          content="Découvrez les maisons rurales d'Eres del Poble, au cœur du village de Fontaneda."
+        />
       </Helmet>
 
       <div className="zone-page">
@@ -101,6 +104,7 @@ const EresdelPoble: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: km</p>
@@ -110,7 +114,7 @@ const EresdelPoble: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2943.82291388621!2d1.4632948328304025!3d42.45278381251289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sad!4v1746192774422!5m2!1sfr!2sad"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

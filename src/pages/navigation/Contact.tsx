@@ -6,7 +6,7 @@ import "./Contact.css";
 
 const Contact: React.FC = () => {
   return (
-    <DefaultLayout title="Contactez-nous" description="Page de contact pour ACD Invest">
+    <DefaultLayout title="Contacta'ns" description="Pàgina de contacte per a ACD Invest">
       <div className="contact-page">
         <HeroType2
           backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
           alt="Poseu-vos en contacte amb l'equip d'ACD Invest"
         />
         <div className="contact-content">
-          <h1 className="page-title">Contactez-nous</h1>
-          <p>Nous sommes là pour vous aider !</p>
+          <h1 className="page-title">Contacta'ns</h1>
+          <h2 className="intro-text">Som aquí per ajudar-te!</h2>
           <ContactForm />
         </div>
       </div>

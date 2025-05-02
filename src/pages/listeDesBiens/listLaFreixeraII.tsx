@@ -27,28 +27,28 @@ const ListLaFreixeraII: React.FC = () => {
     >
       <Helmet>
         <title>Liste des biens - La Freixera II</title>
-        <meta name="description" content="Découvrez les biens disponibles dans le projet La Freixera II, un projet moderne et durable." />
+        <meta
+          name="description"
+          content="Découvrez les biens disponibles dans le projet La Freixera II, un projet moderne et durable."
+        />
       </Helmet>
 
       <h1 className="page-title">Biens disponibles – La Freixera II</h1>
       {/* Liste de biens */}
-      <h2>Resort</h2>
+
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
+        title="La Freixera II"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={[
+          "Edifici de disseny",
+          "5 plantes + àtics",
+          "habitatges de 2 habitacions",
+        ]}
+        amenities={[
+          "Grans finestres",
+          "parada bus propera",
+          "prop de supermercats",
+        ]}
       />
       <PropertyCardType3
         title="Argüens"
@@ -101,7 +101,7 @@ const ListLaFreixeraII: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Beç</h2>
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -136,7 +136,6 @@ const ListLaFreixeraII: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Autre</h2>
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"

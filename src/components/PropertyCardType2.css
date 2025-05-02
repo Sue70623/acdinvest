@@ -10,6 +10,8 @@
   margin: 0;
   background-color: #212226;
   color: white;
+  position: relative; /* Ensure arrows are positioned relative to the container */
+  overflow: visible; /* Allow arrows to overlap slightly within the container */
 }
 
 .property-card-type2.reverse {
@@ -70,6 +72,27 @@
 
 .nav.next {
   right: -40px;
+}
+
+.property-card-type2 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem; /* Augmente la taille pour une meilleure lisibilité */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* Assure que les flèches sont au-dessus des images */
+}
+
+/* Flèche gauche */
+.property-card-type2 .arrow.left {
+  left: 0; /* Colle visuellement au bord de l'image */
+}
+
+/* Flèche droite */
+.property-card-type2 .arrow.right {
+  right: 0; /* Colle visuellement au bord de l'image */
 }
 
 .action-button {

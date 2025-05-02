@@ -100,6 +100,7 @@ const XiuletHauss: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: km</p>

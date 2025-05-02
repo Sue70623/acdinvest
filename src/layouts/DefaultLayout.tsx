@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import TotsElsEspaisButton from "../components/TotsElsEspaisButton";
 import SideMenu from "../components/SideMenu";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import WhatsAppButton from "../components/WhatsAppButton";
+import ChatWidget from "../components/ChatWidget";
 import "./DefaultLayout.css";
 
 interface DefaultLayoutProps {
@@ -20,6 +20,18 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
   children,
 }) => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.chatwith.io/widget.js";
+    script.setAttribute("data-id", "330631307849");
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="default-layout">
@@ -38,8 +50,8 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
       {/* Fixed buttons container */}
       <div className="fixed-buttons">
         <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
+        <ChatWidget />
         <ScrollToTopButton />
-        <WhatsAppButton />
       </div>
     </div>
   );

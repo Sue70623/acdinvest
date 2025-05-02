@@ -22,25 +22,220 @@ const ListPlanaDelBou: React.FC = () => {
   };
   return (
     <DefaultLayout
-      title="Liste des biens - Plana del Bou"
-      description="Découvrez les biens disponibles dans le projet Plana del Bou, un espace résidentiel intégré à la nature."
+      title="Llista de propietats - Plana del Bou"
+      description="Descobreix les propietats disponibles al projecte Plana del Bou, un espai residencial integrat a la natura."
     >
       <Helmet>
-        <title>Liste des biens - Plana del Bou</title>
-        <meta name="description" content="Découvrez les biens disponibles dans le projet Plana del Bou, un espace résidentiel intégré à la nature." />
+        <title>Llista de propietats - Plana del Bou</title>
+        <meta
+          name="description"
+          content="Descobreix les propietats disponibles al projecte Plana del Bou, un espai residencial integrat a la natura."
+        />
       </Helmet>
 
-      <h1 className="page-title">Biens disponibles – Plana del Bou</h1>
-      {/* Liste de biens */}
-      <h2>Resort</h2>
+      <h1 className="page-title">Propietats disponibles – Plana del Bou</h1>
+      {/* Llista de propietats */}
+      <h2 style={{ textAlign: "center" }}>Resort</h2>
+      <PropertyCardType3
+        title="Aixartell"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["80m²", "3 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+        ]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Aixartell",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/105/dossier-aixartell.pdf"
+          )
+        }
+        reverse={false}
+      />
       <PropertyCardType3
         title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["95m²", "2 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
         onViewGallery={() =>
           handleOpenModal(
             "Argüens",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/101/dossier-arguens.pdf"
+          )
+        }
+        reverse={true}
+      />
+      <PropertyCardType3
+        title="Arpiot"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["95m²", "2 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Arpiot",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/103/dossier-arpiot.pdf"
+          )
+        }
+        reverse={false}
+      />
+      <PropertyCardType3
+        title="Cloc"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["80m²", "2 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Cloc",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/6/dossier-cloc.pdf"
+          )
+        }
+        reverse={true}
+      />
+      <PropertyCardType3
+        title="Esclop"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["95m²", "2 Habitació", "2 Bany"]}
+        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Esclop",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/102/dossier-esclo.pdf"
+          )
+        }
+        reverse={false}
+      />
+      <PropertyCardType3
+        title="Estolador"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["80m²", "2 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Estolador",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/104/dossier-estolador.pdf"
+          )
+        }
+        reverse={true}
+      />
+      <PropertyCardType3
+        title="Taupa"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["95m²", "2 Habitació", "2 Bany"]}
+        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Taupa",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/102/dossier-esclo.pdf"
+          )
+        }
+        reverse={false}
+      />
+      <PropertyCardType3
+        title="Xut"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["80m²", "2 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Xut",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/107/dossier-xut.pdf"
+          )
+        }
+        reverse={true}
+      />
+      <h2 style={{ textAlign: "center" }}>Beç</h2>
+      <PropertyCardType3
+        title="Moixo"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["36m²", "1 Habitació", "1 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Moixo",
             [
               "https://via.placeholder.com/600x400?text=Image1",
               "https://via.placeholder.com/600x400?text=Image2",
@@ -51,13 +246,21 @@ const ListPlanaDelBou: React.FC = () => {
         reverse={false}
       />
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        title="Orandeta"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["36m²", "1 Habitació", "1 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
         onViewGallery={() =>
           handleOpenModal(
-            "Argüens",
+            "Orandeta",
             [
               "https://via.placeholder.com/600x400?text=Image1",
               "https://via.placeholder.com/600x400?text=Image2",
@@ -67,14 +270,25 @@ const ListPlanaDelBou: React.FC = () => {
         }
         reverse={true}
       />
+
+      <h2 style={{ textAlign: "center" }}>Borda de la Plana</h2>
+
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        title="La Cort"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["88m²", "1 Habitació", "1 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
         onViewGallery={() =>
           handleOpenModal(
-            "Argüens",
+            "La Cort",
             [
               "https://via.placeholder.com/600x400?text=Image1",
               "https://via.placeholder.com/600x400?text=Image2",
@@ -84,106 +298,53 @@ const ListPlanaDelBou: React.FC = () => {
         }
         reverse={false}
       />
+
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        title="El Mallador"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["102m²", "2 Habitació", "2 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
         onViewGallery={() =>
           handleOpenModal(
-            "Argüens",
+            "El Mallador",
             [
               "https://via.placeholder.com/600x400?text=Image1",
               "https://via.placeholder.com/600x400?text=Image2",
             ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <h2>Beç</h2>
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <h2>Autre</h2>
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
+            "https://quetx.net/imatges/projecteVivenda/11/dossier-mallador.pdf"
           )
         }
         reverse={true}
       />
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        title="El Paller"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["135m²", "2 Habitació", "3 Bany"]}
+        amenities={[
+          "Aparcament segons disponibilitat",
+          "Traster segons disponibilitat",
+          " Aigua termoelèctrica",
+          " Llar de foc",
+          "Jardí comunitari",
+          "Pati privat",
+          "Chauffage individuel",
+        ]}
         onViewGallery={() =>
           handleOpenModal(
-            "Argüens",
+            "El Paller",
             [
               "https://via.placeholder.com/600x400?text=Image1",
               "https://via.placeholder.com/600x400?text=Image2",
             ],
-            "https://example.com/brochure-arguens.pdf"
+            "https://quetx.net/imatges/projecteVivenda/10/dossier-paller.pdf"
           )
         }
         reverse={false}

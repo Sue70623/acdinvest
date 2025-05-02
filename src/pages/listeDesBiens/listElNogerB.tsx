@@ -27,48 +27,26 @@ const ListElNogerB: React.FC = () => {
     >
       <Helmet>
         <title>Liste des biens - El Noger B</title>
-        <meta name="description" content="Explorez les biens disponibles dans le projet El Noger B, offrant confort et commodités modernes." />
+        <meta
+          name="description"
+          content="Explorez les biens disponibles dans le projet El Noger B, offrant confort et commodités modernes."
+        />
       </Helmet>
 
       <h1 className="page-title">Biens disponibles – El Noger B</h1>
       {/* Liste de biens */}
 
       <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
+        title="El Noger B"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={[
+          "Pisos de 3 habitacions",
+          "edifici de 1996",
+          "doble orientació",
+        ]}
+        amenities={["Al centre", "prop de serveis", "fàcil accés"]}
       />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-        
-    
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -103,6 +81,7 @@ const ListElNogerB: React.FC = () => {
         }
         reverse={true}
       />
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -137,7 +116,40 @@ const ListElNogerB: React.FC = () => {
         }
         reverse={true}
       />
-      
+      <PropertyCardType3
+        title="Argüens"
+        image="https://via.placeholder.com/600"
+        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
+        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Argüens",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://example.com/brochure-arguens.pdf"
+          )
+        }
+        reverse={false}
+      />
+      <PropertyCardType3
+        title="Argüens"
+        image="https://via.placeholder.com/600"
+        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
+        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Argüens",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://example.com/brochure-arguens.pdf"
+          )
+        }
+        reverse={true}
+      />
 
       <PropertyCardType3
         title="Argüens"
@@ -199,7 +211,7 @@ const ListElNogerB: React.FC = () => {
           pdfUrl={modalPdfUrl}
           onActionClick={() => console.log("Action Ver más déclenchée !")}
           onClose={handleCloseModal}
-          />
+        />
       )}
     </DefaultLayout>
   );

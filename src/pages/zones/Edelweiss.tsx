@@ -6,28 +6,27 @@ import { Helmet } from "react-helmet";
 import "./zonesPages.css";
 
 const Edelweiss: React.FC = () => {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
-   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  
-    // Tableau d'images pour la galerie
-    const images = [
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-      "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    ];
-  
-    const handleOpenGallery = () => {
-      setIsGalleryOpen(true); // Ouvre la modale
-    };
-  
-    const handleCloseGallery = () => {
-      setIsGalleryOpen(false); // Ferme la modale
-    };
+  // Tableau d'images pour la galerie
+  const images = [
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+  ];
+
+  const handleOpenGallery = () => {
+    setIsGalleryOpen(true); // Ouvre la modale
+  };
+
+  const handleCloseGallery = () => {
+    setIsGalleryOpen(false); // Ferme la modale
+  };
   return (
     <DefaultLayout
       title="Edelweiss - ACD Invest"
@@ -35,7 +34,10 @@ const Edelweiss: React.FC = () => {
     >
       <Helmet>
         <title>Edelweiss - ACD Invest</title>
-        <meta name="description" content="Découvrez les biens immobiliers Edelweiss, situés dans un cadre exceptionnel à Sant Julià de Lòria." />
+        <meta
+          name="description"
+          content="Découvrez les biens immobiliers Edelweiss, situés dans un cadre exceptionnel à Sant Julià de Lòria."
+        />
       </Helmet>
       <div className="zone-page">
         <HeroType2
@@ -99,6 +101,8 @@ const Edelweiss: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: 10,7km</p>

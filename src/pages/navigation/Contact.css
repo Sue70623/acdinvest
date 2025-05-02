@@ -5,3 +5,11 @@
 .zone-distances p {
   margin: 5px 0;
 }
+
+.intro-text {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}

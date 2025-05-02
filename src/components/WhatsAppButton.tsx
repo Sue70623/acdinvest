@@ -4,7 +4,10 @@ import { FaWhatsapp } from "react-icons/fa"; // Import de l'icône WhatsApp
 
 const WhatsAppButton: React.FC = () => {
   const phoneNumber = "33631307849"; // Remplacez par le numéro souhaité
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  const whatsappLink = isMobile
+    ? `https://api.whatsapp.com/send?phone=${phoneNumber}`
+    : `https://web.whatsapp.com/send?phone=${phoneNumber}`;
 
   return (
     <a

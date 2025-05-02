@@ -19,6 +19,14 @@
   margin: 5px 0;
 }
 
+.separator {
+  width: 90%;
+  height: 3px;
+  background-color: #C59D6B;
+  border: none;
+  border-radius: 2px;
+  margin: 20px auto;
+}
 /* Responsive adjustments for zones pages */
 @media (max-width: 768px) {
   .zone-info-block {

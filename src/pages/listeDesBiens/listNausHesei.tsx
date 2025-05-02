@@ -27,12 +27,15 @@ const ListNausHesei: React.FC = () => {
     >
       <Helmet>
         <title>Liste des biens - Naus Hesei</title>
-        <meta name="description" content="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre." />
+        <meta
+          name="description"
+          content="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre."
+        />
       </Helmet>
 
       <h1 className="page-title">Biens disponibles – Naus Hesei</h1>
       {/* Liste de biens */}
-      <h2>Resort</h2>
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -102,7 +105,7 @@ const ListNausHesei: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Beç</h2>
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -137,7 +140,7 @@ const ListNausHesei: React.FC = () => {
         }
         reverse={true}
       />
-      <h2>Autre</h2>
+
       <PropertyCardType3
         title="Argüens"
         image="https://via.placeholder.com/600"
@@ -188,6 +191,16 @@ const ListNausHesei: React.FC = () => {
           )
         }
         reverse={false}
+      />
+      <PropertyCardType3
+        title="Naus Hesei"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={[
+          "Naus de 200-400m²",
+          "alçades de 4 a 7m",
+          "portes per tràilers",
+        ]}
+        amenities={["Banys", "llum completa", "a 5,5 km de la frontera"]}
       />
       {/* Modale */}
       {isModalOpen && (

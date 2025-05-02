@@ -10,18 +10,25 @@ const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({ onClick }) =>
       onClick={onClick}
       style={{
         position: "fixed",
-        bottom: "20px",
+        bottom: "150px",
         right: "20px",
+        width: "60px",
+        height: "60px",
+        fontSize: "0.85rem",
+        padding: "4px",
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+        textAlign: "center",
+        borderRadius: "50%",
         backgroundColor: "#c59d6b",
         color: "#fff",
         border: "none",
-        borderRadius: "50%",
-        width: "60px",
-        height: "60px",
-        fontSize: "14px",
         cursor: "pointer",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        transition: "background-color 0.3s ease",
       }}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#b08a5c")}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c59d6b")}
     >
       Tots els espais
     </button>

@@ -37,7 +37,10 @@ const ElNogerB: React.FC = () => {
     >
       <Helmet>
         <title>El Noger B - ACD Invest</title>
-        <meta name="description" content="Explorez les propriétés El Noger B, offrant confort et commodités modernes à Sant Julià de Lòria." />
+        <meta
+          name="description"
+          content="Explorez les propriétés El Noger B, offrant confort et commodités modernes à Sant Julià de Lòria."
+        />
       </Helmet>
 
       <div className="zone-page">
@@ -51,7 +54,7 @@ const ElNogerB: React.FC = () => {
           📷 Veure totes les nostres fotos
         </p>
 
-        <h1 className="page-title">El Noger B</h1>
+        <h1 className="page-title">El Noguer B</h1>
         {/* Exemple d'un bien */}
         {/* Description contextuelle */}
         <p className="zone-description">
@@ -94,6 +97,8 @@ const ElNogerB: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
         />
+
+        <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
             <p>Frontera espanyola: km</p>
