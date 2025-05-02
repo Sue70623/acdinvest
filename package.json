@@ -10,6 +10,7 @@
   "homepage": "https://sue70623.github.io/acdinvest/",
   "main": "src/index.tsx",
   "dependencies": {
+    "ajv": "^8.17.1",
     "framer-motion": "^12.8.2",
     "loader-utils": "3.2.1",
     "lucide-react": "^0.488.0",
@@ -32,10 +33,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-gh": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "GIT_CEILING_DIRECTORIES=/Users/olivierbourdeaut/Desktop/SuzanneVictor/acdinvest gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
