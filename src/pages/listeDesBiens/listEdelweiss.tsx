@@ -3,6 +3,7 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
 import { Helmet } from "react-helmet";
+import HeroType2 from "../../components/HeroType2";
 
 const ListEdelweiss: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,6 +27,12 @@ const ListEdelweiss: React.FC = () => {
       title="Liste des biens - Edelweiss"
       description="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel."
     >
+      <HeroType2
+        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        title="Edelweiss"
+        subtitle="Descobreix totes les vivendes disponibles"
+        alt="Edifici Edelweiss a Andorra"
+      />
       <Helmet>
         <title>Liste des biens - Edelweiss</title>
         <meta
@@ -34,7 +41,7 @@ const ListEdelweiss: React.FC = () => {
         />
       </Helmet>
 
-      <h1 className="page-title">Biens disponibles – Edelweiss</h1>
+      <h1 className="page-title">Béns disponibles – Edelweiss</h1>
       {/* Liste de biens */}
 
       <PropertyCardType3
@@ -42,6 +49,7 @@ const ListEdelweiss: React.FC = () => {
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={["183 m²", "3 habitacios", "3 banys", "àtic dúplex"]}
         amenities={["Vistes muntanya", "grans finestres", "acabats moderns"]}
+        status="Disponible"
         onViewGallery={() =>
           handleOpenModal(
             "Atic Edelweiss",
@@ -60,6 +68,7 @@ const ListEdelweiss: React.FC = () => {
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={["80m²"]}
         amenities={["Meublé"]}
+        status="Disponible"
         onViewGallery={() =>
           handleOpenModal(
             "Plaça d'aparcament",
@@ -72,6 +81,17 @@ const ListEdelweiss: React.FC = () => {
         }
         reverse={true}
       />
+
+      <PropertyCardType3
+        title="Edelweiss 1"
+        image="https://via.placeholder.com/600x400?text=Edelweiss1"
+        caracteristics={["100 m²", "3 habitacions", "2 banys"]}
+        amenities={["parking", "terrassa"]}
+        status="Disponible"
+        onViewGallery={() => console.log("Gallery opened for Edelweiss 1")}
+        reverse={false}
+      />
+
       <h2 className="page-title">Dossier Edifici</h2>
       <PropertyCardType3
         title="Dossier Edifici"
@@ -82,6 +102,7 @@ const ListEdelweiss: React.FC = () => {
           "16 traters",
         ]}
         amenities={["Vistes muntanya", "grans finestres", "acabats moderns"]}
+        status="Disponible"
         onViewGallery={() =>
           handleOpenModal(
             "Dossier Edifici",

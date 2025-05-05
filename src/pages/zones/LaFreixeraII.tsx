@@ -112,7 +112,7 @@ const LaFreixeraII: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d735.7341392792558!2d1.4928442696422686!3d42.471637987413516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI4JzE3LjkiTiAxwrAyOSczNi42IkU!5e0!3m2!1sfr!2sus!4v1746448140329!5m2!1sfr!2sus"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

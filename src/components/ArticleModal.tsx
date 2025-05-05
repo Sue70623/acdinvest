@@ -18,7 +18,6 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
   isOpen,
   onClose,
 }) => {
-
   // Gestion de la touche "Échap" pour fermer le modal
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -38,10 +37,13 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
     return null;
   }
   return (
-    <div className="article-modal" role="dialog"
-    aria-labelledby="modal-title"
-    aria-describedby="modal-content"
-    aria-modal="true">
+    <div
+      className="article-modal"
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-content"
+      aria-modal="true"
+    >
       <div className="modal-overlay" onClick={onClose}></div>
       <div className="modal-content">
         {/* Bouton de fermeture */}
@@ -50,7 +52,13 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
         </button>
 
         {/* Image principale */}
-        {imageUrl && <img src={imageUrl} alt={title || 'Image related to the article'} className="modal-image" />}
+        {imageUrl && (
+          <img
+            src={imageUrl}
+            alt={title || "Image related to the article"}
+            className="modal-image"
+          />
+        )}
 
         {/* Titre */}
         <h1 className="modal-title">{title}</h1>

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
+import HeroType2 from "../../components/HeroType2";
 
 const ListPlanaDelBou: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,6 +26,12 @@ const ListPlanaDelBou: React.FC = () => {
       title="Llista de propietats - Plana del Bou"
       description="Descobreix les propietats disponibles al projecte Plana del Bou, un espai residencial integrat a la natura."
     >
+      <HeroType2
+        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        title="Plana del Bou"
+        subtitle="Descobreix totes les vivendes disponibles"
+        alt="Edifici Plana del Bou a Sant Julià de Lòria, Andorra"
+      />
       <Helmet>
         <title>Llista de propietats - Plana del Bou</title>
         <meta
@@ -39,7 +46,7 @@ const ListPlanaDelBou: React.FC = () => {
       <PropertyCardType3
         title="Aixartell"
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
-        caracteristics={["80m²", "3 Habitació", "2 Bany"]}
+        caracteristics={["95m²", "2 Habitació", "2 Bany"]}
         amenities={[
           "Aparcament segons disponibilitat",
           "Traster segons disponibilitat",
@@ -48,6 +55,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Jardí comunitari",
           "Pati privat",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Aixartell",
@@ -73,6 +81,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Argüens",
@@ -98,6 +107,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Arpiot",
@@ -123,6 +133,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Cloc",
@@ -140,6 +151,7 @@ const ListPlanaDelBou: React.FC = () => {
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={["95m²", "2 Habitació", "2 Bany"]}
         amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Esclop",
@@ -165,6 +177,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Estolador",
@@ -182,6 +195,7 @@ const ListPlanaDelBou: React.FC = () => {
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={["95m²", "2 Habitació", "2 Bany"]}
         amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Taupa",
@@ -207,6 +221,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Xut",
@@ -233,6 +248,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Moixo",
@@ -258,6 +274,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "Orandeta",
@@ -286,6 +303,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "La Cort",
@@ -312,6 +330,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "El Mallador",
@@ -337,6 +356,7 @@ const ListPlanaDelBou: React.FC = () => {
           "Pati privat",
           "Chauffage individuel",
         ]}
+        status="Llista d'espera"
         onViewGallery={() =>
           handleOpenModal(
             "El Paller",

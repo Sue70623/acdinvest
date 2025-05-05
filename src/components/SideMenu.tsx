@@ -41,7 +41,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
       </button>
 
       {/* Liste des zones */}
-      <h2>Zones</h2>
+      <h2>Tots els espais</h2>
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li
           style={{
@@ -118,7 +118,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             }}
           ></div>
           <NavLink
-            to="/Zones/ElNogerB"
+            to="/Zones/ElNoguerB"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
             El Noguer B

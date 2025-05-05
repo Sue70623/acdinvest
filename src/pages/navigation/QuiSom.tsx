@@ -5,7 +5,10 @@ import QuiSomSection from "../../components/QuiSomSection";
 
 const QuiSom = () => {
   return (
-    <DefaultLayout title="Qui Som" description="Descobriu més sobre ACD Invest i la nostra missió.">
+    <DefaultLayout
+      title="Qui Som"
+      description="Descobriu més sobre ACD Invest i la nostra missió."
+    >
       <HeroType2
         backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
         title="Plana del Bou"

@@ -12,7 +12,10 @@ const ViuLaNatura = () => {
     >
       <Helmet>
         <title>Viu La Natura - ACD Invest</title>
-        <meta name="description" content="Découvrez nos biens immobiliers entourés de nature. Vivez dans un cadre paisible et verdoyant." />
+        <meta
+          name="description"
+          content="Découvrez nos biens immobiliers entourés de nature. Vivez dans un cadre paisible et verdoyant."
+        />
       </Helmet>
 
       <h1 className="type-page-title">VIU LA NATURA</h1>

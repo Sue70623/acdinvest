@@ -68,24 +68,20 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
       </div>
 
       <div className="carousel-section">
-        <button
-          className="nav prev"
-          onClick={prev}
-          aria-label="Image précédente"
-        >
-          ←
+        <button className="prev-video" onClick={prev}>
+          ‹
         </button>
         <div className="carousel-frame">
           {visibleImages.map((image, index) => (
             <img
               key={index}
               src={image}
-              alt={`Image ${currentIndex + index + 1}`}
+              alt={title || "Property image"}
             />
           ))}
         </div>
-        <button className="nav next" onClick={next} aria-label="Image suivante">
-          →
+        <button className="next-video" onClick={next}>
+          ›
         </button>
       </div>
     </div>

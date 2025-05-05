@@ -5,7 +5,10 @@ import ElsNostresEspais from "../../components/ElsNostresEspais";
 
 const Home: React.FC = () => {
   return (
-    <DefaultLayout title="Pàgina d'inici" description="Benvinguts a la pàgina d'inici">
+    <DefaultLayout
+      title="Pàgina d'inici"
+      description="Benvinguts a la pàgina d'inici"
+    >
       <Hero />
       <div id="els-nostres-espais">
         <ElsNostresEspais />

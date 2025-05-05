@@ -112,7 +112,7 @@ const Edelweiss: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2080536547496!2d1.4546807762344478!3d42.35940513514284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edc411d60a91%3A0x3549a8f7a8d3ccb1!2sCarrer%20de%20la%20Germandat%20de%20Sant%20Sebasti%C3%A0%2C%2014%2C%2025700%20La%20Seu%20d&#39;Urgell%2C%20Lleida%2C%20Espagne!5e0!3m2!1sfr!2sad!4v1746447923473!5m2!1sfr!2sad"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

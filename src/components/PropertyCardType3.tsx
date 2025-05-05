@@ -6,6 +6,7 @@ interface PropertyCardType3Props {
   image: string;
   caracteristics: string[];
   amenities: string[];
+  status: string; // Added status property
   reverse?: boolean;
   onViewGallery?: () => void;
   galleryLink?: string;
@@ -20,6 +21,16 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
   onViewGallery,
   galleryLink,
 }) => {
+  const prev = () => {
+    console.log("Previous image");
+  };
+
+  const next = () => {
+    console.log("Next image");
+  };
+
+  const visibleImages = [image]; // Placeholder for visible images logic
+
   return (
     <div className={`property-card-type3 ${reverse ? "reverse" : ""}`}>
       <div className="text-zone">
@@ -43,7 +54,7 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
       </div>
 
       <div className="image-zone">
-        <img src={image} alt={title || 'Property image'} />
+        <img src={image} alt={title || "Property image"} />
         {onViewGallery && (
           <p className="view-gallery" onClick={onViewGallery}>
             📷 Veure totes les fotos

@@ -3,6 +3,7 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
 import { Helmet } from "react-helmet";
+import HeroType2 from "../../components/HeroType2";
 
 const ListEscolesSept: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,172 +21,189 @@ const ListEscolesSept: React.FC = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  const properties = [
+    {
+      title: "1r 1a",
+      surface: "50 m²",
+      bedrooms: 1,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/32/dossier-escoles-sept-1-1.pdf",
+    },
+    {
+      title: "1r 2a",
+      surface: "50 m²",
+      bedrooms: 2,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/33/dossier-escoles-sept-1-2.pdf",
+    },
+    {
+      title: "2n 1a",
+      surface: "50 m²",
+      bedrooms: 1,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/34/dossier-escoles-sept-2-1.pdf",
+    },
+    {
+      title: "2n 2a",
+      surface: "50 m²",
+      bedrooms: 2,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/35/dossier-escoles-sept-2-2.pdf",
+    },
+    {
+      title: "3r 1a",
+      surface: "50 m²",
+      bedrooms: 1,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/36/dossier-escoles-sept-3-1.pdf",
+    },
+    {
+      title: "3r 2a",
+      surface: "50 m²",
+      bedrooms: 2,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/37/dossier-escoles-sept-3-2.pdf",
+    },
+    {
+      title: "4r 1a",
+      surface: "50 m²",
+      bedrooms: 1,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/38/dossier-escoles-sept-4-1.pdf",
+    },
+    {
+      title: "4r 2a",
+      surface: "50 m²",
+      bedrooms: 2,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/39/dossier-escoles-sept-4-2.pdf",
+    },
+    {
+      title: "5r 1a",
+      surface: "50 m²",
+      bedrooms: 1,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/40/dossier-escoles-sept-5-1.pdf",
+    },
+    {
+      title: "5r 2a",
+      surface: "50 m²",
+      bedrooms: 2,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Llista d'espera",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/41/dossier-escoles-sept-5-2.pdf",
+    },
+    {
+      title: "Àtic",
+      surface: "62 m²",
+      bedrooms: 1,
+      bathrooms: 1,
+      amenities: ["parking"],
+      status: "Properament",
+      image: "/images/placeholder.jpg",
+      galleryImages: ["https://via.placeholder.com/600x400"],
+      brochureUrl:
+        "https://quetx.net/imatges/projecteVivenda/42/dossier-escoles-sept-atic.pdf",
+    },
+  ];
+
   return (
     <DefaultLayout
-      title="Liste des biens - Escoles Sept"
-      description="Découvrez les biens disponibles dans le projet Escoles Sept, situés dans un emplacement central."
+      title="Llista de béns - Escoles Sept"
+      description="Descobreix els béns disponibles al projecte Escoles Sept."
     >
+      <HeroType2
+        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        title="Escoles Sept"
+        subtitle="Descobreix totes les vivendes disponibles"
+        alt="Edifici Escoles Sept a Andorra"
+      />
       <Helmet>
-        <title>Liste des biens - Escoles Sept</title>
+        <title>Llista de béns - Escoles Sept</title>
         <meta
           name="description"
-          content="Découvrez les biens disponibles dans le projet Escoles Sept, situés dans un emplacement central."
+          content="Descobreix els béns disponibles al projecte Escoles Sept."
         />
       </Helmet>
-      <h1 className="page-title">Biens disponibles – Escoles Sept</h1>
-      {/* Liste de biens */}
-
-      <PropertyCardType3
-        title="Escoles Sept"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
-        caracteristics={["Habitatges d’1 i 2 habitacions", "reformat 2022"]}
-        amenities={["Terrassa o balcó", "molta llum", "ubicació cèntrica"]}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      {/* Modale */}
+      <h1 className="page-title">Béns disponibles – Escoles Sept</h1>
+      {properties.map((property, index) => (
+        <PropertyCardType3
+          key={index}
+          title={property.title}
+          image={property.image || property.galleryImages[0]}
+          caracteristics={[
+            property.surface,
+            `${property.bedrooms} habitacions`,
+            `${property.bathrooms} banys`,
+          ]}
+          amenities={property.amenities}
+          status={property.status}
+          reverse={index % 2 === 1}
+          onViewGallery={() =>
+            handleOpenModal(
+              property.title,
+              property.galleryImages,
+              property.brochureUrl
+            )
+          }
+        />
+      ))}
       {isModalOpen && (
         <CustomModal
           title={modalTitle}
           images={modalImages}
           pdfUrl={modalPdfUrl}
-          onActionClick={() => console.log("Action Ver más déclenchée !")}
+          onActionClick={() => console.log("Voir plus")}
           onClose={handleCloseModal}
         />
       )}

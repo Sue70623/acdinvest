@@ -20,7 +20,11 @@ const HeroType2: React.FC<HeroType2Props> = ({
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Image invisible pour l'accessibilité */}
-      <img src={backgroundImage} alt={alt || 'Background image'} className="sr-only" />
+      <img
+        src={backgroundImage}
+        alt={alt || "Background image"}
+        className="sr-only"
+      />
       <div className="hero-overlay">
         <h1 className="hero-title">{title}</h1>
         <p className="hero-subtitle">{subtitle}</p>

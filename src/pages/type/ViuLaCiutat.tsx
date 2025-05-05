@@ -33,7 +33,7 @@ const ViuLaCiutat = () => {
         zoneName="El Noguer B"
         location="Sant Julià de Lòria, Andorra"
         description="Edifici cèntric a Sant Julià de Lòria, proper a tots els serveis."
-        link="/Zones/ElNogerB"
+        link="/Zones/ElNoguerB"
       />
 
       <hr className="separator" />

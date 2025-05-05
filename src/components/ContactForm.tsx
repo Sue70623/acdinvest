@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../pages/navigation/ContactForm.css"; // Import des styles
 
 const ContactForm: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "", // Added subject field
     message: "",
   });
 
@@ -17,11 +20,33 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Formulaire soumis :", formData);
+    if (form.current) {
+      console.log("Form reference:", form.current); // Debugging log
+      emailjs
+        .sendForm(
+          "service_zuhgizn",
+          "template_oxjlxea",
+          form.current,
+          "AYB2FEpYiuysRSuC-"
+        )
+        .then(
+          (result) => {
+            console.log("EmailJS result:", result); // Debugging log
+            alert("Message envoyé avec succès !");
+          },
+          (error) => {
+            console.error("EmailJS error:", error); // Debugging log
+            alert("Une erreur s'est produite lors de l'envoi du message.");
+          }
+        );
+    } else {
+      console.error("Form reference is null."); // Debugging log
+      alert("Une erreur s'est produite : le formulaire n'est pas référencé.");
+    }
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form ref={form} className="contact-form" onSubmit={handleSubmit}>
       <input
         type="text"
         name="name"
@@ -35,6 +60,14 @@ const ContactForm: React.FC = () => {
         name="email"
         placeholder="Email"
         value={formData.email}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        name="subject"
+        placeholder="Sujet"
+        value={formData.subject}
         onChange={handleChange}
         required
       />

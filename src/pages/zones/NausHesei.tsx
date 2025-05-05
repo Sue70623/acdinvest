@@ -113,7 +113,7 @@ const NausHesei: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d597.5687588222103!2d1.4838883889692485!3d42.475098470349195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d367.8458218430416!2d1.484682!3d42.47525300000001!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI4JzMxLjAiTiAxwrAyOScwNC4yIkU!5e0!3m2!1sfr!2sus!4v1746448279813!5m2!1sfr!2sus"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

@@ -21,7 +21,7 @@ import Edelweiss from "./pages/zones/Edelweiss";
 import NausHesei from "./pages/zones/NausHesei";
 import ListPlanaDelBou from "./pages/listeDesBiens/listPlanaDelBou";
 import ListEresDelPoble from "./pages/listeDesBiens/listEresDelPoble";
-import ListElNougerB from "./pages/listeDesBiens/listElNoguerB";
+import ListElNoguerB from "./pages/listeDesBiens/listElNoguerB";
 import ListEscolesSept from "./pages/listeDesBiens/listEscolesSept";
 import ListXiuletHauss from "./pages/listeDesBiens/listXiuletHauss";
 import ListLaFreixeraII from "./pages/listeDesBiens/listLaFreixeraII";

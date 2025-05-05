@@ -45,11 +45,14 @@ const CustomModal: React.FC<CustomModalProps> = ({
 
         {/* Pied de la modale */}
         <div className="modal-footer">
-          <button className="modal-button action-button" onClick={onActionClick}>
-            Ver más
+          <button
+            className="modal-button action-button"
+            onClick={onActionClick}
+          >
+            Contacta'ns
           </button>
           <a href={pdfUrl} download className="modal-button download-button">
-            Télécharger PDF
+            Descarregar PDF
           </a>
         </div>
       </div>

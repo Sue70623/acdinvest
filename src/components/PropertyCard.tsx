@@ -58,32 +58,31 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
     <div className="property-card">
       {/* Grande image à gauche */}
       <div className="main-image">
-        <img src={mainImage} alt={mainImageAlt || 'Main property image'} className="main-image" />
+        <img
+          src={mainImage}
+          alt={mainImageAlt || "Main property image"}
+          className="main-image"
+        />
       </div>
 
       {/* Miniatures et informations à droite */}
       <div className="details">
         {/* Diaporama de miniatures */}
         <div className="thumbnails">
-          <a
-            className="prev"
-            onClick={prevThumbnails}
-            role="button"
-            tabIndex={0}
-          >
-            <FaArrowCircleLeft />
-          </a>
+          <button className="prev-video" onClick={prevThumbnails}>
+            ‹
+          </button>
           {visibleThumbnails.map((thumbnail, index) => (
-            <img key={index} src={thumbnail} alt={thumbnailsAlt[index] || `Thumbnail ${index + 1}`} className="thumbnail-image" />
+            <img
+              key={index}
+              src={thumbnail}
+              alt={thumbnailsAlt[index] || `Thumbnail ${index + 1}`}
+              className="thumbnail-image"
+            />
           ))}
-          <a
-            className="next"
-            onClick={nextThumbnails}
-            role="button"
-            tabIndex={0}
-          >
-            <FaArrowCircleRight />
-          </a>
+          <button className="next-video" onClick={nextThumbnails}>
+            ›
+          </button>
         </div>
 
         {/* Texte centré verticalement */}

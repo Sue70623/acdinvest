@@ -73,7 +73,7 @@ const ElNoguerB: React.FC = () => {
             "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
           ]}
           buttonLabel="Ver Mas"
-          link="/liste-des-biens/listElNogerB"
+          link="/liste-des-biens/listElNoguerB"
         />
         <PropertyCardType2
           title="Serveis"
@@ -93,7 +93,7 @@ const ElNoguerB: React.FC = () => {
         <PropertyCardType2
           title="Entorn"
           description="Situat al carrer de les escoles, envoltat d’horts, supermercats, farmàcies i centres esportius."
-          images={["https://via.placeholder.com/600"]}
+          images={["https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"]}
           buttonLabel="Ver Mas"
           link="/"
         />
@@ -108,7 +108,7 @@ const ElNoguerB: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d2943.226772747844!2d1.4931156!3d42.4654654!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI3JzU1LjgiTiAxwrAyOSczNS4xIkU!5e0!3m2!1sfr!2sad!4v1746447890553!5m2!1sfr!2sad"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

@@ -114,7 +114,7 @@ const EscolesSept: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d2943.226772747844!2d1.4931156!3d42.4654654!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI3JzU1LjgiTiAxwrAyOSczNS4xIkU!5e0!3m2!1sfr!2sad!4v1746447770147!5m2!1sfr!2sad"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

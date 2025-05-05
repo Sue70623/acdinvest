@@ -30,7 +30,11 @@ const ArticleBlogCard: React.FC<ArticleBlogCardProps> = ({
           allowFullScreen
         ></iframe>
       ) : (
-        <img src={image} alt={title || 'Blog article image'} className="article-image" />
+        <img
+          src={image}
+          alt={title || "Blog article image"}
+          className="article-image"
+        />
       )}
       <div className="article-content">
         <h2 className="article-title">{title}</h2>

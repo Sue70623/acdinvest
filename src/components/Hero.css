@@ -60,7 +60,6 @@
 .next-video {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background: #c59d6b;
   color: white;
   font-size: 2rem;

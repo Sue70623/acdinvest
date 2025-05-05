@@ -4,7 +4,9 @@ interface TotsElsEspaisButtonProps {
   onClick: () => void;
 }
 
-const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({ onClick }) => {
+const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({
+  onClick,
+}) => {
   return (
     <button
       onClick={onClick}
@@ -16,7 +18,7 @@ const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({ onClick }) =>
         height: "60px",
         fontSize: "0.85rem",
         padding: "4px",
-        whiteSpace: "nowrap",
+        whiteSpace: "normal",
         overflow: "hidden",
         textOverflow: "ellipsis",
         textAlign: "center",
@@ -30,7 +32,7 @@ const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({ onClick }) =>
       onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#b08a5c")}
       onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c59d6b")}
     >
-      Tots els espais
+      Veure Tot
     </button>
   );
 };

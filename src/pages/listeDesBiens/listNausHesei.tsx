@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
+import HeroType2 from "../../components/HeroType2";
 
 const ListNausHesei: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,6 +26,12 @@ const ListNausHesei: React.FC = () => {
       title="Liste des biens - Naus Hesei"
       description="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre."
     >
+      <HeroType2
+        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        title="Naus Hesei"
+        subtitle="Descobreix totes les vivendes disponibles"
+        alt="Edifici Naus Hesei a Andorra"
+      />
       <Helmet>
         <title>Liste des biens - Naus Hesei</title>
         <meta
@@ -33,165 +40,9 @@ const ListNausHesei: React.FC = () => {
         />
       </Helmet>
 
-      <h1 className="page-title">Biens disponibles – Naus Hesei</h1>
+      <h1 className="page-title">Béns disponibles – Naus Hesei</h1>
       {/* Liste de biens */}
 
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
       <PropertyCardType3
         title="Naus Hesei"
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
@@ -201,6 +52,36 @@ const ListNausHesei: React.FC = () => {
           "portes per tràilers",
         ]}
         amenities={["Banys", "llum completa", "a 5,5 km de la frontera"]}
+        status="Disponible"
+        onViewGallery={() =>
+          handleOpenModal(
+            "Argüens",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://example.com/brochure-arguens.pdf"
+          )
+        }
+        reverse={true}
+      />
+      <PropertyCardType3
+        title="Naus Hesei 1"
+        image="https://via.placeholder.com/600x400?text=Naus+Hesei+1"
+        caracteristics={["95 m²", "2 habitacions", "2 banys"]}
+        amenities={["terrassa", "garatge"]}
+        status="Llista d'espera"
+        onViewGallery={() =>
+          handleOpenModal(
+            "Argüens",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://example.com/brochure-arguens.pdf"
+          )
+        }
+        reverse={false}
       />
       {/* Modale */}
       {isModalOpen && (

@@ -29,7 +29,7 @@ const QuiSomSection: React.FC<QuiSomSectionProps> = ({
             }`}
           >
             <div className="qui-som-image">
-              <img src={section.image} alt={section.title || 'Section image'} />
+              <img src={section.image} alt={section.title || "Section image"} />
             </div>
             <div className="qui-som-content">
               <h2 className="qui-som-section-title">{section.title}</h2>

@@ -2,7 +2,6 @@
   padding: 40px 20px;
 }
 
-
 .zone-gallery-link {
   cursor: pointer;
   text-align: center;
@@ -13,8 +12,6 @@
   text-decoration: underline;
 }
 
-
-
 .zone-distances p {
   margin: 5px 0;
 }
@@ -22,7 +19,7 @@
 .separator {
   width: 90%;
   height: 3px;
-  background-color: #C59D6B;
+  background-color: #c59d6b;
   border: none;
   border-radius: 2px;
   margin: 20px auto;
