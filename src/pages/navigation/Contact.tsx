@@ -6,7 +6,10 @@ import "./Contact.css";
 
 const Contact: React.FC = () => {
   return (
-    <DefaultLayout title="Contacta'ns" description="Pàgina de contacte per a ACD Invest">
+    <DefaultLayout
+      title="Contacta'ns"
+      description="Pàgina de contacte per a ACD Invest"
+    >
       <div className="contact-page">
         <HeroType2
           backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
@@ -30,7 +33,7 @@ const Contact: React.FC = () => {
         {/* Lien vers Google Maps */}
         <iframe
           className="map-iframe"
-          src="https://www.google.com/maps?q=42.5078,1.5211&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5885.531996555543!2d1.4767823863459544!3d42.475265259281905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5f59c74ff0a6d%3A0x58ae97ce7cd9d2c0!2sQuetx!5e0!3m2!1sfr!2sad!4v1746432300348!5m2!1sfr!2sad"
           width="100%"
           height="300"
           style={{ border: "0", marginTop: "20px" }}

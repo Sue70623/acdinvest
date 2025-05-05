@@ -13,7 +13,7 @@ import Actualitats from "./pages/navigation/Actualitats";
 import Contact from "./pages/navigation/Contact";
 import PlanaDelBou from "./pages/zones/PlanaDelBou";
 import EresdelPoble from "./pages/zones/EresdelPoble";
-import ElNogerB from "./pages/zones/ElNogerB";
+import ElNoguerB from "./pages/zones/ElNoguerB";
 import EscolesSept from "./pages/zones/EscolesSept";
 import XiuletHauss from "./pages/zones/XiuletHauss";
 import LaFreixeraII from "./pages/zones/LaFreixeraII";
@@ -21,7 +21,7 @@ import Edelweiss from "./pages/zones/Edelweiss";
 import NausHesei from "./pages/zones/NausHesei";
 import ListPlanaDelBou from "./pages/listeDesBiens/listPlanaDelBou";
 import ListEresDelPoble from "./pages/listeDesBiens/listEresDelPoble";
-import ListElNogerB from "./pages/listeDesBiens/listElNogerB";
+import ListElNougerB from "./pages/listeDesBiens/listElNoguerB";
 import ListEscolesSept from "./pages/listeDesBiens/listEscolesSept";
 import ListXiuletHauss from "./pages/listeDesBiens/listXiuletHauss";
 import ListLaFreixeraII from "./pages/listeDesBiens/listLaFreixeraII";
@@ -41,7 +41,7 @@ export default function App() {
       {/* </DefaultLayout> */}
 
       {/* Routes de l'application */}
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/viu-la-natura" element={<ViuLaNatura />} />
@@ -53,7 +53,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/Zones/PlanaDelBou" element={<PlanaDelBou />} />
         <Route path="/Zones/EresdelPoble" element={<EresdelPoble />} />
-        <Route path="/Zones/ElNogerB" element={<ElNogerB />} />
+        <Route path="/Zones/ElNoguerB" element={<ElNoguerB />} />
         <Route path="/Zones/EscolesSept" element={<EscolesSept />} />
         <Route path="/Zones/XiuletHauss" element={<XiuletHauss />} />
         <Route path="/Zones/LaFreixeraII" element={<LaFreixeraII />} />
@@ -68,8 +68,8 @@ export default function App() {
           element={<ListEresDelPoble />}
         />
         <Route
-          path="/liste-des-biens/listElNogerB"
-          element={<ListElNogerB />}
+          path="/liste-des-biens/listElNoguerB"
+          element={<ListElNoguerB />}
         />
         <Route
           path="/liste-des-biens/listEscolesSept"

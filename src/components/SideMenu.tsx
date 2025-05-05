@@ -121,7 +121,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
             to="/Zones/ElNogerB"
             style={{ textDecoration: "none", color: "#ffffff" }}
           >
-            El Noger B
+            El Noguer B
           </NavLink>
         </li>
         <li

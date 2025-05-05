@@ -114,7 +114,7 @@ const EresdelPoble: React.FC = () => {
           {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2943.82291388621!2d1.4632948328304025!3d42.45278381251289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sad!4v1746192774422!5m2!1sfr!2sad"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2943.759265906343!2d1.4609730762385988!3d42.454137929152694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI3JzE0LjkiTiAxwrAyNyc0OC44IkU!5e0!3m2!1sfr!2sad!4v1746431929246!5m2!1sfr!2sad"
             width="100%"
             height="300"
             style={{ border: "0", marginTop: "20px" }}

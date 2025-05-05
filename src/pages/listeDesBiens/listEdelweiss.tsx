@@ -38,167 +38,58 @@ const ListEdelweiss: React.FC = () => {
       {/* Liste de biens */}
 
       <PropertyCardType3
-        title="Edelweiss"
+        title="Atic Edelweiss"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["183 m²", "3 habitacios", "3 banys", "àtic dúplex"]}
+        amenities={["Vistes muntanya", "grans finestres", "acabats moderns"]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Atic Edelweiss",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://quetx.net/imatges/projecteVivenda/118/p4-p4-1-web.pdf"
+          )
+        }
+        reverse={false}
+      />
+
+      <PropertyCardType3
+        title="Plaça d'aparcament"
+        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        caracteristics={["80m²"]}
+        amenities={["Meublé"]}
+        onViewGallery={() =>
+          handleOpenModal(
+            "Plaça d'aparcament",
+            [
+              "https://via.placeholder.com/600x400?text=Image1",
+              "https://via.placeholder.com/600x400?text=Image2",
+            ],
+            "https://example.com/brochure-arguens.pdf"
+          )
+        }
+        reverse={true}
+      />
+      <h2 className="page-title">Dossier Edifici</h2>
+      <PropertyCardType3
+        title="Dossier Edifici"
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={[
-          "4 plantes + 1 subterrània",
-          "habitatges de 2 habitacions",
-          "àtic dúplex",
+          "6 pisos de 2 habitacions de 56 m2",
+          "7 places de pàrquing",
+          "16 traters",
         ]}
         amenities={["Vistes muntanya", "grans finestres", "acabats moderns"]}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
         onViewGallery={() =>
           handleOpenModal(
-            "Argüens",
+            "Dossier Edifici",
             [
               "https://via.placeholder.com/600x400?text=Image1",
               "https://via.placeholder.com/600x400?text=Image2",
             ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-        amenities={[]}
-      />
-
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={false}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
-          )
-        }
-        reverse={true}
-      />
-      <PropertyCardType3
-        title="Argüens"
-        image="https://via.placeholder.com/600"
-        caracteristics={["80m²", "2 Chambres", "2 Banos"]}
-        amenities={["Meublé", "Cheminée", "Chauffage individuel"]}
-        onViewGallery={() =>
-          handleOpenModal(
-            "Argüens",
-            [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
-            ],
-            "https://example.com/brochure-arguens.pdf"
+            "https://quetx.net/imatges/projecteVivenda/120/planols-x-web-2.pdf"
           )
         }
         reverse={false}

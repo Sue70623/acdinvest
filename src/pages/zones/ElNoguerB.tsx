@@ -6,7 +6,7 @@ import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
 import { Helmet } from "react-helmet";
 
-const ElNogerB: React.FC = () => {
+const ElNoguerB: React.FC = () => {
   // Tableau d'images pour la galerie
   const images = [
     "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
@@ -32,21 +32,21 @@ const ElNogerB: React.FC = () => {
 
   return (
     <DefaultLayout
-      title="El Noger B - ACD Invest"
-      description="Explorez les propriétés El Noger B, offrant confort et commodités modernes à Sant Julià de Lòria."
+      title="El Noguer B - ACD Invest"
+      description="Explorez les propriétés El Noguer B, offrant confort et commodités modernes à Sant Julià de Lòria."
     >
       <Helmet>
-        <title>El Noger B - ACD Invest</title>
+        <title>El Noguer B - ACD Invest</title>
         <meta
           name="description"
-          content="Explorez les propriétés El Noger B, offrant confort et commodités modernes à Sant Julià de Lòria."
+          content="Explorez les propriétés El Noguer B, offrant confort et commodités modernes à Sant Julià de Lòria."
         />
       </Helmet>
 
       <div className="zone-page">
         <HeroType2
           backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
-          title="El Noger B"
+          title="El Noguer B"
           subtitle="Sant Julià de Lòria, Andorra"
           alt="Edifici El Noguer B a Sant Julià de Lòria, pisos de 3 habitacions amb façana moderna de pedra i alumini"
         />
@@ -132,4 +132,4 @@ const ElNogerB: React.FC = () => {
   );
 };
 
-export default ElNogerB;
+export default ElNoguerB;

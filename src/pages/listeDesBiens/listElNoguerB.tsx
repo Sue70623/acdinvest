@@ -4,7 +4,7 @@ import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal";
 import { Helmet } from "react-helmet";
 
-const ListElNogerB: React.FC = () => {
+const ListElNoguerB: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalImages, setModalImages] = useState<string[]>([]);
@@ -22,22 +22,22 @@ const ListElNogerB: React.FC = () => {
   };
   return (
     <DefaultLayout
-      title="Liste des biens - El Noger B"
-      description="Explorez les biens disponibles dans le projet El Noger B, offrant confort et commodités modernes."
+      title="Liste des biens - El Noguer B"
+      description="Explorez les biens disponibles dans le projet El Noguer B, offrant confort et commodités modernes."
     >
       <Helmet>
-        <title>Liste des biens - El Noger B</title>
+        <title>Liste des biens - El Noguer B</title>
         <meta
           name="description"
-          content="Explorez les biens disponibles dans le projet El Noger B, offrant confort et commodités modernes."
+          content="Explorez les biens disponibles dans le projet El Noguer B, offrant confort et commodités modernes."
         />
       </Helmet>
 
-      <h1 className="page-title">Biens disponibles – El Noger B</h1>
+      <h1 className="page-title">Biens disponibles – El Noguer B</h1>
       {/* Liste de biens */}
 
       <PropertyCardType3
-        title="El Noger B"
+        title="El Noguer B"
         image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
         caracteristics={[
           "Pisos de 3 habitacions",
@@ -217,4 +217,4 @@ const ListElNogerB: React.FC = () => {
   );
 };
 
-export default ListElNogerB;
+export default ListElNoguerB;
