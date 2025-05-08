@@ -1,0 +1,46 @@
+.floating-buttons-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* Space between buttons */
+  z-index: 1000;
+}
+
+.tots-els-espais-button {
+  width: 60px;
+  height: 60px;
+  background-color: #c59d6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tots-els-espais-button:hover {
+  background-color: #b08a5c;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .tots-els-espais-button {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tots-els-espais-button {
+    width: 55px;
+    height: 55px;
+    font-size: 0.95rem;
+  }
+}

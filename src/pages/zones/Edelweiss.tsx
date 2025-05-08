@@ -3,10 +3,16 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType2 from "../../components/PropertyCardType2";
 import HeroType2 from "../../components/HeroType2";
 import { Helmet } from "react-helmet";
+import Lightbox from "react-image-lightbox";
+import ArticleModal from "../../components/ArticleModal";
+import "react-image-lightbox/style.css";
 import "./zonesPages.css";
 
 const Edelweiss: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isServeisModalOpen, setIsServeisModalOpen] = useState(false);
+  const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
   // Tableau d'images pour la galerie
   const images = [
@@ -27,6 +33,13 @@ const Edelweiss: React.FC = () => {
   const handleCloseGallery = () => {
     setIsGalleryOpen(false); // Ferme la modale
   };
+
+  const openServeisModal = () => setIsServeisModalOpen(true);
+  const closeServeisModal = () => setIsServeisModalOpen(false);
+
+  const openEntornModal = () => setIsEntornModalOpen(true);
+  const closeEntornModal = () => setIsEntornModalOpen(false);
+
   return (
     <DefaultLayout
       title="Edelweiss - ACD Invest"
@@ -49,6 +62,21 @@ const Edelweiss: React.FC = () => {
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
+
+        {isGalleryOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={handleCloseGallery}
+            onMovePrevRequest={() =>
+              setPhotoIndex((photoIndex + images.length - 1) % images.length)
+            }
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % images.length)
+            }
+          />
+        )}
 
         <h1 className="page-title">Edelweiss</h1>
         {/* Exemple d'un bien */}
@@ -86,6 +114,16 @@ const Edelweiss: React.FC = () => {
           link="/"
           reverse={true}
         />
+        <button className="global-button" onClick={openServeisModal}>
+          Serveis
+        </button>
+        <ArticleModal
+          title="Serveis"
+          content="Àtics dúplex, trasters, places d’aparcament, pisos de dues habitacions."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isServeisModalOpen}
+          onClose={closeServeisModal}
+        />
         <PropertyCardType2
           title="Entorn"
           description="Entre muntanyes i ciutat, amb vistes espectaculars i una connexió fluïda amb l’exterior.
@@ -100,6 +138,16 @@ const Edelweiss: React.FC = () => {
           ]}
           buttonLabel="Ver Mas"
           link="/"
+        />
+        <button className="global-button" onClick={openEntornModal}>
+          Entorn
+        </button>
+        <ArticleModal
+          title="Entorn"
+          content="Entre muntanyes i ciutat, amb vistes espectaculars i una connexió fluïda amb l’exterior."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isEntornModalOpen}
+          onClose={closeEntornModal}
         />
 
         <hr className="separator" />

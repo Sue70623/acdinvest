@@ -1,9 +1,9 @@
 .navbar {
-  background-color: black;
-  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: black;
+  padding: 15px;
   position: relative;
 }
 
@@ -16,26 +16,36 @@
 
 /* MENU DESKTOP */
 .menu {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  list-style: none;
   padding: 0;
+  margin: 0;
+  gap: 20px; /* Consistent horizontal spacing */
 }
 
 .menu li {
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
-.menu a {
-  color: white;
+.menu li a,
+.menu li .active {
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease, transform 0.2s ease;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
-/* Effet hover */
-.menu a:hover {
-  color: #c59d6b;
+.menu li a:hover {
+  color: #c59d6b; /* Hover color */
+}
+
+/* Specific styling for the magnifying glass icon */
+.menu li .icon {
+  margin-right: 5px;
+  font-size: 14px;
 }
 
 /* Effet actif (page sélectionnée) */
@@ -59,6 +69,46 @@
   cursor: pointer;
 }
 
+/* MAGNIFYING GLASS ICON */
+.magnifying-glass-icon {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px; /* Ensure spacing from the last menu item */
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.magnifying-glass-icon .icon {
+  margin-right: 5px;
+}
+
+.magnifying-glass-icon:hover {
+  background-color: #c59d6b;
+  color: black;
+}
+
+/* JO BUSCO BUTTON */
+.jo-busco {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 5px 10px; /* Match padding with other nav links */
+  background: transparent; /* Seamless style */
+  border: none; /* Remove border */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.jo-busco:hover {
+  color: #c59d6b;
+}
+
 /* RESPONSIVE - MODE MOBILE */
 @media (max-width: 768px) {
   .menu {
@@ -80,5 +130,14 @@
 
   .burger {
     display: block;
+  }
+
+  .magnifying-glass-icon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .jo-busco {
+    margin-top: 10px; /* Adjust spacing for mobile view */
   }
 }

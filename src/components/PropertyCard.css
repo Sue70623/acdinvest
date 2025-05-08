@@ -1,6 +1,10 @@
 .property-card {
   display: flex;
-  gap: 2rem;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
   background-color: #1c1c1c;
   padding: 20px;
   border-radius: 10px;
@@ -9,8 +13,12 @@
   margin: 0 auto;
 }
 
-.main-image {
-  flex: 2;
+.property-card .main-image {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -24,12 +32,18 @@
   border-radius: 8px; /* Facultatif : ajoute des coins arrondis */
 }
 
-.details {
-  flex: 3;
+.property-card .details {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centre verticalement le contenu */
+  justify-content: center;
+  text-align: left;
   gap: 20px;
+}
+
+.property-card .details .discover-btn {
+  margin-top: 20px;
+  align-self: center;
 }
 
 .thumbnails {
@@ -125,7 +139,23 @@
 /* Responsive adjustments for PropertyCard */
 @media (max-width: 768px) {
   .property-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 16px;
+  }
+
+  .property-card .main-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .property-card .details {
+    text-align: center;
+  }
+
+  .property-card .details .discover-btn {
+    margin-top: 10px;
   }
 
   .property-card-title {

@@ -1,0 +1,40 @@
+.floating-buttons-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Consistent vertical spacing */
+  z-index: 1000;
+}
+
+.floating-button.chat-widget {
+  position: fixed;
+  bottom: 80px; /* Adjust to stack above ScrollToTopButton */
+  right: 20px;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.floating-button.chat-widget:hover {
+  transform: scale(1.1);
+}
+
+/* Override ChatWith.io default button position */
+#chatwithio-button {
+  position: fixed !important;
+  bottom: 140px !important; /* Adjust to stack below ChatWidget */
+  right: 20px !important;
+  z-index: 999;
+}

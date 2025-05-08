@@ -48,10 +48,12 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
       />
 
       {/* Fixed buttons container */}
-      <div className="fixed-buttons">
-        <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
-        <ChatWidget />
-        <ScrollToTopButton />
+      <div className="floating-buttons-container">
+        <div className="floating-buttons-wrapper">
+          <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
+          <ChatWidget />
+          <ScrollToTopButton />
+        </div>
       </div>
     </div>
   );

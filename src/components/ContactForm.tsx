@@ -66,19 +66,19 @@ const ContactForm: React.FC = () => {
       <input
         type="text"
         name="subject"
-        placeholder="Sujet"
+        placeholder="Assumpte"
         value={formData.subject}
         onChange={handleChange}
         required
       />
       <textarea
         name="message"
-        placeholder="Message"
+        placeholder="Missatge"
         value={formData.message}
         onChange={handleChange}
         required
       />
-      <button type="submit" className="submit-button">
+      <button type="submit" className="global-button">
         Envoyez
       </button>
     </form>

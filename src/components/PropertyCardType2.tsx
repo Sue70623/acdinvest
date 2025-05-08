@@ -62,13 +62,13 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
       <div className="text-section">
         <h2>{title}</h2>
         <p>{description}</p>
-        <Link to={link} className="action-button">
+        <Link to={link} className="global-button">
           {buttonLabel}
         </Link>
       </div>
 
       <div className="carousel-section">
-        <button className="prev-video" onClick={prev}>
+        <button className="global-button prev-video" onClick={prev}>
           ‹
         </button>
         <div className="carousel-frame">
@@ -80,7 +80,7 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
             />
           ))}
         </div>
-        <button className="next-video" onClick={next}>
+        <button className="global-button next-video" onClick={next}>
           ›
         </button>
       </div>

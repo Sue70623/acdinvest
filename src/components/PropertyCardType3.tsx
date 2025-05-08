@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PropertyCardType3.css";
+import GalleryModal from "./GalleryModal";
 
 interface PropertyCardType3Props {
   title: string;
@@ -21,15 +22,13 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
   onViewGallery,
   galleryLink,
 }) => {
-  const prev = () => {
-    console.log("Previous image");
-  };
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
-  const next = () => {
-    console.log("Next image");
-  };
-
-  const visibleImages = [image]; // Placeholder for visible images logic
+  const dummyImages = [
+    "https://via.placeholder.com/150",
+    "https://via.placeholder.com/200",
+    "https://via.placeholder.com/250",
+  ];
 
   return (
     <div className={`property-card-type3 ${reverse ? "reverse" : ""}`}>
@@ -55,12 +54,23 @@ const PropertyCardType3: React.FC<PropertyCardType3Props> = ({
 
       <div className="image-zone">
         <img src={image} alt={title || "Property image"} />
-        {onViewGallery && (
-          <p className="view-gallery" onClick={onViewGallery}>
-            📷 Veure totes les fotos
-          </p>
-        )}
+        <a
+          className="view-gallery-button"
+          onClick={() => setIsGalleryOpen(true)}
+          href="#"
+        >
+          📷 Veure totes les nostres fotos
+        </a>
       </div>
+
+      <GalleryModal
+        isOpen={isGalleryOpen}
+        onClose={() => setIsGalleryOpen(false)}
+        title="Galeria d'imatges"
+        images={dummyImages}
+        onContactClick={() => alert("Contacta'ns clicked")}
+        pdfUrl="https://example.com/sample.pdf"
+      />
     </div>
   );
 };

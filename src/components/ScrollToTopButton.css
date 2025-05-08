@@ -1,37 +1,39 @@
 /* Bouton de retour en haut */
 .scroll-to-top {
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
   width: 60px;
   height: 60px;
   background-color: #c59d6b;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 50%;
-  cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-  margin-bottom: 10px; /* Space between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Effet au survol */
 .scroll-to-top:hover {
   background-color: #b08a5c;
+  transform: scale(1.1);
 }
 
 /* Responsive : ajustement pour mobile */
 @media (max-width: 768px) {
   .scroll-to-top {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
-    bottom: 40px;
-    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scroll-to-top {
+    width: 55px;
+    height: 55px;
+    font-size: 0.95rem;
   }
 }
 

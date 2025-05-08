@@ -1,20 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import "./ChatWidget.css";
 
 const ChatWidget: React.FC = () => {
-  useEffect(() => {
-    console.log("ChatWidget useEffect triggered");
-    const script = document.createElement("script");
-    script.src = "https://app.chatwith.io/embed/330631307849";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      console.log("ChatWidget cleanup");
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  return null;
+  return (
+    <div className="floating-button chat-widget">
+      <FaWhatsapp />
+    </div>
+  );
 };
 
 export default ChatWidget;

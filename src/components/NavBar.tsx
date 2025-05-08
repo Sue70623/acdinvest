@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 import "./NavBar.css";
 
 const NavBar: React.FC = () => {
@@ -61,7 +62,7 @@ const NavBar: React.FC = () => {
             className={({ isActive }) => (isActive ? "active" : "")}
             onClick={() => setMenuOpen(false)}
           >
-            Qui Som
+            Qui Som ?
           </NavLink>
         </li>
 
@@ -81,6 +82,16 @@ const NavBar: React.FC = () => {
             onClick={() => setMenuOpen(false)}
           >
             Contacte
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="https://quetx.net"
+            target="_blank"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => setMenuOpen(false)}
+          >
+            <FaSearch className="icon" /> Jo busco
           </NavLink>
         </li>
       </ul>

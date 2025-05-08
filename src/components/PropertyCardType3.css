@@ -61,19 +61,31 @@
 }
 
 .view-gallery {
-  display: block;
-  margin: 10px auto 0; /* Centered below the image */
-  text-align: center;
-  color: #c59d6b;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 14px;
+  background-color: #c59d6b;
+  color: white;
   border: none;
-  background: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .view-gallery:hover {
-  text-decoration: none; /* Prevent hover effects */
+  background-color: #b08a5c;
+  transform: scale(1.05);
+}
+
+.view-gallery-button {
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  display: block;
 }
 
 /* Responsive adjustments */

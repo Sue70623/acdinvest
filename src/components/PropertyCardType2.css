@@ -1,8 +1,10 @@
 .property-card-type2 {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
   flex-wrap: wrap; /* Permet de s'adapter aux petits écrans */
   justify-content: space-between;
-  align-items: center;
   border-top: 4px solid #c59d6b;
   border-left: 4px solid #c59d6b;
   border-right: 4px solid #c59d6b;
@@ -20,10 +22,11 @@
 
 .text-section {
   flex: 1;
-  margin-right: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
+  align-items: center; /* Center content horizontally */
 }
 
 .property-card-type2.reverse .text-section {
@@ -32,8 +35,9 @@
 }
 
 .carousel-section {
-  flex: 2;
+  flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -96,23 +100,43 @@
 }
 
 .action-button {
-  border: none;
-  width: fit-content;
+  width: 60px;
+  height: 60px;
   background-color: #c59d6b;
   color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
+  border: none;
+  border-radius: 50%;
   font-size: 1rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 auto; /* Center the button horizontally */
 }
 
-.action-btn:hover {
-  background-color: #a47f54;
+.action-button:hover {
+  background-color: #b08a5c;
+  transform: scale(1.1);
 }
 
 /* Responsiveness */
+@media (max-width: 1024px) {
+  .property-card-type2 {
+    flex-direction: column;
+  }
+
+  .property-card-type2.reverse {
+    flex-direction: column;
+  }
+
+  .action-button {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .property-card-type2 {
     flex-direction: column;
@@ -138,5 +162,11 @@
 
   .nav.next {
     right: 5px;
+  }
+
+  .action-button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
   }
 }

@@ -121,6 +121,36 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.global-button {
+  background-color: #c59d6b;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.global-button:hover {
+  background-color: #a57f4f;
+  transform: scale(1.05);
+}
+
+.floating-buttons-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
 @media (max-width: 768px) {
   :root {
     --h1-size: 36px;
@@ -157,5 +187,10 @@ h2 {
   h2 {
     margin-top: 0.8rem;
     margin-bottom: 1.2rem;
+  }
+
+  .global-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }

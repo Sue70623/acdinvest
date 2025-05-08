@@ -79,6 +79,26 @@
   transform: scale(1.05);
 }
 
+.modal-button {
+  background-color: #c59d6b;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #a57f4f;
+  transform: scale(1.05);
+}
+
 @media (max-width: 1024px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les tablettes */
