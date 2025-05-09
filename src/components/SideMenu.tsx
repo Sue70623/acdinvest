@@ -42,224 +42,257 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
 
       {/* Liste des zones */}
       <h2>Tots els espais</h2>
-      <ul style={{ listStyle: "none", padding: "0" }}>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
+
+      <div style={{ marginBottom: "20px" }}>
+        <h3
+          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
         >
-          {/* Placeholder pour la miniature */}
-          <div
+          Viu la Natura
+        </h3>
+        <ul style={{ listStyle: "none", padding: "0" }}>
+          <li
             style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
             }}
-          ></div>
-          <NavLink
-            to="/Zones/PlanaDelBou"
-            style={{ textDecoration: "none", color: "#ffffff" }}
           >
-            Plana del Bou
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/plana-del-bou-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/PlanaDelBou"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              Plana del Bou
+            </NavLink>
+          </li>
+          <li
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/eres-del-poble-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/EresdelPoble"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              Eres del poble
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+
+      <div style={{ marginBottom: "20px" }}>
+        <h3
+          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
         >
-          {/* Placeholder pour la miniature */}
-          <div
+          Viu la Ciutat
+        </h3>
+        <ul style={{ listStyle: "none", padding: "0" }}>
+          <li
             style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
             }}
-          ></div>
-          <NavLink
-            to="/Zones/EresdelPoble"
-            style={{ textDecoration: "none", color: "#ffffff" }}
           >
-            Eres del poble
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/escoles-sept-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/EscolesSept"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              EscolesSept
+            </NavLink>
+          </li>
+          <li
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/el-noguer-b-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/ElNoguerB"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              El Noguer B
+            </NavLink>
+          </li>
+          <li
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/xiulet-hauss-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/XiuletHauss"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              Xiulet Hauss
+            </NavLink>
+          </li>
+          <li
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/la-freixera-ii-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/LaFreixeraII"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              La Freixera II
+            </NavLink>
+          </li>
+          <li
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/edelweiss-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/Edelweiss"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              Edelweiss
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+
+      <div style={{ marginBottom: "20px" }}>
+        <h3
+          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
         >
-          {/* Placeholder pour la miniature */}
-          <div
+          Polígon i Indústria
+        </h3>
+        <ul style={{ listStyle: "none", padding: "0" }}>
+          <li
             style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "10px",
             }}
-          ></div>
-          <NavLink
-            to="/Zones/ElNoguerB"
-            style={{ textDecoration: "none", color: "#ffffff" }}
           >
-            El Noguer B
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                backgroundImage:
+                  "url('/src/assets/images/naus-hesei-thumbnail.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
+            ></div>
+            <NavLink
+              to="/Zones/NausHesei"
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              Naus Hesei
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+
+      <div style={{ marginBottom: "20px" }}>
+        <h3
+          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
         >
-          {/* Placeholder pour la miniature */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
-            }}
-          ></div>
-          <NavLink
-            to="/Zones/EscolesSept"
-            style={{ textDecoration: "none", color: "#ffffff" }}
-          >
-            EscolesSept
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
-        >
-          {/* Placeholder pour la miniature */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
-            }}
-          ></div>
-          <NavLink
-            to="/Zones/XiuletHauss"
-            style={{ textDecoration: "none", color: "#ffffff" }}
-          >
-            Xiulet Hauss
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
-        >
-          {/* Placeholder pour la miniature */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
-            }}
-          ></div>
-          <NavLink
-            to="/Zones/LaFreixeraII"
-            style={{ textDecoration: "none", color: "#ffffff" }}
-          >
-            La Freixera II
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
-        >
-          {/* Placeholder pour la miniature */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
-            }}
-          ></div>
-          <NavLink
-            to="/Zones/Edelweiss"
-            style={{ textDecoration: "none", color: "#ffffff" }}
-          >
-            Edelweiss
-          </NavLink>
-        </li>
-        <li
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "10px",
-          }}
-        >
-          {/* Placeholder pour la miniature */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              backgroundImage:
-                "url('https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg')", // URL de l'image
-              backgroundSize: "cover", // Assure que l'image remplit l'espace sans déformation
-              backgroundPosition: "center", // Centre l'image
-              borderRadius: "5px",
-              marginRight: "10px",
-            }}
-          ></div>
-          <NavLink
-            to="/Zones/NausHesei"
-            style={{ textDecoration: "none", color: "#ffffff" }}
-          >
-            Naus Hesei
-          </NavLink>
-        </li>
-      </ul>
+          Espais de negoci
+        </h3>
+        <ul style={{ listStyle: "none", padding: "0" }}>
+          <li style={{ marginBottom: "10px", color: "#ffffff" }}>
+            Coming soon...
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

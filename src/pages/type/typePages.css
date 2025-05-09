@@ -10,3 +10,19 @@
   margin: 2rem auto;
   width: 60%;
 }
+
+.type-page-description {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .type-page-description {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+}

@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* Consistent vertical spacing */
+  gap: 12px; /* Consistent vertical spacing */
   z-index: 1000;
 }
 
@@ -14,10 +14,6 @@
   height: 60px;
   background-color: #c59d6b; /* Default button color */
   color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -28,17 +24,17 @@
   background-color: #1da851; /* Darker green on hover */
 }
 
-/* Specific styles for individual buttons */
+/* Removed redundant styles for individual buttons */
 .floating-button.chat-widget {
-  background-color: #25d366; /* WhatsApp green */
+  background-color: inherit; /* Inherit base styles */
 }
 
 .floating-button.veure-tot {
-  background-color: #007bff; /* Example blue for Veure Tot */
+  background-color: inherit; /* Inherit base styles */
 }
 
 .floating-button.scroll-to-top {
-  background-color: #ffc107; /* Example yellow for ScrollToTop */
+  background-color: inherit; /* Inherit base styles */
 }
 
 @media (max-width: 768px) {

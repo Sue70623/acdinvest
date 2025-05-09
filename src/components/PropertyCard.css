@@ -48,54 +48,42 @@
 
 .thumbnails {
   display: flex;
-  gap: 10px;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   position: relative;
 }
 
 .thumbnails img {
-  width: 0 0 50%;
-  height: auto;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-/* Styles pour les miniatures */
-.thumbnails img {
-  width: 286px; /* Largeur fixe */
-  height: 286px; /* Hauteur fixe */
-  object-fit: cover; /* Remplit l'espace sans déformer */
-  display: block; /* Évite les espaces blancs autour de l'image */
-  margin: 0 auto; /* Centre l'image horizontalement */
-  border-radius: 4px; /* Facultatif : ajoute des coins arrondis */
-}
-
-.thumbnails .prev,
-.thumbnails .next {
-  background: #c59d6b; /* Fond semi-transparent */
+.prev-video,
+.next-video {
+  position: absolute;
+  top: 50%;
+  background: #c59d6b;
   border: none;
   color: white;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1000;
 }
 
-.thumbnails .prev {
-  left: 10px; /* Position à gauche */
+.prev-video {
+  left: -40px;
 }
 
-.thumbnails .next {
-  right: 10px; /* Position à droite */
+.next-video {
+  right: -40px;
 }
 
-.thumbnails .prev:hover,
-.thumbnails .next:hover {
-  background: #a47f54; /* Fond plus sombre au survol */
+.prev-video:hover,
+.next-video:hover {
+  background: #a47f54;
 }
 
 .info {
@@ -151,11 +139,36 @@
   }
 
   .property-card .details {
+    max-width: 100%;
     text-align: center;
   }
 
-  .property-card .details .discover-btn {
-    margin-top: 10px;
+  .thumbnails {
+    flex-wrap: wrap; /* Allow thumbnails to wrap on smaller screens */
+    justify-content: center;
+  }
+
+  .thumbnails img {
+    width: 100px; /* Adjust thumbnail size for smaller screens */
+    height: 100px;
+  }
+
+  .prev-video,
+  .next-video {
+    display: none; /* Hide navigation buttons on smaller screens */
+  }
+
+  .info .title {
+    font-size: 1.2rem; /* Adjust title size for smaller screens */
+  }
+
+  .info .description {
+    font-size: 0.8rem; /* Adjust description size for smaller screens */
+  }
+
+  .discover-btn {
+    font-size: 0.9rem; /* Adjust button size for smaller screens */
+    padding: 8px 16px;
   }
 
   .property-card-title {

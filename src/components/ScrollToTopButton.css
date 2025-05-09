@@ -37,13 +37,6 @@
   }
 }
 
-.floating-buttons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px; /* augmente l’espacement entre les boutons */
-}
-
 .floating-button {
   width: 60px;
   height: 60px;

@@ -18,7 +18,9 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
   onContactClick,
   pdfUrl,
 }) => {
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null
+  );
 
   const openLightbox = (index: number) => setSelectedImageIndex(index);
   const closeLightbox = () => setSelectedImageIndex(null);
@@ -29,7 +31,9 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
   };
   const showPrevImage = () => {
     if (selectedImageIndex !== null) {
-      setSelectedImageIndex((selectedImageIndex - 1 + images.length) % images.length);
+      setSelectedImageIndex(
+        (selectedImageIndex - 1 + images.length) % images.length
+      );
     }
   };
 
@@ -81,7 +85,12 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
             </button>
           )}
           {pdfUrl && (
-            <a className="qui-som-button" href={pdfUrl} target="_blank" rel="noopener noreferrer">
+            <a
+              className="qui-som-button"
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Descarregar PDF
             </a>
           )}

@@ -3,10 +3,10 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType2 from "../../components/PropertyCardType2";
 import HeroType2 from "../../components/HeroType2";
 import { Helmet } from "react-helmet";
-import Lightbox from "react-image-lightbox";
-import ArticleModal from "../../components/ArticleModal";
-import "react-image-lightbox/style.css";
 import "./zonesPages.css";
+import Lightbox from "react-image-lightbox";
+import ArticleModal from "../../components/ArticleModal"; // Ensure this path is correct
+import "react-image-lightbox/style.css";
 
 const Edelweiss: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -113,10 +113,8 @@ const Edelweiss: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
+          onButtonClick={openServeisModal} // Passes the modal opening callback
         />
-        <button className="global-button" onClick={openServeisModal}>
-          Serveis
-        </button>
         <ArticleModal
           title="Serveis"
           content="Àtics dúplex, trasters, places d’aparcament, pisos de dues habitacions."
@@ -126,8 +124,7 @@ const Edelweiss: React.FC = () => {
         />
         <PropertyCardType2
           title="Entorn"
-          description="Entre muntanyes i ciutat, amb vistes espectaculars i una connexió fluïda amb l’exterior.
-"
+          description="Entre muntanyes i ciutat, amb vistes espectaculars i una connexió fluïda amb l’exterior."
           images={[
             "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
             "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
@@ -138,10 +135,8 @@ const Edelweiss: React.FC = () => {
           ]}
           buttonLabel="Ver Mas"
           link="/"
+          onButtonClick={openEntornModal} // Passes the modal opening callback
         />
-        <button className="global-button" onClick={openEntornModal}>
-          Entorn
-        </button>
         <ArticleModal
           title="Entorn"
           content="Entre muntanyes i ciutat, amb vistes espectaculars i una connexió fluïda amb l’exterior."

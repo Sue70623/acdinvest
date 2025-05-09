@@ -19,6 +19,7 @@ const ViuLaNatura = () => {
       </Helmet>
 
       <h1 className="type-page-title">VIU LA NATURA</h1>
+      <p className="type-page-description">Descobreix els nostres espais envoltats de natura, ideals per a aquells que busquen tranquil·litat i bellesa natural en el seu entorn quotidià.</p>
       <PropertyCard
         mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
         mainImageAlt="Resort Plana Del Bou"

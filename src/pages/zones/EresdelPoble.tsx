@@ -30,6 +30,14 @@ const EresdelPoble: React.FC = () => {
     setIsGalleryOpen(false); // Ferme la modale
   };
 
+  const openServeisModal = () => {
+    console.log("Serveis modal opened");
+  };
+
+  const openEntornModal = () => {
+    console.log("Entorn modal opened");
+  };
+
   return (
     <DefaultLayout
       title="Eres del Poble - ACD Invest"
@@ -89,6 +97,7 @@ const EresdelPoble: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
+          onButtonClick={openServeisModal} // Passes the modal opening callback
         />
         <PropertyCardType2
           title="Entorn"
@@ -103,6 +112,7 @@ const EresdelPoble: React.FC = () => {
           ]}
           buttonLabel="Ver Mas"
           link="/"
+          onButtonClick={openEntornModal} // Passes the modal opening callback
         />
         <hr className="separator" />
         <div className="zone-info-block">

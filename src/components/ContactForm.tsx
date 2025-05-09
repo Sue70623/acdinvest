@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
         required
       />
       <button type="submit" className="global-button">
-        Envoyez
+        Enviar
       </button>
     </form>
   );

@@ -8,6 +8,9 @@ interface ArticleModalProps {
   videoUrl?: string; // Vidéo YouTube optionnelle
   isOpen: boolean;
   onClose: () => void; // Fonction pour fermer la modale
+  pdfLink?: string; // Optional link to a PDF
+  contactLink?: string; // Optional link to a contact page
+  imageUrls?: string[]; // Optional array of image URLs for a gallery
 }
 
 const ArticleModal: React.FC<ArticleModalProps> = ({
@@ -17,6 +20,9 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
   videoUrl,
   isOpen,
   onClose,
+  pdfLink,
+  contactLink,
+  imageUrls,
 }) => {
   // Gestion de la touche "Échap" pour fermer le modal
   useEffect(() => {
@@ -51,6 +57,20 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
           ×
         </button>
 
+        {/* Galerie d'images */}
+        {imageUrls && imageUrls.length > 0 && (
+          <div className="modal-gallery">
+            {imageUrls.map((url, index) => (
+              <img
+                key={index}
+                src={url}
+                alt={`Image ${index + 1} de la galerie`}
+                className="modal-gallery-image"
+              />
+            ))}
+          </div>
+        )}
+
         {/* Image principale */}
         {imageUrl && (
           <img
@@ -78,6 +98,20 @@ const ArticleModal: React.FC<ArticleModalProps> = ({
             ></iframe>
           </div>
         )}
+
+        {/* Optional Buttons */}
+        <div className="modal-buttons">
+          {pdfLink && (
+            <a href={pdfLink} target="_blank" rel="noopener noreferrer" className="modal-button">
+              Voir PDF
+            </a>
+          )}
+          {contactLink && (
+            <a href={contactLink} className="modal-button">
+              Contactez-nous
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

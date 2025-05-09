@@ -5,6 +5,7 @@ import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
 import { Helmet } from "react-helmet";
+import ArticleModal from "../../components/ArticleModal";
 
 const EscolesSept: React.FC = () => {
   // Tableau d'images pour la galerie
@@ -20,6 +21,8 @@ const EscolesSept: React.FC = () => {
   ];
 
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [isServeisModalOpen, setIsServeisModalOpen] = useState(false);
+  const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
   const handleOpenGallery = () => {
     setIsGalleryOpen(true); // Ouvre la modale
@@ -28,6 +31,12 @@ const EscolesSept: React.FC = () => {
   const handleCloseGallery = () => {
     setIsGalleryOpen(false); // Ferme la modale
   };
+
+  const openServeisModal = () => setIsServeisModalOpen(true);
+  const closeServeisModal = () => setIsServeisModalOpen(false);
+
+  const openEntornModal = () => setIsEntornModalOpen(true);
+  const closeEntornModal = () => setIsEntornModalOpen(false);
 
   return (
     <DefaultLayout
@@ -76,7 +85,7 @@ const EscolesSept: React.FC = () => {
         />
         <PropertyCardType2
           title="Serveis"
-          description="Reforma integral, terrasses, gran presència arquitectònica."
+          description="Reforma integral, terrasses, gran presència architectònica."
           images={[
             "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
             "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
@@ -88,6 +97,7 @@ const EscolesSept: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
+          onButtonClick={openServeisModal} // Passes the modal opening callback
         />
         <PropertyCardType2
           title="Entorn"
@@ -102,6 +112,7 @@ const EscolesSept: React.FC = () => {
           ]}
           buttonLabel="Ver Mas"
           link="/"
+          onButtonClick={openEntornModal} // Passes the modal opening callback
         />
 
         <hr className="separator" />
@@ -134,6 +145,22 @@ const EscolesSept: React.FC = () => {
             }
           />
         )}
+
+        <ArticleModal
+          title="Serveis"
+          content="Reforma integral, terrasses, gran presència arquitectònica."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isServeisModalOpen}
+          onClose={closeServeisModal}
+        />
+
+        <ArticleModal
+          title="Entorn"
+          content="Ubicat al carrer de les escoles, prop de tot: escoles, farmàcies, esport, supermercats."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isEntornModalOpen}
+          onClose={closeEntornModal}
+        />
       </div>
     </DefaultLayout>
   );

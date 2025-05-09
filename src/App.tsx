@@ -27,7 +27,6 @@ import ListXiuletHauss from "./pages/listeDesBiens/listXiuletHauss";
 import ListLaFreixeraII from "./pages/listeDesBiens/listLaFreixeraII";
 import ListEdelweiss from "./pages/listeDesBiens/listEdelweiss";
 import ListNausHesei from "./pages/listeDesBiens/listNausHesei";
-import ChatWidget from "./components/ChatWidget";
 
 export default function App() {
   const basename = process.env.NODE_ENV === "production" ? "/acdinvest" : "";
@@ -35,7 +34,6 @@ export default function App() {
   return (
     <Router basename={basename}>
       <ScrollToTop />
-      <ChatWidget />
       {/* Layout par défaut pour toutes les pages */}
       {/* <DefaultLayout> */}
       {/* <NavBar /> */}

@@ -19,6 +19,7 @@ const ViuLaCiutat = () => {
       </Helmet>
 
       <h1 className="type-page-title">VIU LA CIUTAT</h1>
+      <p className="type-page-description">Explora els nostres espais urbans, perfectes per gaudir de la comoditat i els serveis que ofereix la vida a la ciutat.</p>
       <PropertyCard
         mainImage="https://placehold.co/400x400?text=Main"
         mainImageAlt="Image principale de Plana Del Bou"

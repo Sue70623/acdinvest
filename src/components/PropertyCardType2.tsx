@@ -10,6 +10,7 @@ interface PropertyCardType2Props {
   link: string;
   reverse?: boolean;
   autoScroll?: boolean;
+  onButtonClick?: () => void; // New optional prop for button click handler
 }
 
 const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
@@ -20,6 +21,7 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
   link,
   reverse = false,
   autoScroll = true,
+  onButtonClick,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -62,9 +64,9 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
       <div className="text-section">
         <h2>{title}</h2>
         <p>{description}</p>
-        <Link to={link} className="global-button">
+        <button className="global-button" onClick={onButtonClick}>
           {buttonLabel}
-        </Link>
+        </button>
       </div>
 
       <div className="carousel-section">
@@ -73,11 +75,7 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
         </button>
         <div className="carousel-frame">
           {visibleImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={title || "Property image"}
-            />
+            <img key={index} src={image} alt={title || "Property image"} />
           ))}
         </div>
         <button className="global-button next-video" onClick={next}>

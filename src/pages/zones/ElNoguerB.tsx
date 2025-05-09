@@ -5,6 +5,7 @@ import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
 import { Helmet } from "react-helmet";
+import ArticleModal from "../../components/ArticleModal";
 
 const ElNoguerB: React.FC = () => {
   // Tableau d'images pour la galerie
@@ -22,6 +23,9 @@ const ElNoguerB: React.FC = () => {
   // State for gallery modal visibility
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
+  const [isServeisModalOpen, setIsServeisModalOpen] = useState(false);
+  const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
+
   const handleOpenGallery = () => {
     setIsGalleryOpen(true); // Ouvre la modale
   };
@@ -29,6 +33,12 @@ const ElNoguerB: React.FC = () => {
   const handleCloseGallery = () => {
     setIsGalleryOpen(false); // Ferme la modale
   };
+
+  const openServeisModal = () => setIsServeisModalOpen(true);
+  const closeServeisModal = () => setIsServeisModalOpen(false);
+
+  const openEntornModal = () => setIsEntornModalOpen(true);
+  const closeEntornModal = () => setIsEntornModalOpen(false);
 
   return (
     <DefaultLayout
@@ -89,13 +99,17 @@ const ElNoguerB: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
+          onButtonClick={openServeisModal} // Passes the modal opening callback
         />
         <PropertyCardType2
           title="Entorn"
           description="Situat al carrer de les escoles, envoltat d’horts, supermercats, farmàcies i centres esportius."
-          images={["https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"]}
+          images={[
+            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+          ]}
           buttonLabel="Ver Mas"
           link="/"
+          onButtonClick={openEntornModal} // Passes the modal opening callback
         />
 
         <hr className="separator" />
@@ -127,6 +141,20 @@ const ElNoguerB: React.FC = () => {
             }
           />
         )}
+        <ArticleModal
+          title="Serveis"
+          content="Ascensor, garatge compartit, orientació doble, fàcil accés als comerços i escoles."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isServeisModalOpen}
+          onClose={closeServeisModal}
+        />
+        <ArticleModal
+          title="Entorn"
+          content="Situat al carrer de les escoles, envoltat d’horts, supermercats, farmàcies i centres esportius."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isEntornModalOpen}
+          onClose={closeEntornModal}
+        />
       </div>
     </DefaultLayout>
   );

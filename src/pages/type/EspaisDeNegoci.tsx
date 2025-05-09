@@ -7,6 +7,7 @@ const EspaisDeNegoci = () => {
   return (
     <DefaultLayout title="Espais De Negoci" description="Description of Espais De Negoci">
       <h1 className="type-page-title">ESPAIS DE NEGOCI</h1>
+      <p className="type-page-description">Explora els nostres espais de negoci, pensats per impulsar el teu èxit empresarial en ubicacions estratègiques.</p>
       <PropertyCard
         mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
         mainImageAlt="Image principale de Plana Del Bou"

@@ -8,7 +8,7 @@ const ElsNostresEspais = () => {
       <div className="espais-grid">
         <Link to="/viu-la-natura" className="espai-card">
           <img
-            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            src="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/viu-la-natura2.webp"
             alt="Viu la Natura"
             className="els-nostres-espais-image"
           />

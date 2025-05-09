@@ -7,6 +7,7 @@ const PoligonIIndustria = () => {
   return (
     <DefaultLayout title="Polígon I Industria" description="Explore the industrial zones and properties available.">
       <h1 className="type-page-title">POLÍGON I INDUSTRIA</h1>
+      <p className="type-page-description">Descobreix les nostres zones industrials i espais dissenyats per a activitats empresarials i logístiques.</p>
       <PropertyCard
         mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
         mainImageAlt="Image principale de Plana Del Bou"

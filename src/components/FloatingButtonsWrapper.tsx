@@ -6,7 +6,9 @@ import ScrollToTopButton from "./ScrollToTopButton"; // Ensure the correct path 
 const FloatingButtonsWrapper: React.FC = () => {
   return (
     <div className="floating-buttons-wrapper">
-      <TotsElsEspaisButton onClick={() => console.log('TotsElsEspaisButton clicked')} />
+      <TotsElsEspaisButton
+        onClick={() => console.log("TotsElsEspaisButton clicked")}
+      />
       <ChatWidget />
       <ScrollToTopButton />
     </div>

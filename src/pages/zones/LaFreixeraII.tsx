@@ -5,6 +5,7 @@ import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
 import { Helmet } from "react-helmet";
+import ArticleModal from "../../components/ArticleModal";
 
 const LaFreixeraII: React.FC = () => {
   // Tableau d'images pour la galerie
@@ -20,6 +21,8 @@ const LaFreixeraII: React.FC = () => {
   ];
 
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [isServeisModalOpen, setIsServeisModalOpen] = useState(false);
+  const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
   const handleOpenGallery = () => {
     setIsGalleryOpen(true); // Ouvre la modale
@@ -28,6 +31,12 @@ const LaFreixeraII: React.FC = () => {
   const handleCloseGallery = () => {
     setIsGalleryOpen(false); // Ferme la modale
   };
+
+  const openServeisModal = () => setIsServeisModalOpen(true);
+  const closeServeisModal = () => setIsServeisModalOpen(false);
+
+  const openEntornModal = () => setIsEntornModalOpen(true);
+  const closeEntornModal = () => setIsEntornModalOpen(false);
 
   return (
     <DefaultLayout
@@ -87,6 +96,7 @@ const LaFreixeraII: React.FC = () => {
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
+          onButtonClick={openServeisModal} // Passes the modal opening callback
         />
         <PropertyCardType2
           title="Entorn"
@@ -101,6 +111,7 @@ const LaFreixeraII: React.FC = () => {
           ]}
           buttonLabel="Ver Mas"
           link="/"
+          onButtonClick={openEntornModal} // Passes the modal opening callback
         />
         <hr className="separator" />
         <div className="zone-info-block">
@@ -132,6 +143,20 @@ const LaFreixeraII: React.FC = () => {
             }
           />
         )}
+        <ArticleModal
+          title="Serveis"
+          content="5 plantes, 2 àtics, pàrquing, parada de bus, supermercat a 350 metres."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isServeisModalOpen}
+          onClose={closeServeisModal}
+        />
+        <ArticleModal
+          title="Entorn"
+          content="Zona nord de Sant Julià, tranquil·litat amb serveis a prop i arquitectura contemporània."
+          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          isOpen={isEntornModalOpen}
+          onClose={closeEntornModal}
+        />
       </div>
     </DefaultLayout>
   );
