@@ -10,6 +10,7 @@
   "homepage": "https://sue70623.github.io/acdinvest/",
   "main": "src/index.tsx",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "ajv": "^8.17.1",
     "framer-motion": "^12.8.2",
     "loader-utils": "3.2.1",
