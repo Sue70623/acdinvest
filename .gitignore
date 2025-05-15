@@ -23,3 +23,5 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+
+echo "yarn.lock" >> .gitignore
