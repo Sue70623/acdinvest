@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/acdinvest/static/css/main.8f0334f3.css",
-    "main.js": "/acdinvest/static/js/main.71826eec.js",
+    "main.css": "/acdinvest/static/css/main.e4afafdf.css",
+    "main.js": "/acdinvest/static/js/main.931d0a00.js",
     "index.html": "/acdinvest/index.html",
-    "main.8f0334f3.css.map": "/acdinvest/static/css/main.8f0334f3.css.map",
-    "main.71826eec.js.map": "/acdinvest/static/js/main.71826eec.js.map"
+    "main.e4afafdf.css.map": "/acdinvest/static/css/main.e4afafdf.css.map",
+    "main.931d0a00.js.map": "/acdinvest/static/js/main.931d0a00.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f0334f3.css",
-    "static/js/main.71826eec.js"
+    "static/css/main.e4afafdf.css",
+    "static/js/main.931d0a00.js"
   ]
 }
