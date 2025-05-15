@@ -10,7 +10,7 @@
   "homepage": "https://sue70623.github.io/acdinvest/",
   "main": "src/index.tsx",
   "engines": {
-    "node": ">=18.x"
+    "node": "18.x"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
