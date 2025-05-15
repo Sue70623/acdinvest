@@ -64,7 +64,16 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
       <div className="text-section">
         <h2>{title}</h2>
         <p>{description}</p>
-        <button className="global-button" onClick={onButtonClick}>
+        <button
+          className="global-button"
+          onClick={() => {
+            if (onButtonClick) {
+              onButtonClick(); // Ouvrir la modal si elle existe
+            } else {
+              window.location.href = link; // Sinon, naviguer vers le lien
+            }
+          }}
+        >
           {buttonLabel}
         </button>
       </div>

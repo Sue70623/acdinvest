@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +33,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  border: 2px solid #c59d6b;
 }
 
 .modal-header {
@@ -41,6 +43,7 @@
   padding: 15px;
   background: #1c1d1f;
   color: #ffffff;
+  border-bottom: 1px solid #c59d6b;
 }
 
 .modal-title {
@@ -61,15 +64,18 @@
   overflow-y: auto;
 }
 
+/* Gallery grid layout */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes en desktop */
-  gap: 10px; /* Espacement entre les images */
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr); /* Desktop */
 }
 
 .image-item img {
   width: 100%;
-  height: auto;
+  height: auto; /* Desktop height */
+  aspect-ratio: 4/3; /* Maintain aspect ratio */
+  object-fit: cover;
   border-radius: 4px;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -77,6 +83,71 @@
 
 .image-item img:hover {
   transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-item img {
+    height: 150px; /* Mobile height */
+  }
+}
+
+/* Lightbox styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 4px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.lightbox-close {
+  top: 20px;
+  right: 20px;
+}
+
+.lightbox-prev {
+  left: 20px;
+  top: 50%;
+}
+
+.lightbox-next {
+  right: 20px;
+  top: 50%;
 }
 
 .modal-button {
@@ -97,16 +168,4 @@
 .modal-button:hover {
   background-color: #a57f4f;
   transform: scale(1.05);
-}
-
-@media (max-width: 1024px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les tablettes */
-  }
-}
-
-@media (max-width: 768px) {
-  .image-grid {
-    grid-template-columns: 1fr; /* 1 colonne pour les mobiles */
-  }
 }

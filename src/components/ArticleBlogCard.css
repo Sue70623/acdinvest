@@ -7,6 +7,9 @@
   margin: 20px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
 }
 
 .article-blog-card:hover {
@@ -58,9 +61,11 @@
   flex-direction: row-reverse;
 }
 .article-video {
-  width: 50%;
-  height: 100%;
-  margin: 0 auto 16px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 5 auto 16px;
   border-radius: 8px;
   overflow: hidden;
 }

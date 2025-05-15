@@ -3,7 +3,7 @@ import "./Hero.css";
 
 const videos = [
   {
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    src: "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Video/Emocio-i-detall-l-essencia-del-teu-refugi-exclusiu.mp4",
     title: "ESTAT D’ANIM",
     link: "/qui-som",
     linkText: "Qui Som?",

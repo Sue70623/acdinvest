@@ -22,7 +22,7 @@ const HeroType2: React.FC<HeroType2Props> = ({
       {/* Image invisible pour l'accessibilité */}
       <img
         src={backgroundImage}
-        alt={alt || "Background image"}
+        alt="Imatge de l'heroi"
         className="sr-only"
       />
       <div className="hero-overlay">

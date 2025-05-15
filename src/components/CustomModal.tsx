@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CustomModal.css";
 
 interface CustomModalProps {
@@ -16,46 +16,90 @@ const CustomModal: React.FC<CustomModalProps> = ({
   pdfUrl,
   onClose,
 }) => {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    document.body.style.overflow = "hidden"; // Lock background scroll
+  };
+
+  const closeLightbox = () => {
+    setLightboxIndex(null);
+    document.body.style.overflow = ""; // Unlock background scroll
+  };
+
+  const showNextImage = () => {
+    if (lightboxIndex !== null) {
+      setLightboxIndex((lightboxIndex + 1) % images.length);
+    }
+  };
+
+  const showPreviousImage = () => {
+    if (lightboxIndex !== null) {
+      setLightboxIndex((lightboxIndex - 1 + images.length) % images.length);
+    }
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (lightboxIndex !== null) {
+      if (event.key === "ArrowRight") showNextImage();
+      if (event.key === "ArrowLeft") showPreviousImage();
+      if (event.key === "Escape") closeLightbox();
+    }
+  };
+
   return (
-    <div className="custom-modal">
+    <div className="custom-modal" onKeyDown={handleKeyDown} tabIndex={0}>
       <div className="modal-overlay" onClick={onClose}></div>
       <div className="modal-content">
-        {/* En-tête */}
         <div className="modal-header">
           <h2 className="modal-title">{title}</h2>
           <button className="modal-close" onClick={onClose}>
             ×
           </button>
         </div>
-
-        {/* Corps de la modale */}
         <div className="modal-body">
           <div className="gallery-grid">
             {images.map((image, index) => (
-              <div className="image-item" key={index}>
-                <img
-                  src={image}
-                  alt={`Gallery image ${index + 1}`}
-                  className="custom-modal-image"
-                />
+              <div
+                key={index}
+                className="image-item"
+                onClick={() => openLightbox(index)}
+              >
+                <img src={image} alt={`Imatge de la galeria ${index + 1}`} />
               </div>
             ))}
           </div>
         </div>
-
-        {/* Pied de la modale */}
         <div className="modal-footer">
-          <button
-            className="modal-button action-button"
-            onClick={onActionClick}
-          >
+          <a href="/contact" className="global-button" onClick={onActionClick}>
             Contacta'ns
-          </button>
-          <a href={pdfUrl} download className="modal-button download-button">
+          </a>
+          <a href={pdfUrl} download className="global-button">
             Descarregar PDF
           </a>
         </div>
       </div>
+
+      {lightboxIndex !== null && (
+        <div className="lightbox">
+          <div className="lightbox-overlay" onClick={closeLightbox}></div>
+          <button className="lightbox-close" onClick={closeLightbox}>
+            ×
+          </button>
+          <button className="lightbox-prev" onClick={showPreviousImage}>
+            ←
+          </button>
+          <img
+            className="lightbox-image"
+            src={images[lightboxIndex]}
+            alt={`Lightbox Image ${lightboxIndex + 1}`}
+          />
+          <button className="lightbox-next" onClick={showNextImage}>
+            →
+          </button>
+        </div>
+      )}
     </div>
   );
 };

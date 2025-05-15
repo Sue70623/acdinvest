@@ -14,14 +14,19 @@ const PlanaDelBou: React.FC = () => {
 
   // Tableau d'images pour la galerie
   const images = [
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/flor-jardi-resort.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/piscina-andorra-resort.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/raco-tranquil-jardi-residencial.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/flor-jardi-resort.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/bec-plana-del-bou-fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/borda-de-la-plana-fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/entrada-resort-plana-del-bou.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/jardi-etorn-plana-del-bou.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/bustia-residencial-luxe.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/sauna-private-borda-plana.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/sol-borda-plana-fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/terrasa-borda-plana-del-bou.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/omba-i-piscina-plana-del-bou.webp",
   ];
 
   const handleOpenGallery = () => {
@@ -73,11 +78,17 @@ const PlanaDelBou: React.FC = () => {
           description="Un espai ideal per desconnectar de la ciutat i gaudir d’un estil de vida saludable."
           images={[
             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/calma-a-la-vora.webp",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/flor-jardi-resort.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/piscina-andorra-resort.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/raco-tranquil-jardi-residencial.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/flor-jardi-resort.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/bec-plana-del-bou-fontaneda.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/borda-de-la-plana-fontaneda.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/entrada-resort-plana-del-bou.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/jardi-etorn-plana-del-bou.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/bustia-residencial-luxe.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/sol-borda-plana-fontaneda.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/terrasa-borda-plana-del-bou.webp",
           ]}
           buttonLabel="Ver Mas"
           link="/liste-des-biens/listPlanaDelBou"
@@ -91,7 +102,10 @@ const PlanaDelBou: React.FC = () => {
             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/gimnas-servies-plana-del-bou.webp",
             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/sauna-servies-plana-del-bou.webp",
             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/chill-ombra-plana-del-bou.webp",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/piscina-sol-plana-del-bou.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/flor-jardi-resort.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/BulkResizePhotos.com%20(15)ESPAISCOMMUN/chill-piscina-andorra.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/sauna-private-borda-plana.webp",
           ]}
           buttonLabel="Ver Mas"
           link="/"
@@ -102,12 +116,11 @@ const PlanaDelBou: React.FC = () => {
           title="Entorn"
           description="Plenament integrat a la natura, amb vistes a les muntanyes i a prop de Fontaneda."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
           ]}
           buttonLabel="Ver Mas"
           link="/"
@@ -136,27 +149,24 @@ const PlanaDelBou: React.FC = () => {
         {/* Affichage conditionnel de la modale */}
         {isGalleryOpen && (
           <ImageGalleryModal
-            title="Galerie - Plana del Bou"
+            title="Galeria fotogràfica - Plana del Bou"
             images={images}
             onClose={handleCloseGallery}
-            onImageClick={(imageUrl) =>
-              console.log("Image cliquée :", imageUrl)
-            }
           />
         )}
 
         <ArticleModal
           title="Serveis"
-          content="Piscina, gimnàs, spa, rutes de muntanya, espais comuns."
-          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          content="El Resort de Fontaneda ofereix un conjunt de serveis pensats per al benestar i el confort diari dels seus residents. Entre la planta baixa i la soterrània es troben espais comuns com el gimnàs completament equipat, l’spa amb jacuzzi, sauna i hammam, així com una sala de billar ideal per desconnectar. Cada apartament disposa de terrassa o jardí privat, oferint espais exteriors íntims per gaudir de l’entorn. A més, la piscina i les zones de relaxació comuniquen amb la natura, promovent un estil de vida saludable i actiu."
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/omba-i-piscina-plana-del-bou.webp"
           isOpen={isServeisModalOpen}
           onClose={closeServeisModal}
         />
 
         <ArticleModal
           title="Entorn"
-          content="Plenament integrat a la natura, amb vistes a les muntanyes i a prop de Fontaneda."
-          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          content="Situat a pocs minuts de Fontaneda i de Sant Julià de Lòria, el Resort s’integra en plena natura, en un entorn tranquil i privilegiat. Antigament un assecador de tabac, l’espai ha estat reformat per respectar la seva història i potenciar la connexió amb el paisatge. Els apartaments combinen l’arquitectura rústica amb solucions modernes, envoltats de boscos, senders i camins per excursions a peu o en bicicleta. Un entorn únic on la sostenibilitat, la lluminositat i el confort es fonen per crear la llar ideal."
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
           isOpen={isEntornModalOpen}
           onClose={closeEntornModal}
         />

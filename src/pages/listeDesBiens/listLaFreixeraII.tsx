@@ -344,7 +344,7 @@ const ListLaFreixeraII: React.FC = () => {
         <title>Liste des biens - La Freixera II</title>
         <meta
           name="description"
-          content="Découvrez les biens disponibles dans le projet La Freixera II, un projet moderne et durable."
+          content="Descobreix els béns disponibles al projecte La Freixera II, un projecte modern i sostenible."
         />
       </Helmet>
 

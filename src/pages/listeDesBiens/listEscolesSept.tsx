@@ -172,7 +172,7 @@ const ListEscolesSept: React.FC = () => {
         <title>Llista de béns - Escoles Sept</title>
         <meta
           name="description"
-          content="Descobreix els béns disponibles al projecte Escoles Sept."
+          content="Explora els béns disponibles al projecte Escoles Sept, amb espais amplis i lluminosos."
         />
       </Helmet>
       <h1 className="page-title">Béns disponibles – Escoles Sept</h1>

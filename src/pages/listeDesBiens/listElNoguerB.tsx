@@ -278,7 +278,7 @@ const ListElNoguerB: React.FC = () => {
   return (
     <DefaultLayout
       title="Llista de béns - El Noguer B"
-      description="Descobreix els béns disponibles al projecte El Noguer B."
+      description="Explora els béns disponibles al projecte El Noguer B, amb habitatges moderns i funcionals."
     >
       <HeroType2
         backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"

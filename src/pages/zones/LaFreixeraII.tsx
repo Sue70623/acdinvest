@@ -1,36 +1,24 @@
 import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
-import PropertyCardType2 from "../../components/PropertyCardType2";
 import HeroType2 from "../../components/HeroType2";
-import "./zonesPages.css";
+import PropertyCardType2 from "../../components/PropertyCardType2";
 import ImageGalleryModal from "../../components/ImageGalleryModal";
-import { Helmet } from "react-helmet";
 import ArticleModal from "../../components/ArticleModal";
+import { Helmet } from "react-helmet";
+import "./zonesPages.css";
 
 const LaFreixeraII: React.FC = () => {
-  // Tableau d'images pour la galerie
-  const images = [
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-  ];
-
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isServeisModalOpen, setIsServeisModalOpen] = useState(false);
   const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
-  const handleOpenGallery = () => {
-    setIsGalleryOpen(true); // Ouvre la modale
-  };
+  const images = [
+    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    // (ajouter les vraies images ici)
+  ];
 
-  const handleCloseGallery = () => {
-    setIsGalleryOpen(false); // Ferme la modale
-  };
+  const handleOpenGallery = () => setIsGalleryOpen(true);
+  const handleCloseGallery = () => setIsGalleryOpen(false);
 
   const openServeisModal = () => setIsServeisModalOpen(true);
   const closeServeisModal = () => setIsServeisModalOpen(false);
@@ -50,77 +38,85 @@ const LaFreixeraII: React.FC = () => {
           content="Découvrez La Freixera II, un projet immobilier moderne et durable à Les Arades."
         />
       </Helmet>
+
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
           title="La Freixera II"
           subtitle="Sant Julià de Lòria, Andorra"
           alt="Edifici d'obra nova La Freixera II amb pisos lluminosos i àtics a Sant Julià de Lòria"
         />
+
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
           📷 Veure totes les nostres fotos
         </p>
 
         <h1 className="page-title">La Freixera II</h1>
-        {/* Exemple d'un bien */}
-        {/* Description contextuelle */}
         <p className="zone-description">
           Pisos de 2 habitacions i àtics amb grans finestres, al costat de La
           Freixera I.
         </p>
+
+    
+
+       
+
         <PropertyCardType2
           title="Uns Espais"
           description="Un espai modern amb vista i accés fàcil a serveis, pensat per al confort."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            // (ajouter les vraies images ici)
           ]}
           buttonLabel="Ver Mas"
           link="/liste-des-biens/listLaFreixeraII"
         />
+
         <PropertyCardType2
           title="Serveis"
           description="5 plantes, 2 àtics, pàrquing, parada de bus, supermercat a 350 metres."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            // (ajouter les vraies images ici)
           ]}
           buttonLabel="Ver Mas"
           link="/"
           reverse={true}
-          onButtonClick={openServeisModal} // Passes the modal opening callback
+          onButtonClick={openServeisModal}
         />
+
         <PropertyCardType2
           title="Entorn"
           description="Zona nord de Sant Julià, tranquil·litat amb serveis a prop i arquitectura contemporània."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            // (ajouter les vraies images ici)
           ]}
           buttonLabel="Ver Mas"
           link="/"
-          onButtonClick={openEntornModal} // Passes the modal opening callback
+          onButtonClick={openEntornModal}
         />
+
         <hr className="separator" />
+
         <div className="zone-info-block">
           <div className="zone-distances">
-            <p>Frontera espanyola: km</p>
-            <p>Frontera fancesa: km</p>
-            <p>Andorra la Vella: km</p>
+            <p>Frontera espanyola: 4,7km</p>
+            <p>Frontera francesa: 26km</p>
+            <p>Andorra la Vella: 5,6km</p>
           </div>
-          {/* Lien vers Google Maps */}
           <iframe
             className="map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d735.7341392792558!2d1.4928442696422686!3d42.471637987413516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI4JzE3LjkiTiAxwrAyOSczNi42IkU!5e0!3m2!1sfr!2sus!4v1746448140329!5m2!1sfr!2sus"
@@ -132,17 +128,14 @@ const LaFreixeraII: React.FC = () => {
           />
         </div>
 
-        {/* Affichage conditionnel de la modale */}
         {isGalleryOpen && (
           <ImageGalleryModal
-            title="Galerie - Plana del Bou"
+            title="Galeria fotogràfica - La Freixera II"
             images={images}
             onClose={handleCloseGallery}
-            onImageClick={(imageUrl) =>
-              console.log("Image cliquée :", imageUrl)
-            }
           />
         )}
+
         <ArticleModal
           title="Serveis"
           content="5 plantes, 2 àtics, pàrquing, parada de bus, supermercat a 350 metres."
@@ -150,6 +143,7 @@ const LaFreixeraII: React.FC = () => {
           isOpen={isServeisModalOpen}
           onClose={closeServeisModal}
         />
+
         <ArticleModal
           title="Entorn"
           content="Zona nord de Sant Julià, tranquil·litat amb serveis a prop i arquitectura contemporània."

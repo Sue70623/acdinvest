@@ -28,7 +28,10 @@ const NavBar: React.FC = () => {
       {/* LOGO */}
       <div className="logo">
         <NavLink to="/">
-          <img src={logo} alt="ACD Invest Logo" />
+          <img
+            src="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/logotransparantblancacdinvest.png"
+            alt="ACD Invest Logo"
+          />
         </NavLink>
       </div>
 

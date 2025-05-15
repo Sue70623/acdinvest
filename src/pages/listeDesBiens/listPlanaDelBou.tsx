@@ -36,7 +36,7 @@ const ListPlanaDelBou: React.FC = () => {
         <title>Llista de propietats - Plana del Bou</title>
         <meta
           name="description"
-          content="Descobreix les propietats disponibles al projecte Plana del Bou, un espai residencial integrat a la natura."
+          content="Descobreix les propietats exclusives del projecte Plana del Bou, envoltades de natura i tranquil·litat."
         />
       </Helmet>
 
@@ -45,7 +45,7 @@ const ListPlanaDelBou: React.FC = () => {
       <h2 style={{ textAlign: "center" }}>Resort</h2>
       <PropertyCardType3
         title="Aixartell"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Airxartell/BulkResizePhotos.com%20(4)AIRXARTELL/airxartell-salo-plana-del-bou-andorra.webp"
         caracteristics={["95m²", "2 Habitació", "2 Bany"]}
         amenities={[
           "Aparcament segons disponibilitat",
@@ -60,8 +60,12 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Aixartell",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Airxartell/BulkResizePhotos.com%20(4)AIRXARTELL/airxartell-salo-plana-del-bou-andorra.webp",
+
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Airxartell/BulkResizePhotos.com%20(4)AIRXARTELL/1bany-airxartell-plana-del-bou-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Airxartell/BulkResizePhotos.com%20(4)AIRXARTELL/1MENJADORairxartell-plana-del-bou-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Airxartell/BulkResizePhotos.com%20(4)AIRXARTELL/1HABITACIO-NEN-airxartell-plana-del-bou-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Airxartell/BulkResizePhotos.com%20(4)AIRXARTELL/CUINA-airxartell-plana-del-bou-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/105/dossier-aixartell.pdf"
           )
@@ -70,7 +74,7 @@ const ListPlanaDelBou: React.FC = () => {
       />
       <PropertyCardType3
         title="Argüens"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp"
         caracteristics={["95m²", "2 Habitació", "2 Bany"]}
         amenities={[
           "Aparcament segons disponibilitat",
@@ -86,8 +90,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Argüens",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/101/dossier-arguens.pdf"
           )
@@ -112,8 +123,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Arpiot",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/103/dossier-arpiot.pdf"
           )
@@ -138,8 +156,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Cloc",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/6/dossier-cloc.pdf"
           )
@@ -156,8 +181,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Esclop",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/102/dossier-esclo.pdf"
           )
@@ -182,8 +214,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Estolador",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/104/dossier-estolador.pdf"
           )
@@ -200,8 +239,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Taupa",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/102/dossier-esclo.pdf"
           )
@@ -226,8 +272,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Xut",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/107/dossier-xut.pdf"
           )
@@ -253,8 +306,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Moixo",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://example.com/brochure-arguens.pdf"
           )
@@ -279,8 +339,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "Orandeta",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://example.com/brochure-arguens.pdf"
           )
@@ -308,8 +375,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "La Cort",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://example.com/brochure-arguens.pdf"
           )
@@ -335,8 +409,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "El Mallador",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/11/dossier-mallador.pdf"
           )
@@ -361,8 +442,15 @@ const ListPlanaDelBou: React.FC = () => {
           handleOpenModal(
             "El Paller",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-vista-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-cuina-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-salo-escalera-vista-munatanya-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-mezzanin-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-habitacio1-porta-plana-del-bou-fontaneda-andorra.webp",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Arguens/arguens-bany1-plana-del-bou-fontaneda-andorra.webp",
             ],
             "https://quetx.net/imatges/projecteVivenda/10/dossier-paller.pdf"
           )

@@ -36,7 +36,7 @@ const ListEresDelPoble: React.FC = () => {
         <title>Liste des biens - Eres del Poble</title>
         <meta
           name="description"
-          content="Découvrez les maisons rurales disponibles dans le projet Eres del Poble, au cœur du village de Fontaneda."
+          content="Descobreix les cases rurals disponibles al projecte Eres del Poble, al cor del poble de Fontaneda."
         />
       </Helmet>
 

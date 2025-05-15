@@ -7,6 +7,14 @@ import ImageGalleryModal from "../../components/ImageGalleryModal";
 import { Helmet } from "react-helmet";
 import ArticleModal from "../../components/ArticleModal";
 
+
+
+// Ensure lightbox functionality is consistent
+const handleImageClick = (imageUrl: string) => {
+  console.log("Image clicked:", imageUrl);
+  // Open lightbox logic here
+};
+
 const XiuletHauss: React.FC = () => {
   // Tableau d'images pour la galerie
   const images = [
@@ -139,9 +147,7 @@ const XiuletHauss: React.FC = () => {
             title="Galerie - Plana del Bou"
             images={images}
             onClose={handleCloseGallery}
-            onImageClick={(imageUrl) =>
-              console.log("Image cliquée :", imageUrl)
-            }
+            onImageClick={handleImageClick}
           />
         )}
 

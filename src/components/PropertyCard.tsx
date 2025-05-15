@@ -44,7 +44,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   useEffect(() => {
     const interval = setInterval(() => {
       nextThumbnails();
-    }, 3000); // Change toutes les 3 secondes
+    }, 6000); // Change toutes les 3 secondes
     return () => clearInterval(interval); // Nettoyage à la fin
   }, [thumbnails]);
 

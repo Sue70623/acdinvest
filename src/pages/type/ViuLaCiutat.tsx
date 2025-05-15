@@ -14,18 +14,23 @@ const ViuLaCiutat = () => {
         <title>Viu La Ciutat - ACD Invest</title>
         <meta
           name="description"
-          content="Explorez nos biens immobiliers en ville. Profitez de la vie urbaine avec ACD Invest."
+          content="Explora els nostres immobles urbans i gaudeix de la vida a la ciutat amb ACD Invest."
         />
       </Helmet>
 
       <h1 className="type-page-title">VIU LA CIUTAT</h1>
-      <p className="type-page-description">Explora els nostres espais urbans, perfectes per gaudir de la comoditat i els serveis que ofereix la vida a la ciutat.</p>
+      <p className="type-page-description">
+        Explora els nostres espais urbans, perfectes per gaudir de la comoditat
+        i els serveis que ofereix la vida a la ciutat.
+      </p>
       <PropertyCard
-        mainImage="https://placehold.co/400x400?text=Main"
+        mainImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/el-noguer-b-edifici.webp"
         mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
-          "https://placehold.co/286x286?text=Mini1",
-          "https://placehold.co/286x286?text=Mini2",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Naus%20Hesei/Noguer%20B/BulkResizePhotos.comNoguer2-2/menjador-vista-montanya-el-noguer-b.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Naus%20Hesei/Noguer%20B/BulkResizePhotos.comNoguerBx1/entrada-amb-art-el-noguer-b-sant-julia-dde-loria.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Naus%20Hesei/Noguer%20B/BulkResizePhotos.comNoguerBx1/espais-commun-el-noguer-b.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Naus%20Hesei/Noguer%20B/BulkResizePhotos.comNoguerBx1/el-noguer-b-a-prop-escola-francesa.webp",
         ]}
         thumbnailsAlt={[
           "Miniature 1 de Plana Del Bou",
@@ -39,11 +44,13 @@ const ViuLaCiutat = () => {
 
       <hr className="separator" />
       <PropertyCard
-        mainImage="https://placehold.co/400x400?text=Main"
+        mainImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/escoles-sept-exterior-400-400.webp"
         mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
-          "https://placehold.co/286x286?text=Mini1",
-          "https://placehold.co/286x286?text=Mini2",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/escoles-sept-nit-cuitat-andorra2.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept5-1/menjador-lluminos-i-espaios-escoles-sept-andorra.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept5-1/habitacio-funcional-escoles-sept-sant-julia-de-loria.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/escoles-sept-mural-sant-julia-de-loria.webp",
         ]}
         thumbnailsAlt={[
           "Miniature 1 de Plana Del Bou",
@@ -57,29 +64,13 @@ const ViuLaCiutat = () => {
 
       <hr className="separator" />
       <PropertyCard
-        mainImage="https://placehold.co/400x400?text=Main"
+        mainImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
         mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
-          "https://placehold.co/286x286?text=Mini1",
-          "https://placehold.co/286x286?text=Mini2",
-        ]}
-        thumbnailsAlt={[
-          "Miniature 1 de Plana Del Bou",
-          "Miniature 2 de Plana Del Bou",
-        ]}
-        zoneName="Xiulet Hauss"
-        location="Sant Julià de Lòria, Andorra"
-        description="Habitatge al barri antic de Sant Julià amb història i caràcter."
-        link="/Zones/XiuletHauss"
-      />
-
-      <hr className="separator" />
-      <PropertyCard
-        mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
-        mainImageAlt="Image principale de Plana Del Bou"
-        thumbnails={[
-          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
         ]}
         thumbnailsAlt={[
           "Miniature 1 de Plana Del Bou",
@@ -93,11 +84,13 @@ const ViuLaCiutat = () => {
 
       <hr className="separator" />
       <PropertyCard
-        mainImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/look-up.jpg"
+        mainImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
         mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
-          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-          "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
+          "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp",
         ]}
         thumbnailsAlt={[
           "Miniature 1 de Plana Del Bou",
@@ -108,6 +101,7 @@ const ViuLaCiutat = () => {
         description="Edifici de disseny modern situat a la Seu d’Urgell."
         link="/Zones/Edelweiss"
       />
+      <hr className="separator" />
     </DefaultLayout>
   );
 };

@@ -54,7 +54,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
               className="image-item"
               onClick={() => openLightbox(index)}
             >
-              <img src={image} alt={`Thumbnail ${index + 1}`} />
+              <img src={image} alt={`Miniatura ${index + 1}`} />
             </div>
           ))}
         </div>
@@ -69,7 +69,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
             </button>
             <img
               src={images[selectedImageIndex]}
-              alt={`Image ${selectedImageIndex + 1}`}
+              alt={`Miniatura ${selectedImageIndex + 1}`}
               className="lightbox-image"
             />
             <button className="lightbox-next" onClick={showNextImage}>

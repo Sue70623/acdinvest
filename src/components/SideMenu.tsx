@@ -62,7 +62,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/plana-del-bou-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/resort-plana-del-bou.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -88,7 +88,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/eres-del-poble-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -124,7 +124,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/escoles-sept-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/Escoles-Sept-Art-Andorra.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -150,7 +150,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/el-noguer-b-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/el-noguer-b-1.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -176,7 +176,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/xiulet-hauss-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -202,7 +202,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/la-freixera-ii-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -228,7 +228,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/edelweiss-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",
@@ -264,7 +264,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('/src/assets/images/naus-hesei-thumbnail.jpg')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/naus-hesei-capcalera.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",

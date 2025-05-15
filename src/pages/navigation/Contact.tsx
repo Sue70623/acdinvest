@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
     >
       <div className="contact-page">
         <HeroType2
-          backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
           title="Bienvenue"
           subtitle="Contacta'ns"
           alt="Poseu-vos en contacte amb l'equip d'ACD Invest"
@@ -26,9 +26,9 @@ const Contact: React.FC = () => {
 
       <div className="zone-info-block">
         <div className="zone-distances">
-          <p>Frontera espanyola: km</p>
-          <p>Frontera fancesa: km</p>
-          <p>Andorra la Vella: km</p>
+          <p>Frontera espanyola: 5,9km</p>
+          <p>Frontera fancesa: 25,7km</p>
+          <p>Andorra la Vella: 5,3km</p>
         </div>
         {/* Lien vers Google Maps */}
         <iframe

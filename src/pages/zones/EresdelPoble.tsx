@@ -5,18 +5,21 @@ import HeroType2 from "../../components/HeroType2";
 import "./zonesPages.css";
 import ImageGalleryModal from "../../components/ImageGalleryModal"; // Import the missing component
 import { Helmet } from "react-helmet";
+import ArticleModal from "../../components/ArticleModal";
 
 const EresdelPoble: React.FC = () => {
   // Tableau d'images pour la galerie
   const images = [
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(17)ERADECALBOU1/vista-montanya-fontaneda-andorra.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(17)ERADECALBOU1/mezzanine-era-cal-bou-fontaneda-andorra.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(17)ERADECALBOU1/vista-muntanya-fontaneda-andorra-casa-rural.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/calma-muntanya-era-ermita-fontaneda.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/menjador-rural-era-ermita-fontanedena.webp",
   ];
 
   // State for gallery modal visibility
@@ -26,16 +29,32 @@ const EresdelPoble: React.FC = () => {
     setIsGalleryOpen(true); // Ouvre la modale
   };
 
+  // State for Serveis modal visibility
+  const [isServeisModalOpen, setIsServeisModalOpen] = useState(false);
+
+  const openServeisModal = () => {
+    setIsServeisModalOpen(true);
+  };
+
+  const closeServeisModal = () => {
+    setIsServeisModalOpen(false);
+  };
+
   const handleCloseGallery = () => {
     setIsGalleryOpen(false); // Ferme la modale
   };
 
-  const openServeisModal = () => {
-    console.log("Serveis modal opened");
-  };
+  // Removed duplicate declaration of openServeisModal
+
+  const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
   const openEntornModal = () => {
+    setIsEntornModalOpen(true);
     console.log("Entorn modal opened");
+  };
+
+  const closeEntornModal = () => {
+    setIsEntornModalOpen(false);
   };
 
   return (
@@ -53,7 +72,7 @@ const EresdelPoble: React.FC = () => {
 
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
           title="Eres del Poble"
           subtitle="Fontaneda,Andorra"
           alt="Cases tradicionals a Fontaneda amb façanes de pedra i interiors modernitzats"
@@ -73,12 +92,12 @@ const EresdelPoble: React.FC = () => {
           title="Uns Espais"
           description="Un espai que fusiona història i confort, envoltat de natura."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/fontaneda.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(17)ERADECALBOU1/vista-muntanya-fontaneda-andorra-casa-rural.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/calma-muntanya-era-ermita-fontaneda.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/menjador-rural-era-ermita-fontanedena.webp",
           ]}
           buttonLabel="Ver Mas"
           link="/liste-des-biens/listEresdelPoble"
@@ -87,12 +106,11 @@ const EresdelPoble: React.FC = () => {
           title="Serveis"
           description="Modernització interior, façana de pedra, sostre de pissarra, tranquil·litat absoluta."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
           ]}
           buttonLabel="Ver Mas"
           link="/"
@@ -103,12 +121,11 @@ const EresdelPoble: React.FC = () => {
           title="Entorn"
           description="En plena muntanya, dins la zona antiga del poble, amb accés a camins naturals."
           images={[
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
-            "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/cat.jpg",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
           ]}
           buttonLabel="Ver Mas"
           link="/"
@@ -117,9 +134,9 @@ const EresdelPoble: React.FC = () => {
         <hr className="separator" />
         <div className="zone-info-block">
           <div className="zone-distances">
-            <p>Frontera espanyola: km</p>
-            <p>Frontera fancesa: km</p>
-            <p>Andorra la Vella: km</p>
+            <p>Frontera espanyola: 9,6km</p>
+            <p>Frontera fancesa: 33,1km</p>
+            <p>Andorra la Vella: 12,7km</p>
           </div>
           {/* Lien vers Google Maps */}
           <iframe
@@ -135,14 +152,27 @@ const EresdelPoble: React.FC = () => {
         {/* Affichage conditionnel de la modale */}
         {isGalleryOpen && (
           <ImageGalleryModal
-            title="Galerie - Plana del Bou"
+            title="Galeria fotogràfica Eres del Poble"
             images={images}
             onClose={handleCloseGallery}
-            onImageClick={(imageUrl) =>
-              console.log("Image cliquée :", imageUrl)
-            }
           />
         )}
+
+        <ArticleModal
+          title="Serveis"
+          content="Les cases de l’Era de Cal Bou i l’Era de l’Ermita ofereixen un espai acollidor que conserva l’essència de l’arquitectura tradicional pirinenca, però adaptada als estàndards actuals de confort. Cada habitatge disposa de dues plantes, amb estances lluminoses i zones exteriors privades per gaudir de la natura. Es conserven elements originals com murs de pedra i bigues de fusta, combinats amb cuines obertes, xemeneies i terrasses equipades amb barbacoa, creant un equilibri perfecte entre tradició i modernitat."
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
+          isOpen={isServeisModalOpen}
+          onClose={closeServeisModal}
+        />
+
+        <ArticleModal
+          title="Entorn"
+          content="Situades al nucli antic de Fontaneda, les Eres del Poble s’envolten d’un entorn rural tranquil i natural. Aquestes cases estan perfectament integrades al paisatge de muntanya, amb accés directe a camins per fer excursions a peu o en bicicleta. L’encant d’aquestes construccions tradicionals es combina amb la serenor del seu entorn, oferint als residents un refugi ideal per desconnectar i viure la muntanya amb autenticitat i comoditat."
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
+          isOpen={isEntornModalOpen}
+          onClose={closeEntornModal}
+        />
       </div>
     </DefaultLayout>
   );

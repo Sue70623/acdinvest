@@ -18,7 +18,7 @@ const ElsNostresEspais = () => {
 
         <Link to="/viu-la-ciutat" className="espai-card">
           <img
-            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            src="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/escoles-sept-nit-cuitat-andorra2.webp"
             alt="Viu la Ciutat"
             className="els-nostres-espais-image"
           />
@@ -32,7 +32,7 @@ const ElsNostresEspais = () => {
       <div className="espais-grid">
         <Link to="/espais-de-negoci" className="espai-card">
           <img
-            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            src="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Naus%20Hesei/NauHesei/BulkResizePhotos.comNau41-42-2/local-commercial.webp"
             alt="Espais de Negoci"
             className="els-nostres-espais-image"
           />
@@ -42,7 +42,7 @@ const ElsNostresEspais = () => {
 
         <Link to="/poligon-i-industria" className="espai-card">
           <img
-            src="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477624/sample.jpg"
+            src="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/naus-hesei-capcalera.webp"
             alt="Polígon i Indústria"
             className="els-nostres-espais-image"
           />

@@ -74,11 +74,11 @@
 }
 
 .prev-video {
-  left: -40px;
+  left: 15px;
 }
 
 .next-video {
-  right: -40px;
+  right: 15px;
 }
 
 .prev-video:hover,

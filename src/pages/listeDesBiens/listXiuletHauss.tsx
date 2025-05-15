@@ -37,7 +37,7 @@ const ListXiuletHauss: React.FC = () => {
         <title>Liste des biens - Xiulet Hauss</title>
         <meta
           name="description"
-          content="Découvrez les biens disponibles dans le projet Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria."
+          content="Descobreix els béns disponibles al projecte Xiulet Hauss, un habitatge únic al cor de Sant Julià de Lòria."
         />
       </Helmet>
       <h1 className="page-title">Béns disponibles – Xiulet Hauss</h1>

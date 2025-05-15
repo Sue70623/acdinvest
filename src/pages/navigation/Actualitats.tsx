@@ -9,10 +9,16 @@ import { Helmet } from "react-helmet";
 
 const Actualitats = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState({
-    title: "",
-    image: "",
-    content: "",
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+  image: string;
+  content: string;
+  videoUrl?: string;
+}>({
+  title: "",
+  image: "",
+  content: "",
+ // Ajout de la propriété videoUrl
   });
 
   const openModal = (article: {
@@ -27,7 +33,7 @@ const Actualitats = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setModalContent({ title: "", image: "", content: "" });
+    setModalContent({ title: "", image: "", content: "" , videoUrl: "" }); // Réinitialiser le contenu du modal
   };
   return (
     <DefaultLayout
@@ -42,7 +48,7 @@ const Actualitats = () => {
         />
       </Helmet>
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
         title="Plana del Bou"
         subtitle="Un lloc únic envoltat de natura"
         alt="Notícies recents i esdeveniments d'ACD Invest"
@@ -57,12 +63,13 @@ vivendes són unifamiliars i es trobaran en un entorn natural
 privilegiat, amb privacitat i amplitut per a disfrutar de l'espai.
 "
           image="https://via.placeholder.com/300x200"
-          videoUrl="https://youtu.be/H1xIK7UGc68?si=IdswAgxirk7XpHMD"
+          videoUrl="https://www.youtube.com/embed/H1xIK7UGc68?si=WvbTHoshECbzgJCC"
           onReadMore={() =>
             openModal({
               title: "Nous xalets a la Plana del Bou de Fontaneda",
               image: "https://via.placeholder.com/300x200",
-              videoUrl: "https://youtu.be/H1xIK7UGc68?si=IdswAgxirk7XpHMD",
+              videoUrl:
+                "https://www.youtube.com/embed/H1xIK7UGc68?si=WvbTHoshECbzgJCC",
               content:
                 "Aquest és un projecte de quatre xalets singulars. Les vivendes són unifamiliars i es trobaran en un entorn natural privilegiat, amb privacitat i amplitut per a disfrutar de l'espai. Les cases, es regiran per un sistema de passive house, de manera que intervinguin en la menor manera possible amb l'entorn, respectant la natura. Així doncs, també s’autoabastiran d’energia solar autoproduïda. Entre algunes de les qualitats dels habitatges, destaquen la seva innovadora estructura de fusta i el terra radiant a l’interior per a un màxim confort.",
             })
@@ -119,6 +126,7 @@ privilegiat, amb privacitat i amplitut per a disfrutar de l'espai.
         title={modalContent.title}
         imageUrl={modalContent.image}
         content={modalContent.content}
+        videoUrl={modalContent.videoUrl}
       />
     </DefaultLayout>
   );
